@@ -118,11 +118,11 @@ export default function Organizers() {
                      </div>
                 </div>
 
-                {/* Section 4: Core Committee */}
+                {/* Section 4: Faculty Conveners */}
                 <div className="mb-24">
                      <div className="text-center mb-10">
                         <h2 className="text-2xl font-mono text-white tracking-widest uppercase inline-block border-b border-white/20 pb-2">
-                             Core Committee
+                             Faculty Conveners
                         </h2>
                      </div>
                      <div className="flex flex-wrap justify-center gap-10">
