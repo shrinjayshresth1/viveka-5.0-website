@@ -1,122 +1,122 @@
 "use client";
 
-import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
-import { useRef } from "react";
-import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import { Instagram, Linkedin, Facebook } from "lucide-react";
+import Image from "next/image";
 
 export default function About() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  
-  // 3D Tilt Effect
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const width = rect.width;
-    const height = rect.height;
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
-    
-    const xPct = mouseX / width - 0.5;
-    const yPct = mouseY / height - 0.5;
-    
-    x.set(xPct * 20); // Rotate Y
-    y.set(yPct * -20); // Rotate X
-  };
-
-  const handleMouseLeave = () => {
-    x.set(0);
-    y.set(0);
-  };
-
-  const xSpring = useSpring(x, { stiffness: 400, damping: 30 });
-  const ySpring = useSpring(y, { stiffness: 400, damping: 30 });
-
   return (
-    <section 
-      id="about" 
-      className="relative min-h-screen py-20 flex flex-col items-center justify-center bg-background overflow-hidden"
-    >
-        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <section id="about" className="relative py-24 bg-[#020617] overflow-hidden">
+      
+      {/* --- Section 1: About SRMU --- */}
+      <div className="container mx-auto px-4 mb-32 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
-            {/* Text Side */}
-            <div className="z-10">
-                <motion.h2 
-                    initial={{ opacity: 0, x: -50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.8 }}
-                    className="text-nean-cyan text-sm md:text-base tracking-[0.2em] font-medium text-neon-cyan uppercase mb-6"
-                >
-                    The Revelation
-                </motion.h2>
+            {/* Text Content */}
+            <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.8 }}
+                className="relative"
+            >
+                <h4 className="text-2xl font-bold text-gray-200 mb-2">About</h4>
+                
+                {/* Outlined Text Effect */}
+                <h1 className="text-7xl md:text-9xl font-bold tracking-tighter mb-8" 
+                    style={{ 
+                        WebkitTextStroke: "1px rgba(255,255,255,0.3)", 
+                        color: "transparent" 
+                    }}>
+                    SRMU
+                </h1>
 
-                <div className="space-y-6 text-2xl md:text-4xl font-space-grotesk font-light leading-tight">
-                    {["SRMU's flagship", "technical festival returns,", "bigger and bolder than", "ever before."].map((line, i) => (
-                        <div key={i} className="overflow-hidden">
-                            <motion.p
-                                initial={{ y: "100%" }}
-                                whileInView={{ y: 0 }}
-                                viewport={{ once: true, margin: "-10%" }}
-                                transition={{ duration: 0.8, delay: i * 0.1, ease: [0.33, 1, 0.68, 1] }}
-                                className="text-gray-200"
-                            >
-                                {line}
-                            </motion.p>
-                        </div>
-                    ))}
+                <div className="space-y-6 text-gray-400 leading-relaxed text-sm md:text-base text-justify">
+                    <p>
+                        <strong className="text-white">Shri Ramswaroop Memorial University (SRMU)</strong> aims to be a globally recognized leader in education, research, and preparing ethical professionals. Founded in 1999, it offers a wide range of undergraduate, postgraduate, and doctoral programs across various disciplines. SRMU boasts excellent faculty, industry collaborations, and innovative pedagogy, ensuring its programs are relevant and enhance employability.
+                    </p>
+                    <p>
+                        With a focus on holistic development, students gain practical exposure, attend guest lectures, and participate in co-curricular activities. The university also provides scholarships and outreach programs, creating a well-rounded educational experience. With its <em className="text-white text-lg">"Chase Reality…Dreams Will Follow"</em> motto, SRMU strives to set a benchmark in higher education.
+                    </p>
                 </div>
 
-                <motion.p 
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                     transition={{ duration: 1, delay: 0.6 }}
-                    className="mt-8 text-gray-400 max-w-md text-lg"
-                >
-                    Unite with the brightest minds in technology as we explore the frontiers of Artificial Intelligence and Innovation.
-                </motion.p>
-            </div>
+                <div className="flex gap-4 mt-8">
+                    <a href="#" className="p-2 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 text-white hover:scale-110 transition-transform">
+                        <Instagram size={20} />
+                    </a>
+                    <a href="#" className="p-2 rounded-full bg-blue-600 text-white hover:scale-110 transition-transform">
+                        <Linkedin size={20} />
+                    </a>
+                    <a href="#" className="p-2 rounded-full bg-blue-500 text-white hover:scale-110 transition-transform">
+                        <Facebook size={20} />
+                    </a>
+                </div>
+            </motion.div>
 
-            {/* 3D Card Side */}
-            <div className="perspective-1000 flex justify-center z-10">
-                <motion.div
-                    style={{ rotateX: ySpring, rotateY: xSpring }}
-                    onMouseMove={handleMouseMove}
-                    onMouseLeave={handleMouseLeave}
-                    className={cn(
-                        "relative w-full max-w-md aspect-[4/5] rounded-xl glass-panel p-8",
-                        "flex flex-col justify-between border-t border-l border-white/10 shadow-2xl shadow-neon-cyan/10"
-                    )}
-                >
-                    {/* Content inside card */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-neon-cyan/5 to-blue-500/5 rounded-xl pointer-events-none" />
+            {/* Image Side with 3D Reveal */}
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8, rotateY: 30 }}
+                whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, type: "spring" }}
+                className="relative perspective-1000"
+            >
+                <div className="relative rounded-2xl overflow-hidden border-4 border-white/5 shadow-2xl group">
+                    <div className="absolute inset-0 bg-neon-cyan/10 group-hover:bg-transparent transition-colors z-10" />
+                    <Image 
+                        src="/srmu.png" 
+                        alt="SRMU Campus" 
+                        width={800} 
+                        height={600} 
+                        className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700" 
+                    />
                     
-                    <div className="relative z-10">
-                         <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-6">
-                            <svg className="w-6 h-6 text-neon-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                            </svg>
-                         </div>
-                         <h3 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
-                             Tech Fusion
-                         </h3>
-                         <p className="mt-2 text-sm text-gray-400">The Powerhouse Behind Viveka</p>
-                    </div>
-
-                    <div className="relative z-10 glass-panel p-4 rounded-lg bg-black/20">
-                        <p className="text-xs text-gray-300">
-                            "Innovation distinguishes between a leader and a follower."
-                        </p>
-                    </div>
-
-                </motion.div>
-            </div>
+                    {/* Decorative Corner */}
+                    <div className="absolute top-4 right-4 w-20 h-20 border-t-4 border-r-4 border-neon-cyan/50" />
+                    <div className="absolute bottom-4 left-4 w-20 h-20 border-b-4 border-l-4 border-neon-cyan/50" />
+                </div>
+            </motion.div>
         </div>
+      </div>
 
-        {/* Ambient glow */}
-        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] bg-blue-900/20 blur-[120px] rounded-full pointer-events-none -z-10" />
+       {/* --- Section 2: About Viveka --- */}
+      <div className="container mx-auto px-4 relative z-10">
+         <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="rounded-[3rem] bg-gradient-to-br from-[#0f172a] to-[#020617] border border-white/10 p-8 md:p-16 relative overflow-hidden"
+         >
+             {/* Background Glow */}
+             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-neon-cyan/5 rounded-full blur-[100px] pointer-events-none" />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                 <div>
+                     <h4 className="text-xl font-bold text-gray-300 mb-2">About</h4>
+                     <h2 className="text-5xl md:text-7xl font-bold font-space-grotesk text-white mb-6">
+                        VIVEKA <br/>
+                        <span className="text-neon-cyan">5.0</span>
+                     </h2>
+                 </div>
+                 
+                 <div className="flex flex-col justify-center space-y-6 text-gray-400 text-lg leading-relaxed">
+                     <p>
+                        <strong className="text-white">VIVEKA: The Intelligence 5.0</strong> is the Annual Techfest of <span className="text-neon-cyan">Shri Ramswaroop Memorial University</span> organized under the initiative of Tech Fusion Club. Unleash your technical skills in the vast horizon of events.
+                     </p>
+                     <p>
+                        Viveka 5.0 promises a thrilling experience for all tech enthusiasts. We bring to you a platform to innovate, create, and compete with the best minds in the country.
+                     </p>
+                     
+                     <div className="pt-4">
+                        <button className="px-8 py-3 rounded-full border border-neon-cyan text-neon-cyan font-bold hover:bg-neon-cyan hover:text-black transition-all shadow-[0_0_20px_rgba(0,240,255,0.2)]">
+                            Explore Events
+                        </button>
+                     </div>
+                 </div>
+            </div>
+         </motion.div>
+      </div>
+
     </section>
   );
 }
