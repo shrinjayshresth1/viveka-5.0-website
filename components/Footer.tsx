@@ -18,6 +18,7 @@ export default function Footer() {
         {/* Background Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] opacity-20" />
         
+        <div className="container mx-auto px-4 relative z-10 flex flex-col items-center">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full max-w-6xl text-left border-t border-white/10 pt-16">
                 {/* Brand & Description */}
                 <div className="flex flex-col gap-6">
