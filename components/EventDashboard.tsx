@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calendar, MapPin, User, Trophy, ArrowRight, Zap, Target } from "lucide-react";
+import { Calendar, MapPin, User, Trophy, ArrowRight, Zap, Target, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 // Reusing the same data structure for consistency
@@ -298,7 +298,29 @@ const events: EventData[] = [
 
 export default function EventDashboard() {
   const [activeId, setActiveId] = useState(events[0].id);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
   const activeEvent = events.find((e) => e.id === activeId) || events[0];
+
+  useEffect(() => {
+    if (isMobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => { document.body.style.overflow = "unset"; };
+  }, [isMobileOpen]);
+
+  const handleNext = () => {
+    const currentIndex = events.findIndex(e => e.id === activeId);
+    const nextIndex = (currentIndex + 1) % events.length;
+    setActiveId(events[nextIndex].id);
+  };
+
+  const handlePrev = () => {
+    const currentIndex = events.findIndex(e => e.id === activeId);
+    const prevIndex = (currentIndex - 1 + events.length) % events.length;
+    setActiveId(events[prevIndex].id);
+  };
 
   return (
     <div className="container mx-auto px-4 py-24 h-screen md:h-[85vh] min-h-[500px] flex flex-col md:flex-row gap-8">
@@ -312,7 +334,10 @@ export default function EventDashboard() {
             {events.map((event) => (
                 <button
                     key={event.id}
-                    onClick={() => setActiveId(event.id)}
+                    onClick={() => {
+                        setActiveId(event.id);
+                        setIsMobileOpen(true);
+                    }}
                     className={cn(
                         "w-full group relative p-4 text-left border rounded-lg transition-all duration-300 flex-shrink-0",
                         activeId === event.id 
@@ -343,11 +368,39 @@ export default function EventDashboard() {
       </div>
 
       {/* Mainframe: Details View */}
-      <div className="w-full md:w-2/3 relative h-full flex flex-col">
-         <div className="absolute inset-0 border border-white/10 rounded-2xl bg-black/40 backdrop-blur-md overflow-hidden flex flex-col">
+      <div className={cn(
+          "w-full md:w-2/3 relative h-full flex flex-col transition-all duration-300",
+          isMobileOpen ? "fixed inset-0 z-50 bg-[#0a0a0a] p-0" : "hidden md:flex"
+      )}>
+         <div className="absolute inset-0 border border-white/10 md:rounded-2xl bg-black/40 backdrop-blur-md overflow-hidden flex flex-col">
             
             {/* Background Grid */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:30px_30px] z-0" />
+            
+            {/* Mobile Controls Header */}
+            <div className="md:hidden absolute top-4 left-4 right-4 z-50 flex justify-between items-center pointer-events-none">
+                <button 
+                    onClick={() => setIsMobileOpen(false)}
+                    className="pointer-events-auto p-2 bg-black/50 backdrop-blur border border-white/20 rounded-full text-white hover:text-neon-cyan active:scale-95"
+                >
+                    <X size={24} />
+                </button>
+
+                <div className="pointer-events-auto flex gap-2">
+                    <button 
+                        onClick={(e) => { e.stopPropagation(); handlePrev(); }}
+                        className="p-2 bg-black/50 backdrop-blur border border-white/20 rounded-full text-white hover:text-neon-cyan active:scale-95"
+                    >
+                        <ChevronLeft size={24} />
+                    </button>
+                    <button 
+                        onClick={(e) => { e.stopPropagation(); handleNext(); }}
+                        className="p-2 bg-black/50 backdrop-blur border border-white/20 rounded-full text-white hover:text-neon-cyan active:scale-95"
+                    >
+                        <ChevronRight size={24} />
+                    </button>
+                </div>
+            </div>
 
             <AnimatePresence mode="wait">
                 <motion.div 
