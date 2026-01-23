@@ -3,7 +3,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Sponsors from "@/components/Sponsors";
-import About from "@/components/About";
 import WhyAttend from "@/components/WhyAttend";
 import ChiefGuest from "@/components/ChiefGuest";
 import Schedule from "@/components/Schedule";
@@ -19,7 +18,6 @@ export default function Home() {
       
       <Hero />
       <Sponsors />
-      <About />
       <WhyAttend />
       <ChiefGuest />
       <Schedule />
