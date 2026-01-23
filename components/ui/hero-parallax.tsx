@@ -104,10 +104,13 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-10 md:py-20 px-4 w-full  left-0 top-0">
-      <h1 className="text-6xl md:text-9xl font-bold font-space-grotesk tracking-tighter text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]">
-        V!VEKA <br /> 
-        <span className="text-neon-cyan drop-shadow-[0_0_30px_rgba(0,240,255,0.4)]"> 5.0</span>
-      </h1>
+      <div className="mb-8">
+        <img 
+          src="/logo.png" 
+          alt="Viveka 5.0 The Intelligence" 
+          className="h-32 md:h-48 w-auto object-contain drop-shadow-[0_0_30px_rgba(0,240,255,0.3)]"
+        />
+      </div>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
         Experience the fusion of technology and intelligence. The largest Techno-Cultural fest is here. Join us for 3 days of innovation, competition, and celebration.
       </p>

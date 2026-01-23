@@ -49,9 +49,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img 
-              src="/viveka-logo.png" 
+              src="/logo.png" 
               alt="Viveka Logo" 
-              className="h-10 w-auto object-contain hover:opacity-80 transition-opacity"
+              className="h-12 w-auto object-contain hover:opacity-80 transition-opacity"
             />
           </Link>
 
