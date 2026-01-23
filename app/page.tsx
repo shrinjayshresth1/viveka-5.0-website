@@ -7,6 +7,7 @@ import WhyAttend from "@/components/WhyAttend";
 import ChiefGuest from "@/components/ChiefGuest";
 import Schedule from "@/components/Schedule";
 import Gallery from "@/components/Gallery";
+import FAQMap from "@/components/FAQMap";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/ui/CustomCursor";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <ChiefGuest />
       <Schedule />
       <Gallery />
+      <FAQMap />
       <Footer />
     </main>
   );
