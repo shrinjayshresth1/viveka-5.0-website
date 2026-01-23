@@ -7,11 +7,11 @@ import { SparklesCore } from "./ui/Sparkles";
 
 const teamData = {
   chiefPatrons: [
-    { name: "Er. Pankaj Agarwal", role: "Chancellor", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" },
-    { name: "Er. Pooja Agarwal", role: "Pro Chancellor", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" },
+    { name: "Er. Pankaj Agarwal", role: "Chancellor", image: "https://srmu.ac.in/storage/teams/er-pankaj-agarwal-12012403111859.jpg" },
+    { name: "Er. Pooja Agarwal", role: "Pro Chancellor", image: "https://srmu.ac.in/storage/teams/er.-pooja-agarwal-pro-chancellor--12012403114783.jpg" },
   ],
   patrons: [
-    { name: "Dr. Newal Kishore", role: "Vice Chancellor", image: "https://images.unsplash.com/photo-1556157382-97eda2d622ca?q=80&w=2072&auto=format&fit=crop" },
+    { name: "Prof. (Dr.) Vijay Tiwari", role: "Vice Chancellor", image: "https://srmu.ac.in/storage/teams/sr7d9556-03122510174995.JPG" },
     { name: "Prof. R.K. Jaiswal", role: "Director General", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop" }
   ],
   faculty: [
