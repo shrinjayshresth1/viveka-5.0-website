@@ -326,7 +326,17 @@ export default function EventDashboard() {
     return () => { document.body.style.overflow = "unset"; };
   }, [isMobileOpen]);
 
-  // ... handlers ...
+  const handleNext = () => {
+    const currentIndex = events.findIndex(e => e.id === activeId);
+    const nextIndex = (currentIndex + 1) % events.length;
+    setActiveId(events[nextIndex].id);
+  };
+
+  const handlePrev = () => {
+    const currentIndex = events.findIndex(e => e.id === activeId);
+    const prevIndex = (currentIndex - 1 + events.length) % events.length;
+    setActiveId(events[prevIndex].id);
+  };
 
   return (
     <div className="container mx-auto px-4 py-24 h-screen md:h-[85vh] min-h-[500px] flex flex-col md:flex-row gap-8">
