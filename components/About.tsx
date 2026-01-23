@@ -1,92 +1,101 @@
 "use client";
 import React from "react";
-import { StickyScroll } from "./ui/sticky-scroll-reveal";
+import { HorizontalScroll } from "./ui/horizontal-scroll";
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
-const content = [
+const cards = [
   {
-    title: "SRMU: The Foundation",
-    description: (
-      <>
-        <p className="mb-4">
-            <strong className="text-neon-cyan">Shri Ramswaroop Memorial University (SRMU)</strong> stands as a beacon of excellence in education and research. Founded with a vision to create ethical professionals, it offers a diverse range of programs across multiple disciplines.
-        </p>
-        <p>
-            With the motto <em>"Chase Reality…Dreams Will Follow"</em>, SRMU creates an ecosystem where academic rigour meets holistic development, fostering the leaders of tomorrow.
-        </p>
-      </>
-    ),
-    content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <Image
-          src="/srmu.png"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="SRMU Campus"
-        />
-      </div>
-    ),
+    type: "intro",
+    title: "Discover the Legacy",
+    subtitle: "Swipe to Explore",
+    img: "/srmu.png"
   },
   {
-    title: "Viveka 5.0: The Intelligence",
-    description: (
-      <>
-        <p className="mb-4">
-           The 5th iteration of SRMU's flagship Techno-Cultural Fest. <strong>Viveka</strong> is not just an event; it's a movement. A convergence of code, creativity, and culture.
-        </p>
-        <p>
-            Under the theme <span className="text-neon-cyan">"The Intelligence"</span>, we explore the frontiers of AI, Robotics, and human ingenuity. It is a platform for students to innovate, compete, and showcase their brilliance on a grand stage.
-        </p>
-      </>
-    ),
-    content: (
-      <div className="h-full w-full  flex items-center justify-center text-white p-4 bg-black/50">
-        <Image
-          src="/logo.png"
-          width={300}
-          height={300}
-          className="h-auto w-full object-contain"
-          alt="Viveka Logo"
-        />
-      </div>
-    ),
+    type: "content",
+    title: "The Foundation",
+    heading: "SRMU",
+    description: "Shri Ramswaroop Memorial University (SRMU) stands as a beacon of excellence in education and research. Founded with a vision to create ethical professionals, it offers a diverse range of programs across multiple disciplines.",
+    highlight: "Chase Reality... Dreams Will Follow",
+    img: "/srmu.png"
   },
   {
-    title: "The Vision",
-    description: (
-      <>
-        <p className="mb-4">
-            To ignite the spark of innovation in every student. We believe in learning beyond the classroom, where practical application meets theoretical knowledge.
-        </p>
-        <p>
-            Join us on <strong>6th & 7th February 2025</strong> as we celebrate technology, art, and the spirit of competition. The future is here, and it begins with you.
-        </p>
-      </>
-    ),
+    type: "content",
+    title: "The Event",
+    heading: "VIVEKA 5.0",
+    description: "The 5th iteration of SRMU's flagship Techno-Cultural Fest. Viveka is not just an event; it's a movement. A convergence of code, creativity, and culture exploring the frontiers of AI.",
+    highlight: "The Intelligence",
+    img: "/logo.png"
+  },
+  {
+    type: "vision",
+    title: "The Future",
+    heading: "2025",
+    description: "Join us on 6th & 7th February 2025 as we celebrate technology, art, and the spirit of competition. The future is here, and it begins with you.",
+    highlight: "Innovation starts here",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        <div className="text-6xl font-bold font-space-grotesk text-neon-cyan">
-             2025
+        <div className="mt-8 flex gap-4">
+            <button className="px-8 py-3 bg-neon-cyan text-black font-bold uppercase tracking-wider rounded-full hover:scale-105 transition-transform">
+                Explore Events
+            </button>
         </div>
-      </div>
-    ),
-  },
+    )
+  }
 ];
+
+const Card = ({ card }: { card: any }) => {
+    if (card.type === "intro") {
+        return (
+            <div className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200">
+                <div className="absolute inset-0 bg-black/60 z-10 flex flex-col items-center justify-center p-8 text-center">
+                     <h3 className="text-4xl font-bold text-white font-space-grotesk uppercase mb-2">{card.title}</h3>
+                     <p className="text-neon-cyan flex items-center gap-2 animate-pulse">{card.subtitle} <ArrowRight /></p>
+                </div>
+                <Image src={card.img} fill className="object-cover transition-transform duration-500 group-hover:scale-110 grayscale" alt={card.title} />
+            </div>
+        );
+    }
+
+    return (
+        <div className="group relative h-[450px] w-[800px] overflow-hidden bg-neutral-900 border border-white/10 flex">
+            {/* Image Side */}
+            <div className="w-1/2 relative overflow-hidden border-r border-white/10">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent z-10" />
+                 <Image src={card.img || "/logo.png"} fill className="object-cover transition-transform duration-500 group-hover:scale-110 opacity-60 group-hover:opacity-100" alt={card.heading} />
+            </div>
+            
+            {/* Content Side */}
+            <div className="w-1/2 p-8 flex flex-col justify-center relative">
+                 <span className="text-neon-cyan font-mono text-sm mb-4 tracking-widest uppercase">{card.title}</span>
+                 <h2 className="text-5xl font-bold text-white font-space-grotesk leading-none mb-6 group-hover:text-neon-cyan transition-colors">{card.heading}</h2>
+                 <p className="text-gray-400 leading-relaxed mb-6 border-l-2 border-white/20 pl-4">{card.description}</p>
+                 <span className="text-sm font-bold text-white/50 uppercase tracking-wider">{card.highlight}</span>
+                 {card.content}
+                 
+                 {/* Decorative */}
+                 <div className="absolute bottom-4 right-4 text-[10rem] font-bold text-white/5 pointer-events-none leading-none -z-10 select-none">
+                    {card.heading.charAt(0)}
+                 </div>
+            </div>
+        </div>
+    );
+};
 
 export default function About() {
   return (
-    <section className="py-20 bg-[#020617] overflow-hidden" id="about">
-      <div className="container mx-auto px-4 mb-10 text-center">
-         <h2 className="text-4xl md:text-5xl font-bold text-white font-space-grotesk mb-4">
+    <div id="about" className="relative bg-[#020617]">
+      <div className="container mx-auto px-4 py-20 text-center">
+         <h2 className="text-5xl md:text-7xl font-bold text-white font-space-grotesk mb-4">
              Discover <span className="text-neon-cyan">The Legacy</span>
          </h2>
-         <p className="text-gray-400 max-w-2xl mx-auto">
-             From a premier university to a premier technical festival. Scroll to explore our journey.
-         </p>
+         <p className="text-gray-400">Scroll to explore the journey of innovation.</p>
       </div>
-      
-      <StickyScroll content={content} />
-    </section>
+
+      <HorizontalScroll>
+        {cards.map((card, i) => (
+          <Card key={i} card={card} />
+        ))}
+      </HorizontalScroll>
+    </div>
   );
 }
