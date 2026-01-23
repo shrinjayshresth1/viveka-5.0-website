@@ -328,7 +328,8 @@ export default function EventDashboard() {
       {/* Sidebar: Data Stream */}
       <div className="w-full md:w-1/3 flex flex-col gap-4 h-[40vh] md:h-full">
         <h2 className="text-xl font-mono text-neon-cyan mb-4 flex items-center gap-2 flex-shrink-0">
-            <Target size={20} /> EVENT_LOGS
+            <Target size={20} /> EVENT_LOGS 
+            <span className="md:hidden text-xs text-gray-500 font-normal ml-auto animate-pulse">(Tap to view)</span>
         </h2>
         <div className="flex-1 overflow-y-auto pr-2 custom-scrollbar space-y-3" data-lenis-prevent>
             {events.map((event) => (
@@ -362,6 +363,9 @@ export default function EventDashboard() {
                     )}>
                         {event.title}
                     </h3>
+                    
+                    {/* Mobile Touch Indicator */}
+                    <ChevronRight className="md:hidden absolute right-4 top-1/2 -translate-y-1/2 text-white/10 group-active:text-neon-cyan" size={20} />
                 </button>
             ))}
         </div>
