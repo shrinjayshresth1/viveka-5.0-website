@@ -8,17 +8,19 @@ import { cn } from "@/lib/utils";
 const images1 = [
   "/gallery/1.jpg",
   "/gallery/2.jpg",
-  "/gallery/6pg",
+  "/gallery/3.jpg",
   "/gallery/4.jpg",
   "/gallery/5.jpg",
+  "/gallery/6.jpg",
 ];
 
 const images2 = [
-  "/gallery/3jpg",
   "/gallery/7.jpg",
   "/gallery/8.jpg",
   "/gallery/9.jpg",
   "/gallery/10.jpg",
+  "/gallery/11.jpg",
+  "/gallery/12.jpg",
 ];
 
 export default function Gallery() {
