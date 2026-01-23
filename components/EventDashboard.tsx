@@ -302,6 +302,22 @@ export default function EventDashboard() {
   const activeEvent = events.find((e) => e.id === activeId) || events[0];
 
   useEffect(() => {
+    const handleResize = () => {
+        if (window.innerWidth >= 768) {
+            setIsMobileOpen(false);
+        }
+    };
+    
+    // Initial check
+    if (window.innerWidth >= 768) {
+        setIsMobileOpen(false);
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
     if (isMobileOpen) {
       document.body.style.overflow = "hidden";
     } else {
@@ -310,17 +326,7 @@ export default function EventDashboard() {
     return () => { document.body.style.overflow = "unset"; };
   }, [isMobileOpen]);
 
-  const handleNext = () => {
-    const currentIndex = events.findIndex(e => e.id === activeId);
-    const nextIndex = (currentIndex + 1) % events.length;
-    setActiveId(events[nextIndex].id);
-  };
-
-  const handlePrev = () => {
-    const currentIndex = events.findIndex(e => e.id === activeId);
-    const prevIndex = (currentIndex - 1 + events.length) % events.length;
-    setActiveId(events[prevIndex].id);
-  };
+  // ... handlers ...
 
   return (
     <div className="container mx-auto px-4 py-24 h-screen md:h-[85vh] min-h-[500px] flex flex-col md:flex-row gap-8">
@@ -337,7 +343,9 @@ export default function EventDashboard() {
                     key={event.id}
                     onClick={() => {
                         setActiveId(event.id);
-                        setIsMobileOpen(true);
+                        if (window.innerWidth < 768) {
+                            setIsMobileOpen(true);
+                        }
                     }}
                     className={cn(
                         "w-full group relative p-4 text-left border rounded-lg transition-all duration-300 flex-shrink-0",
