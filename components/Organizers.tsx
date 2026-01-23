@@ -14,11 +14,35 @@ const teamData = {
     { name: "Dr. Newal Kishore", role: "Vice Chancellor", image: "https://images.unsplash.com/photo-1556157382-97eda2d622ca?q=80&w=2072&auto=format&fit=crop" },
     { name: "Prof. R.K. Jaiswal", role: "Director General", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop" }
   ],
-  faculty: [
-    { name: "Dr. Veena Singh", role: "Fest In-Charge", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop" },
-    { name: "Er. Sunny Kumar", role: "Faculty Convener", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" },
-    { name: "Er. Neeta Bhusal", role: "Faculty Convener", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop" }
-  ],
+    { 
+      name: "Dr. Veena Singh", 
+      role: "Fest In-Charge (HoD & Associate Prof.)", 
+      image: "https://media.licdn.com/dms/image/v2/C5603AQGzqTRu2zGEwQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1608385269429?e=1742428800&v=beta&t=W_yr0aIG3172JulJzx98wWrThC_g4ZEqEP4VyYHg2sw" 
+    },
+    { 
+      name: "Er. Abhishek Kumar Saxena", 
+      role: "Faculty Convener (Asst. Prof - DEEE)", 
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQGG-DMrNE5LWg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669641758444?e=1742428800&v=beta&t=0C8-zUqYWU66fWwpGUZZcdpB6-wVvzu05Upp5vDhDqU",
+      linkedin: "https://www.linkedin.com/in/abhishek-kumar-saxena-80a51111a/"
+    },
+    { 
+      name: "Dr. Mrityunjay Rai", 
+      role: "Faculty Convener (Asst. Prof - DEEE)", 
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQHwYGPh-YvESQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1686678021631?e=1742428800&v=beta&t=V_PYfqC9pjbRSKu3P64JqAIPh255RlT18M4zpz9r0Yg",
+      linkedin: "https://www.linkedin.com/in/dr-mritunjay-rai-36b85118/"
+    },
+    { 
+      name: "Er. Sunny Kumar", 
+      role: "Faculty Convener (Asst. Prof - DCSE)", 
+      image: "https://srmu.ac.in/storage/teams/11zon-cropped-5-11zon-23022411165423.jpeg",
+      linkedin: "https://www.linkedin.com/in/sunny-kumar-a7910b234/"
+    },
+    { 
+      name: "Er. Neeta Bhusal Sharma", 
+      role: "Faculty Convener (Asst. Prof - DCSE)", 
+      image: "https://srmu.ac.in/storage/teams/11zon-cropped-2-11zon-23022410512735.jpeg",
+      linkedin: "https://www.linkedin.com/in/neeta-bhusal-13708037/"
+    }
   webOps: [
     { name: "Shrinjay Shresth", role: "WebOps Lead", image: "/shrinjay.png" }, 
   ],
