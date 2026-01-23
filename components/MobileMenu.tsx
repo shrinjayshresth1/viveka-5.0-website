@@ -52,7 +52,7 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
                 transition={{ delay: 0.5 }}
                 className="mt-8 px-8 py-3 bg-neon-cyan text-black font-bold rounded-full hover:bg-white transition-colors"
             >
-                Register Now
+                Coming Soon
             </motion.button>
           </nav>
         </motion.div>
