@@ -5,7 +5,25 @@ import OrganizerCard from "./OrganizerCard";
 import { TracingBeam } from "./ui/TracingBeam";
 import { SparklesCore } from "./ui/Sparkles";
 
-const teamData = {
+interface Member {
+  name: string;
+  role: string;
+  image: string;
+  linkedin?: string;
+}
+
+interface TeamData {
+  chiefPatrons: Member[];
+  patrons: Member[];
+  festInCharge: Member[];
+  faculty: Member[];
+  veteranConveners: Member[];
+  conveners: Member[];
+  studentCoConveners: Member[];
+  webOps: Member[];
+}
+
+const teamData: TeamData = {
   chiefPatrons: [
     { name: "Er. Pankaj Agarwal", role: "Chancellor", image: "https://srmu.ac.in/storage/teams/er-pankaj-agarwal-12012403111859.jpg" },
     { name: "Er. Pooja Agarwal", role: "Pro Chancellor", image: "https://srmu.ac.in/storage/teams/er.-pooja-agarwal-pro-chancellor--12012403114783.jpg" },
