@@ -14,6 +14,7 @@ const teamData = {
     { name: "Dr. Newal Kishore", role: "Vice Chancellor", image: "https://images.unsplash.com/photo-1556157382-97eda2d622ca?q=80&w=2072&auto=format&fit=crop" },
     { name: "Prof. R.K. Jaiswal", role: "Director General", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop" }
   ],
+  faculty: [
     { 
       name: "Dr. Veena Singh", 
       role: "Fest In-Charge (HoD & Associate Prof.)", 
@@ -43,6 +44,7 @@ const teamData = {
       image: "https://srmu.ac.in/storage/teams/11zon-cropped-2-11zon-23022410512735.jpeg",
       linkedin: "https://www.linkedin.com/in/neeta-bhusal-13708037/"
     }
+  ],
   webOps: [
     { name: "Shrinjay Shresth", role: "WebOps Lead", image: "/shrinjay.png" }, 
   ],
