@@ -49,11 +49,11 @@ const teamData = {
     }
   ],
   webOps: [
-    { name: "Shrinjay Shresth", role: "WebOps Lead", image: "/shrinjay.png" }, 
+    { name: "Shrinjay Shresth", role: "WebOps Lead", image: "/shrinjay.png", linkedin: "https://www.linkedin.com/in/shrinjay-shresth-036010215/" }, 
   ],
   veterans: [
     { name: "Pranshu Agrahari", role: "Veteran Convener", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2000&auto=format&fit=crop" },
-    { name: "Shrinjay Shresth", role: "Veteran Convener", image: "/shrinjay.png" },
+    { name: "Shrinjay Shresth", role: "Veteran Convener", image: "/shrinjay.png", linkedin: "https://www.linkedin.com/in/shrinjay-shresth-036010215/" },
     { name: "Adii Chandra", role: "Veteran Convener", image: "/adii.jpg" },
     { name: "Nandini Verma", role: "Veteran Convener", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2000&auto=format&fit=crop" },
     { name: "Nitin Jaiswal", role: "Veteran Convener", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2000&auto=format&fit=crop" },

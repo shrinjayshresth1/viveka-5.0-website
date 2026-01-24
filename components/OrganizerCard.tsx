@@ -1,15 +1,16 @@
 "use client";
 
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 interface OrganizerCardProps {
   name: string;
   role: string;
   image: string;
+  linkedin?: string;
 }
 
-export default function OrganizerCard({ name, role, image }: OrganizerCardProps) {
+export default function OrganizerCard({ name, role, image, linkedin }: OrganizerCardProps) {
   return (
     <CardContainer className="inter-var">
       <CardBody className="bg-black/40 relative group/card dark:hover:shadow-2xl dark:hover:shadow-neon-cyan/[0.1] border-white/10 w-auto sm:w-[20rem] h-auto rounded-xl p-6 border transition-colors hover:border-neon-cyan/50">
@@ -59,12 +60,16 @@ export default function OrganizerCard({ name, role, image }: OrganizerCardProps)
             translateZ={20}
             className="flex gap-2"
           >
-            <button className="p-2 rounded-full bg-white/10 hover:bg-white hover:text-black transition-colors">
-                <Linkedin size={16} />
-            </button>
-             <button className="p-2 rounded-full bg-white/10 hover:bg-white hover:text-black transition-colors">
-                <Mail size={16} />
-            </button>
+            {linkedin && (
+                <a 
+                    href={linkedin} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-white/10 hover:bg-white hover:text-black transition-colors inline-flex items-center justify-center"
+                >
+                    <Linkedin size={16} />
+                </a>
+            )}
           </CardItem>
         </div>
 
