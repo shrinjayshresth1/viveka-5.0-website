@@ -55,7 +55,7 @@ const teamData = {
     { name: "Pranshu Agrahari", role: "Veteran Convener", image: "/pranshu.png", linkedin: "https://www.linkedin.com/in/pranshu-agrahari-956a37288/" },
     { name: "Shrinjay Shresth", role: "Veteran Convener", image: "/shrinjay.png", linkedin: "https://www.linkedin.com/in/shrinjay-shresth-036010215/" },
     { name: "Adii Chandra", role: "Veteran Convener", image: "/adii.jpg", linkedin: "https://www.linkedin.com/in/aadi-chandra-7a4185278/" },
-    { name: "Nandini Verma", role: "Veteran Convener", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2000&auto=format&fit=crop", linkedin: "https://www.linkedin.com/in/nandini-verma-4n5v4/" },
+    { name: "Nandini Verma", role: "Veteran Convener", image: "/nandini.jpg", linkedin: "https://www.linkedin.com/in/nandini-verma-4n5v4/" },
     { name: "Nitin Jaiswal", role: "Veteran Convener", image: "/nitin.png", linkedin: "https://www.linkedin.com/in/thenitinjaiswal/" },
   ],
   conveners: [
