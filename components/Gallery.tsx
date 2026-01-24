@@ -19,7 +19,7 @@ const images2 = [
   "/gallery/8.jpg",
   "/gallery/9.jpg",
   "/gallery/10.jpg",
-  "/gallery/13.jpg",
+  "/gallery/13.JPG",
   "/gallery/12.jpg",
 ];
 
