@@ -54,7 +54,7 @@ const content = [
         <div className="mt-8 p-6 bg-gradient-to-br from-neon-cyan/10 to-transparent border border-neon-cyan/30 rounded-2xl relative overflow-hidden">
              <div className="absolute top-0 right-0 w-32 h-32 bg-neon-cyan/20 blur-[50px] rounded-full pointer-events-none" />
              <h4 className="text-xl font-bold text-white mb-2">Join the Revolution</h4>
-             <p className="text-gray-400 text-sm mb-6">19th - 20th February, 2025</p>
+             <p className="text-gray-400 text-sm mb-6">Dates To Be Announced</p>
              <button className="px-6 py-2 bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/50 font-bold uppercase text-sm tracking-wider rounded-lg cursor-not-allowed">
                  Coming Soon
              </button>

@@ -14,7 +14,7 @@ const faqs = [
   {
     id: "02",
     question: "DATES & TIMINGS",
-    answer: "Initiating on 6th & 7th February 2025. Protocol activation at 10:00 HRS daily."
+    answer: "Dates to be announced. Protocol activation details pending."
   },
   {
     id: "03",
