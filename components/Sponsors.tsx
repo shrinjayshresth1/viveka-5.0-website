@@ -1,12 +1,13 @@
 "use client";
-import { Facebook, Instagram, Youtube, Globe, Cpu } from "lucide-react";
+import { Facebook, Instagram, Youtube, Globe, Cpu, Users, Gamepad2 } from "lucide-react";
 
 const stats = [
-  { label: "Technical Events", value: "50+", icon: Cpu, color: "text-neon-cyan" },
-  { label: "Facebook Reach", value: "50k+", icon: Facebook, color: "text-blue-500" },
+  { label: "Total Participation", value: "5000+", icon: Users, color: "text-neon-cyan" },
+  { label: "Viveka 4.0 Participants", value: "2000+", icon: Users, color: "text-blue-500" },
+  { label: "E-Sports Players", value: "500+", icon: Gamepad2, color: "text-purple-500" },
   { label: "Instagram Impressions", value: "13k+", icon: Instagram, color: "text-pink-500" },
+  { label: "Facebook Reach", value: "50k+", icon: Facebook, color: "text-blue-600" },
   { label: "Subscribers", value: "2.5k+", icon: Youtube, color: "text-red-500" },
-  { label: "Website Visits", value: "2k+", icon: Globe, color: "text-green-500" },
 ];
 
 export default function Stats() {
