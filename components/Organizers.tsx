@@ -54,20 +54,23 @@ const teamData = {
     { name: "Shrinjay Shresth", role: "WebOps Lead", image: "/shrinjay.png", linkedin: "https://www.linkedin.com/in/shrinjay-shresth-036010215/" }, 
   ],
   veterans: [
-    { name: "Pranshu Agrahari", role: "Veteran Convener", image: "/pranshu.png", linkedin: "https://www.linkedin.com/in/pranshu-agrahari-956a37288/" },
-    { name: "Shrinjay Shresth", role: "Veteran Convener", image: "/shrinjay.png", linkedin: "https://www.linkedin.com/in/shrinjay-shresth-036010215/" },
-    { name: "Adii Chandra", role: "Veteran Convener", image: "/adii.jpg", linkedin: "https://www.linkedin.com/in/aadi-chandra-7a4185278/" },
-    { name: "Nandini Verma", role: "Veteran Convener", image: "/nandini.jpg", linkedin: "https://www.linkedin.com/in/nandini-verma-4n5v4/" },
-    { name: "Nitin Jaiswal", role: "Veteran Convener", image: "/nitin.png", linkedin: "https://www.linkedin.com/in/thenitinjaiswal/" },
+    { name: "Pranshu Agrahari", role: "Veteran Student Convener", image: "/pranshu.png", linkedin: "https://www.linkedin.com/in/pranshu-agrahari-956a37288/" },
+    { name: "Shrinjay Shresth", role: "Veteran Student Convener", image: "/shrinjay.png", linkedin: "https://www.linkedin.com/in/shrinjay-shresth-036010215/" },
+    { name: "Adii Chandra", role: "Veteran Student Convener", image: "/adii.jpg", linkedin: "https://www.linkedin.com/in/aadi-chandra-7a4185278/" },
+    { name: "Nandini Verma", role: "Veteran Student Convener", image: "/nandini.jpg", linkedin: "https://www.linkedin.com/in/nandini-verma-4n5v4/" },
+    { name: "Nitin Jaiswal", role: "Veteran Student Convener", image: "/nitin.png", linkedin: "https://www.linkedin.com/in/thenitinjaiswal/" },
+    { name: "Priyanshi Srivastava", role: "Veteran Student Convener", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2000&auto=format&fit=crop" },
   ],
   conveners: [
-    { name: "Atam Prakash", role: "Student Convener", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2000&auto=format&fit=crop" },
-    { name: "Ayushman Singh", role: "Student Convener", image: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=2000&auto=format&fit=crop" },
-    { name: "Deepika", role: "Student Convener", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop" }
+    { name: "Divyanshi Pandey", role: "Student Convener", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop" },
+    { name: "Raunak Srivastava", role: "Student Convener", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2000&auto=format&fit=crop" },
   ],
   coConveners: [
-     // Placeholders - waiting for data
-    { name: "Co-Convener Name", role: "Student Co-Convener", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2000&auto=format&fit=crop" },
+    { name: "Anshuma Yadav", role: "Student Co-Convener", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2000&auto=format&fit=crop" },
+    { name: "Rashi Malik", role: "Student Co-Convener", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop" },
+    { name: "Abhiinav Pratap Singh", role: "Student Co-Convener", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2000&auto=format&fit=crop" },
+    { name: "Shiv Manglam Dubey", role: "Student Co-Convener", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2000&auto=format&fit=crop" },
+    { name: "Anshu Kasaudhan", role: "Student Co-Convener", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2000&auto=format&fit=crop" },
   ]
 };
 
@@ -143,11 +146,11 @@ export default function Organizers() {
                      </div>
                 </div>
 
-                {/* Section 5: Veteran Conveners */}
+                {/* Section 5: Veteran Student Conveners */}
                 <div className="mb-24">
                      <div className="text-center mb-10">
                         <h2 className="text-2xl font-mono text-yellow-500 tracking-widest uppercase inline-block border-b border-yellow-500/50 pb-2">
-                             Veteran Conveners
+                             Veteran Student Conveners
                         </h2>
                      </div>
                      <div className="flex flex-wrap justify-center gap-10">
