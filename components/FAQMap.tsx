@@ -14,7 +14,7 @@ const faqs = [
   {
     id: "02",
     question: "DATES & TIMINGS",
-    answer: "Dates to be announced. Protocol activation details pending."
+    answer: "18th, 19th & 20th February 2025. Protocol activation details pending."
   },
   {
     id: "03",

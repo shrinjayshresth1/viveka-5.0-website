@@ -132,9 +132,9 @@ const scheduleData: Record<number, Event[]> = {
 };
 
 const days = [
-  { id: 1, name: "Day 1", title: "The Awakening" },
-  { id: 2, name: "Day 2", title: "The Ascension" },
-  { id: 3, name: "Day 3", title: "The Singularity" },
+  { id: 1, name: "Feb 18", title: "The Awakening" },
+  { id: 2, name: "Feb 19", title: "The Ascension" },
+  { id: 3, name: "Feb 20", title: "The Singularity" },
 ];
 
 export default function Schedule() {

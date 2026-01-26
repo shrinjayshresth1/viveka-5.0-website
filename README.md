@@ -9,7 +9,7 @@
   <p>
     <strong>The Official Website for the Largest Techno-Cultural Fest</strong>
     <br />
-    <strong>Dates To Be Announced</strong>
+    <strong>February 18th - 20th, 2025</strong>
   </p>
 
   <p>
