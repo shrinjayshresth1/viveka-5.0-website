@@ -28,7 +28,7 @@ export default function ChiefGuest() {
                         Chief Guest
                     </span>
                 </h2>
-                <p className="mt-4 text-gray-400">Honoring the legends of physics.</p>
+                <p className="mt-4 text-gray-400">An icon of inspiration.</p>
              </motion.div>
 
              <div className="flex justify-center">
@@ -52,25 +52,24 @@ export default function ChiefGuest() {
                     {/* Image Side - Placeholder */}
                     <div className="relative h-[400px] md:h-auto bg-gray-800 flex items-center justify-center overflow-hidden">
                          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent z-10 md:bg-gradient-to-r" />
-                         {/* Replace with actual image */}
-                         <div className="text-8xl font-bold text-gray-700 select-none">HC</div>
+                         <div className="text-8xl font-bold text-gray-700 select-none">?</div>
                          <div className="absolute bottom-4 left-4 z-20">
-                             <h3 className="text-2xl font-bold text-white">Prof. H.C. Verma</h3>
-                             <p className="text-neon-cyan">Padma Shri Awardee</p>
+                             <h3 className="text-2xl font-bold text-white">To Be Revealed</h3>
+                             <p className="text-neon-cyan">Chief Guest</p>
                          </div>
                     </div>
 
                     {/* Content Side */}
                     <div className="p-8 md:p-12 flex flex-col justify-center relative z-20">
-                        <h3 className="text-2xl font-bold mb-4">The Legend of Concepts of Physics</h3>
+                        <h3 className="text-2xl font-bold mb-4">A Special Guest Awaits</h3>
                         <p className="text-gray-400 leading-relaxed mb-6">
-                            An experimental physicist and a retired professor at the Indian Institute of Technology Kanpur (IIT Kanpur). He is acclaimed for his two-volume masterpiece, "Concepts of Physics", which has shaped the minds of millions of engineering aspirants.
+                            We are finalizing a distinguished guest who will grace Viveka 5.0 with their presence. Keep an eye on our social media channels for the big reveal!
                         </p>
                         
                         <div className="flex gap-4">
-                            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-neon-cyan">Physics</span>
-                            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-neon-cyan">Education</span>
-                            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-neon-cyan">Research</span>
+                            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-neon-cyan">Innovation</span>
+                            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-neon-cyan">Leadership</span>
+                            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-neon-cyan">Impact</span>
                         </div>
                     </div>
                  </div>
