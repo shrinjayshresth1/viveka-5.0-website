@@ -69,7 +69,7 @@ const teamData = {
     { name: "Anshuma Yadav", role: "Student Co-Convener", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2000&auto=format&fit=crop" },
     { name: "Rashi Malik", role: "Student Co-Convener", image: "/rashi.jpg", linkedin: "https://www.linkedin.com/in/rashi-malik-ab442b289/" },
     { name: "Abhiinav Pratap Singh", role: "Student Co-Convener", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2000&auto=format&fit=crop" },
-    { name: "Shiv Manglam Dubey", role: "Student Co-Convener", image: "/shiv.png", linkedin: "https://www.linkedin.com/in/shiv-manglam-dubey-6a7467289/" },
+    { name: "Shiv Manglam Dubey", role: "Student Co-Convener", image: "/shiv.jpg", linkedin: "https://www.linkedin.com/in/shiv-manglam-dubey-6a7467289/" },
     { name: "Anshu Kasaudhan", role: "Student Co-Convener", image: "/anshu.png", linkedin: "https://www.linkedin.com/in/anshu-kasaudhan-6073712ba/" },
   ]
 };
