@@ -63,7 +63,7 @@ const teamData = {
   ],
   conveners: [
     { name: "Divyanshi Pandey", role: "Student Convener", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop" },
-    { name: "Raunak Srivastava", role: "Student Convener", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2000&auto=format&fit=crop" },
+    { name: "Raunak Srivastava", role: "Student Convener", image: "/raunak.jpg", linkedin: "https://www.linkedin.com/in/raunak-srivastava-a2a030276/" },
   ],
   coConveners: [
     { name: "Anshuma Yadav", role: "Student Co-Convener", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2000&auto=format&fit=crop" },
