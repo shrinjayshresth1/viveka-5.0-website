@@ -66,9 +66,9 @@ const teamData = {
     { name: "Raunak Srivastava", role: "Student Convener", image: "/raunak.jpg", linkedin: "https://www.linkedin.com/in/raunak-srivastava-a2a030276/" },
   ],
   coConveners: [
-    { name: "Anshuma Yadav", role: "Student Co-Convener", image: "/anshuma.png", linkedin: "https://www.linkedin.com/in/anshuma-yadav-487b1a28a/" },
+    { name: "Anshuma Yadav", role: "Student Co-Convener", image: "/anshuma.jpg", linkedin: "https://www.linkedin.com/in/anshuma-yadav-487b1a28a/" },
     { name: "Rashi Malik", role: "Student Co-Convener", image: "/rashi.jpg", linkedin: "https://www.linkedin.com/in/rashi-malik-ab442b289/" },
-    { name: "Abhiinav Pratap Singh", role: "Student Co-Convener", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2000&auto=format&fit=crop" },
+    { name: "Abhiinav Pratap Singh", role: "Student Co-Convener", image: "/abhiinav.jpg", linkedin: "https://www.linkedin.com/in/abhinav-pratap-singh-1a697728a/" },
     { name: "Shiv Manglam Dubey", role: "Student Co-Convener", image: "/shiv.jpg", linkedin: "https://www.linkedin.com/in/shiv-manglam-dubey-6a7467289/" },
     { name: "Anshu Kasaudhan", role: "Student Co-Convener", image: "/anshu.png", linkedin: "https://www.linkedin.com/in/anshu-kasaudhan-6073712ba/" },
   ]
