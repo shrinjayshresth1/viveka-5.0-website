@@ -67,9 +67,15 @@ export default function Footer() {
                             <span>✉️</span>
                             <a href="mailto:techfusionclub@srmu.ac.in" className="hover:text-neon-cyan transition-colors">techfusionclub@srmu.ac.in</a>
                         </li>
-                         <li className="flex items-center gap-3 pt-2 text-neon-cyan/80 font-bold">
+                         <li className="flex items-center gap-3 pt-2 text-neon-cyan/80 font-bold hover:text-neon-cyan transition-colors">
                             <span>🤝</span>
-                            <span>Interested in Sponsorship ?</span>
+                            <a 
+                                href="https://drive.google.com/file/d/1auqEEQnkTWOw5Ey31XJuUZP4K1XDuquO/view?usp=sharing" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            >
+                                Interested in Sponsorship ?
+                            </a>
                         </li>
                     </ul>
                 </div>
