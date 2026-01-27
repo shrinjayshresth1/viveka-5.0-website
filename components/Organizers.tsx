@@ -157,7 +157,7 @@ export default function Organizers() {
                 <div className="mb-24">
                      <div className="text-center mb-10">
                         <h2 className="text-2xl font-mono text-orange-500 tracking-widest uppercase inline-block border-b border-orange-500/50 pb-2">
-                             Student Organizing Secretary
+                             Student Organizing Secretaries
                         </h2>
                      </div>
                      <div className="flex flex-wrap justify-center gap-10">
