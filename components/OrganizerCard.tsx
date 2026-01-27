@@ -8,9 +8,10 @@ interface OrganizerCardProps {
   role: string;
   image: string;
   linkedin?: string;
+  course?: string;
 }
 
-export default function OrganizerCard({ name, role, image, linkedin }: OrganizerCardProps) {
+export default function OrganizerCard({ name, role, image, linkedin, course }: OrganizerCardProps) {
   return (
     <CardContainer className="inter-var">
       <CardBody className="bg-black/40 relative group/card dark:hover:shadow-2xl dark:hover:shadow-neon-cyan/[0.1] border-white/10 w-auto sm:w-[20rem] h-auto rounded-xl p-6 border transition-colors hover:border-neon-cyan/50">
@@ -31,6 +32,17 @@ export default function OrganizerCard({ name, role, image, linkedin }: Organizer
         >
           {role}
         </CardItem>
+
+        {/* Course/Year (Adding this) */}
+        {course && (
+          <CardItem
+            as="p"
+            translateZ="55"
+            className="text-gray-400 text-xs mt-1 font-mono uppercase"
+          >
+            {course}
+          </CardItem>
+        )}
         
         {/* Image (Deep layer) */}
         <CardItem translateZ="100" className="w-full mt-4">
