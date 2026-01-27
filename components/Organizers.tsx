@@ -62,7 +62,7 @@ const teamData = {
     { name: "Aadi Chandra", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/adii.jpg", linkedin: "https://www.linkedin.com/in/aadi-chandra-7a4185278/" },
     { name: "Nandini Verma", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/nandini.jpg", linkedin: "https://www.linkedin.com/in/nandini-verma-4n5v4/" },
     { name: "Priyanshi Srivastava", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/priyanshi.jpg", linkedin: "https://www.linkedin.com/in/priyanshi-s-012a782b1/" },
-    { name: "Yash Mishra", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/viveka-logo.png" },
+    { name: "Yash Mishra", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/yash.jpg", linkedin: "https://www.linkedin.com/in/yash-mishra-2352502bb/" },
     { name: "Kshitij Gupta", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/kshitij.jpg", linkedin: "https://www.linkedin.com/in/kshitij-gupta-99a66726b/" },
     { name: "Utkarsh Pandey", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/utkarsh.png", linkedin: "https://www.linkedin.com/in/uranium-utkarsh-pandey/" },
     { name: "Shashank Kumar", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/shashank.jpg", linkedin: "https://www.linkedin.com/in/shashank-kumar-50098928a/" },
