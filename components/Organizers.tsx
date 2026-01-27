@@ -59,7 +59,7 @@ const teamData = {
     { name: "Adii Chandra", role: "Veteran Student Convener", image: "/adii.jpg", linkedin: "https://www.linkedin.com/in/aadi-chandra-7a4185278/" },
     { name: "Nandini Verma", role: "Veteran Student Convener", image: "/nandini.jpg", linkedin: "https://www.linkedin.com/in/nandini-verma-4n5v4/" },
     { name: "Nitin Jaiswal", role: "Veteran Student Convener", image: "/nitin.png", linkedin: "https://www.linkedin.com/in/thenitinjaiswal/" },
-    { name: "Priyanshi Srivastava", role: "Veteran Student Convener", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2000&auto=format&fit=crop" },
+    { name: "Priyanshi Srivastava", role: "Veteran Student Convener", image: "/priyanshi.jpg", linkedin: "https://www.linkedin.com/in/priyanshi-s-012a782b1/" },
   ],
   conveners: [
     { name: "Divyanshi Pandey", role: "Student Convener", image: "/divyanshi.jpg", linkedin: "https://www.linkedin.com/in/divyanshipandey06/" },
