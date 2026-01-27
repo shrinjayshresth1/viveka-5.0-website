@@ -9,9 +9,10 @@ interface OrganizerCardProps {
   image: string;
   linkedin?: string;
   course?: string;
+  objectPosition?: string;
 }
 
-export default function OrganizerCard({ name, role, image, linkedin, course }: OrganizerCardProps) {
+export default function OrganizerCard({ name, role, image, linkedin, course, objectPosition }: OrganizerCardProps) {
   return (
     <CardContainer className="inter-var">
       <CardBody className="bg-black/40 relative group/card dark:hover:shadow-2xl dark:hover:shadow-neon-cyan/[0.1] border-white/10 w-auto sm:w-[20rem] h-auto rounded-xl p-6 border transition-colors hover:border-neon-cyan/50">
@@ -51,7 +52,7 @@ export default function OrganizerCard({ name, role, image, linkedin, course }: O
                 src={image}
                 height="1000"
                 width="1000"
-                className="h-full w-full object-cover object-top rounded-xl group-hover/card:scale-110 transition-transform duration-500"
+                className={`h-full w-full object-cover rounded-xl group-hover/card:scale-110 transition-transform duration-500 ${objectPosition || 'object-top'}`}
                 alt={name}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
