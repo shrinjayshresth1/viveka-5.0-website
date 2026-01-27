@@ -65,7 +65,7 @@ const teamData = {
     { name: "Yash Mishra", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/viveka-logo.png" },
     { name: "Kshitij Gupta", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/kshitij.jpg", linkedin: "https://www.linkedin.com/in/kshitij-gupta-99a66726b/" },
     { name: "Utkarsh Pandey", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/utkarsh.png", linkedin: "https://www.linkedin.com/in/uranium-utkarsh-pandey/" },
-    { name: "Shashank Kumar", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/viveka-logo.png" },
+    { name: "Shashank Kumar", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/shashank.jpg", linkedin: "https://www.linkedin.com/in/shashank-kumar-50098928a/" },
   ],
   conveners: [
     { name: "Divyanshi Pandey", role: "Student Convener", course: "B.Tech CSE (CC+AI), 3rd Year", image: "/divyanshi.jpg", linkedin: "https://www.linkedin.com/in/divyanshipandey06/" },
