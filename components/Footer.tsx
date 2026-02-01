@@ -7,7 +7,6 @@ import { Facebook, Instagram, Linkedin, Twitter, Mail } from "lucide-react";
 const socials = [
   { icon: Instagram, href: "https://www.instagram.com/techfusionclub_srmu/", color: "hover:text-pink-500" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/techfusion-club/", color: "hover:text-blue-500" },
-  { icon: Twitter, href: "#", color: "hover:text-sky-400" },
   { icon: Facebook, href: "https://www.facebook.com/people/Techfusion-Club/100088111141332/", color: "hover:text-blue-600" },
   { icon: Mail, href: "mailto:techfusionclub@srmu.ac.in", color: "hover:text-red-500" },
 ];
