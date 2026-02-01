@@ -68,7 +68,7 @@ const content = [
 export default function About() {
   return (
     <div id="about" className="relative bg-[#020617] py-20">
-      <div className="container mx-auto px-4 mb-16 text-center">
+      <div className="container mx-auto px-4 pt-10 mb-16 text-center">
          <h2 className="text-4xl md:text-6xl font-bold text-white font-space-grotesk mb-4">
              Tracing The <span className="text-neon-cyan">Evolution</span>
          </h2>

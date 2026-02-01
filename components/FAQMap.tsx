@@ -78,12 +78,12 @@ export default function FAQMap() {
                 </p>
                 <p className="flex items-center gap-3">
                     <Globe className="text-neon-cyan shrink-0" size={18} />
-                    26.9634° N, 81.0957° E
+                    26°57'06.0"N, 81°05'55.3"E
                 </p>
             </div>
 
             <a 
-                href="https://maps.app.goo.gl/SRMU" 
+                href="https://maps.app.goo.gl/Ev64tH7N57yfbQEPA" 
                 target="_blank"
                 className="mt-8 inline-flex items-center gap-2 bg-neon-cyan text-black px-6 py-3 font-bold uppercase tracking-wider hover:bg-white transition-colors w-full justify-center group-hover:scale-[1.02] transform duration-300"
             >
