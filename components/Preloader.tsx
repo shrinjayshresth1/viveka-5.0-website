@@ -8,8 +8,14 @@ export default function Preloader() {
   const [loading, setLoading] = useState(true);
   const [progress, setProgress] = useState(0);
   const [text, setText] = useState("INITIALIZING SYSTEM...");
+  const [randomCodes, setRandomCodes] = useState<string[]>([]);
 
   useEffect(() => {
+    // Generate random codes only on client side
+    setRandomCodes(Array.from({ length: 10 }).map((_, i) => 
+        `> 0x${Math.random().toString(16).slice(2, 10).toUpperCase()} // MODULE_LOAD_${i}`
+    ));
+
     // Simulate loading process
     const timer = setInterval(() => {
         setProgress(prev => {
@@ -105,8 +111,8 @@ export default function Preloader() {
 
                     {/* Decorative Code Lines */}
                     <div className="absolute top-20 left-0 right-0 h-32 overflow-hidden opacity-10 pointer-events-none text-[10px] leading-tight text-green-500 mask-image-gradient-b">
-                        {Array.from({ length: 10 }).map((_, i) => (
-                             <div key={i}>{`> 0x${Math.random().toString(16).slice(2, 10).toUpperCase()} // MODULE_LOAD_${i}`}</div>
+                        {randomCodes.map((code, i) => (
+                             <div key={i}>{code}</div>
                         ))}
                     </div>
 
