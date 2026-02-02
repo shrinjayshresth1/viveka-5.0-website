@@ -14,7 +14,6 @@ const content = [
         </p>
         <div className="relative h-64 w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl mt-8 group">
             <Image src="/srmu.png" fill className="object-cover group-hover:scale-110 transition-transform duration-700" alt="SRMU Campus" />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors" />
         </div>
       </>
     ),
