@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
@@ -48,9 +49,11 @@ export default function Navbar() {
         >
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img 
-              src="/viveka-logo.png" 
+            <Image 
+              src="/viveka-logo.webp" 
               alt="Viveka Logo" 
+              width={120}
+              height={40}
               className="h-10 w-auto object-contain hover:opacity-80 transition-opacity"
             />
           </Link>

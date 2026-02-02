@@ -2,6 +2,7 @@
 
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import { Linkedin } from "lucide-react";
+import Image from "next/image";
 
 interface OrganizerCardProps {
   name: string;
@@ -48,10 +49,10 @@ export default function OrganizerCard({ name, role, image, linkedin, course, obj
         {/* Image (Deep layer) */}
         <CardItem translateZ="100" className="w-full mt-4">
           <div className="relative w-full h-64 overflow-hidden rounded-xl group-hover/card:shadow-xl">
-               <img
+               <Image
                 src={image}
-                height="1000"
-                width="1000"
+                height={1000}
+                width={1000}
                 className={`h-full w-full object-cover rounded-xl group-hover/card:scale-110 transition-transform duration-500 ${objectPosition || 'object-top'}`}
                 alt={name}
               />

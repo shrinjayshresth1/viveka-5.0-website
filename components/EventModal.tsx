@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Calendar, MapPin, Phone, User, Trophy, BookOpen } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export interface EventData {
   id: string;
@@ -55,9 +56,10 @@ export default function EventModal({ event, onClose }: EventModalProps) {
             <div className="w-full md:w-2/5 relative h-64 md:h-auto bg-gray-900 border-r border-white/10">
                  {/* Placeholder for Event Image */}
                  <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 md:bg-gradient-to-r" />
-                 <img 
+                 <Image 
                     src={event.image} 
                     alt={event.title} 
+                    fill
                     className="w-full h-full object-cover opacity-80"
                  />
                  <div className="absolute bottom-6 left-6 right-6 z-20">

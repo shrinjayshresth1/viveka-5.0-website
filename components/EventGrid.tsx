@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import EventModal, { EventData } from "./EventModal";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const events: EventData[] = [
   // --- TECH & CODING ---
@@ -322,9 +323,10 @@ export default function EventGrid() {
                     className="group relative h-[380px] rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:border-neon-cyan/50 hover:shadow-[0_0_30px_rgba(0,240,255,0.15)] transition-all duration-300 flex flex-col"
                 >
                     <div className="relative h-48 overflow-hidden">
-                         <img 
+                         <Image 
                             src={event.image} 
                             alt={event.title} 
+                            fill
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
                          />
                          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a1f] to-transparent" />
