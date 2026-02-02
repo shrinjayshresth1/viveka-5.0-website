@@ -74,7 +74,7 @@ export default function Navbar() {
           {/* CTA */}
           {/* CTA */}
           <a 
-            href="https://drive.google.com/file/d/1auqEEQnkTWOw5Ey31XJuUZP4K1XDuquO/view?usp=sharing" 
+            href="https://drive.google.com/drive/folders/1uMGYhViobTe32kuj-gz8tukceN20M3_X?usp=sharing" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hidden md:block px-5 py-2 bg-white/10 hover:bg-neon-cyan hover:text-black rounded-full text-sm font-medium transition-all duration-300 border border-white/20"
