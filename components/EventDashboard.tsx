@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calendar, MapPin, User, Trophy, ArrowRight, Zap, Target, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Calendar, MapPin, User, Trophy, ArrowRight, Zap, Target, X, ChevronLeft, ChevronRight, GraduationCap, School } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 // Reusing the same data structure for consistency
@@ -18,6 +18,7 @@ export interface EventData {
   location: string;
   timing: string;
   contacts: { name: string; phone: string }[];
+  level: "school" | "university" | "both";
 }
 
 const events: EventData[] = [
@@ -32,7 +33,8 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "TBA",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "both"
     },
     {
       id: "codex",
@@ -45,7 +47,8 @@ const events: EventData[] = [
       prizes: ["Exciting Awards"],
       location: "TBA",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "robo-soccer",
@@ -58,7 +61,8 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "Soccer Arena",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "both"
     },
     {
       id: "robo-war",
@@ -71,7 +75,8 @@ const events: EventData[] = [
       prizes: ["Cash Prizes"],
       location: "War Arena",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "free-fire",
@@ -84,7 +89,8 @@ const events: EventData[] = [
       prizes: ["Pool Prize"],
       location: "E-Sports Arena",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "bgmi",
@@ -97,7 +103,8 @@ const events: EventData[] = [
       prizes: ["Pool Prize"],
       location: "E-Sports Arena",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "robo-race",
@@ -110,7 +117,8 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "Track Area",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "drone-race",
@@ -123,7 +131,8 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "Open Ground",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "both"
     },
     {
       id: "reasoning-rumble",
@@ -136,7 +145,8 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "Block B, Floor 2",
       timing: "06 Feb, 03:25 PM",
-      contacts: [{ name: "Priyanshi", phone: "8687968902" }]
+      contacts: [{ name: "Priyanshi", phone: "8687968902" }],
+      level: "both"
     },
     {
       id: "boat-race",
@@ -149,7 +159,8 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "Water Body",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "find-the-language",
@@ -162,7 +173,8 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "TBA",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "hackathon",
@@ -175,7 +187,8 @@ const events: EventData[] = [
       prizes: ["Grand Prize Pool"],
       location: "Innovation Hub",
       timing: "24 Hours",
-      contacts: []
+      contacts: [],
+      level: "both"
     },
     {
       id: "digi-art",
@@ -188,7 +201,8 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "TBA",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "path-finder",
@@ -201,7 +215,8 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "Maze Area",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "structromania",
@@ -214,7 +229,8 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "TBA",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "rubiks-cube",
@@ -227,7 +243,8 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "TBA",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "both"
     },
     {
       id: "buddhi-kshamta",
@@ -240,7 +257,8 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "TBA",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "both"
     },
     {
       id: "network-workshop",
@@ -253,7 +271,8 @@ const events: EventData[] = [
       prizes: ["Certificates"],
       location: "Seminar Hall",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "ai-workshop",
@@ -266,7 +285,8 @@ const events: EventData[] = [
       prizes: ["Certificates"],
       location: "Seminar Hall",
       timing: "TBA",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "laser-show",
@@ -279,7 +299,8 @@ const events: EventData[] = [
       prizes: ["Memories"],
       location: "Main Ground",
       timing: "Evening",
-      contacts: []
+      contacts: [],
+      level: "university"
     },
     {
       id: "bug-hunting",
@@ -292,14 +313,24 @@ const events: EventData[] = [
       prizes: ["Prizes"],
       location: "Labs",
       timing: "2-3 Hours",
-      contacts: []
+      contacts: [],
+      level: "university"
     }
 ];
 
 export default function EventDashboard() {
   const [activeId, setActiveId] = useState(events[0].id);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const activeEvent = events.find((e) => e.id === activeId) || events[0];
+  const [levelFilter, setLevelFilter] = useState<"all" | "university" | "school">("all");
+  
+  const filteredEvents = events.filter((e) => {
+    if (levelFilter === "all") return true;
+    if (levelFilter === "university") return e.level === "university" || e.level === "both";
+    if (levelFilter === "school") return e.level === "school" || e.level === "both";
+    return true;
+  });
+  
+  const activeEvent = filteredEvents.find((e) => e.id === activeId) || filteredEvents[0];
 
   useEffect(() => {
     const handleResize = () => {
@@ -343,12 +374,49 @@ export default function EventDashboard() {
       
       {/* Sidebar: Data Stream */}
       <div className="w-full md:w-1/3 flex flex-col gap-4 h-full">
-        <h2 className="text-xl font-mono text-neon-cyan mb-4 flex items-center gap-2 flex-shrink-0">
+        <h2 className="text-xl font-mono text-neon-cyan mb-2 flex items-center gap-2 flex-shrink-0">
             <Target size={20} /> EVENT_LOGS 
             <span className="md:hidden text-xs text-gray-500 font-normal ml-auto animate-pulse">(Tap to view)</span>
         </h2>
+        
+        {/* Level Filter Tabs */}
+        <div className="flex gap-2 mb-4 flex-shrink-0">
+          <button
+            onClick={() => { setLevelFilter("all"); setActiveId(events[0].id); }}
+            className={cn(
+              "flex-1 py-2 px-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 border",
+              levelFilter === "all"
+                ? "bg-neon-cyan text-black border-neon-cyan"
+                : "bg-transparent text-gray-400 border-white/10 hover:border-neon-cyan/50 hover:text-white"
+            )}
+          >
+            All
+          </button>
+          <button
+            onClick={() => { setLevelFilter("university"); const first = events.find(e => e.level === "university" || e.level === "both"); if(first) setActiveId(first.id); }}
+            className={cn(
+              "flex-1 py-2 px-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 border flex items-center justify-center gap-1",
+              levelFilter === "university"
+                ? "bg-purple-500 text-white border-purple-500"
+                : "bg-transparent text-gray-400 border-white/10 hover:border-purple-500/50 hover:text-white"
+            )}
+          >
+            <GraduationCap size={14} /> University
+          </button>
+          <button
+            onClick={() => { setLevelFilter("school"); const first = events.find(e => e.level === "school" || e.level === "both"); if(first) setActiveId(first.id); }}
+            className={cn(
+              "flex-1 py-2 px-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 border flex items-center justify-center gap-1",
+              levelFilter === "school"
+                ? "bg-green-500 text-white border-green-500"
+                : "bg-transparent text-gray-400 border-white/10 hover:border-green-500/50 hover:text-white"
+            )}
+          >
+            <School size={14} /> School
+          </button>
+        </div>
         <div className="flex-1 overflow-y-auto pr-2 custom-scrollbar space-y-3" data-lenis-prevent>
-            {events.map((event) => (
+            {filteredEvents.map((event) => (
                 <button
                     key={event.id}
                     onClick={() => {
@@ -381,6 +449,16 @@ export default function EventDashboard() {
                     )}>
                         {event.title}
                     </h3>
+                    
+                    {/* Level Badge */}
+                    <div className="flex gap-1 mt-1">
+                      {(event.level === "university" || event.level === "both") && (
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-400 font-bold">🎓 Univ</span>
+                      )}
+                      {(event.level === "school" || event.level === "both") && (
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-green-500/20 text-green-400 font-bold">🏫 School</span>
+                      )}
+                    </div>
                     
                     {/* Mobile Touch Indicator */}
                     <ChevronRight className="md:hidden absolute right-4 top-1/2 -translate-y-1/2 text-white/10 group-active:text-neon-cyan" size={20} />
