@@ -60,7 +60,7 @@ export default function Footer() {
                         </li>
                         <li className="flex items-center gap-3">
                             <span className="rotate-90">📞</span>
-                            <span>9555686979</span>
+                            <span>(+91)8299399820 , (+91) 8707275199</span>
                         </li>
                         <li className="flex items-center gap-3">
                             <span>✉️</span>

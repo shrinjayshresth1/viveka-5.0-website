@@ -83,7 +83,7 @@ export default function FAQMap() {
             </div>
 
             <a 
-                href="https://maps.app.goo.gl/SRMU" 
+                href="https://www.google.com/maps/place/Shri+Ramswaroop+Memorial+University/@26.951637,81.0981,17z" 
                 target="_blank"
                 className="mt-8 inline-flex items-center gap-2 bg-neon-cyan text-black px-6 py-3 font-bold uppercase tracking-wider hover:bg-white transition-colors w-full justify-center group-hover:scale-[1.02] transform duration-300"
             >
