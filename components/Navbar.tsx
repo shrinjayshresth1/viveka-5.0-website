@@ -86,6 +86,7 @@ export default function Navbar() {
           <button 
             className="md:hidden text-white hover:text-neon-cyan"
             onClick={() => setMobileMenuOpen(true)}
+            aria-label="Open navigation menu"
           >
              <Menu size={24} />
           </button>

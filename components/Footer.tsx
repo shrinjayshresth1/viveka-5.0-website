@@ -5,10 +5,10 @@ import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Twitter, Mail } from "lucide-react";
 
 const socials = [
-  { icon: Instagram, href: "https://www.instagram.com/techfusionclub_srmu/", color: "hover:text-pink-500" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/techfusion-club/", color: "hover:text-blue-500" },
-  { icon: Facebook, href: "https://www.facebook.com/people/Techfusion-Club/100088111141332/", color: "hover:text-blue-600" },
-  { icon: Mail, href: "mailto:techfusionclub@srmu.ac.in", color: "hover:text-red-500" },
+  { icon: Instagram, href: "https://www.instagram.com/techfusionclub_srmu/", color: "hover:text-pink-500", name: "Instagram" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/techfusion-club/", color: "hover:text-blue-500", name: "LinkedIn" },
+  { icon: Facebook, href: "https://www.facebook.com/people/Techfusion-Club/100088111141332/", color: "hover:text-blue-600", name: "Facebook" },
+  { icon: Mail, href: "mailto:techfusionclub@srmu.ac.in", color: "hover:text-red-500", name: "Email" },
 ];
 
 export default function Footer() {
@@ -33,7 +33,7 @@ export default function Footer() {
                     </p>
                     <div className="flex gap-4">
                         {socials.map((Social, i) => (
-                            <Link key={i} href={Social.href} className={`transition-transform hover:scale-110 duration-300 text-gray-400 ${Social.color} bg-white/5 p-2 rounded-full border border-white/10`}>
+                            <Link key={i} href={Social.href} aria-label={`Visit our ${Social.name}`} className={`transition-transform hover:scale-110 duration-300 text-gray-400 ${Social.color} bg-white/5 p-2 rounded-full border border-white/10`}>
                                 <Social.icon size={20} />
                             </Link>
                         ))}

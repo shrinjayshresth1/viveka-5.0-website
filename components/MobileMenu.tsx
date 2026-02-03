@@ -24,6 +24,7 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
           <button 
             onClick={onClose} 
             className="absolute top-6 right-6 p-2 text-white hover:text-neon-cyan transition-colors"
+            aria-label="Close navigation menu"
           >
             <X size={32} />
           </button>
