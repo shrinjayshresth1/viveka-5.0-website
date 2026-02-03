@@ -82,11 +82,12 @@ export const HeroParallax = ({
           ))}
         </motion.div>
         <motion.div className="flex flex-row mb-20 space-x-20 ">
-          {secondRow.map((product) => (
+          {secondRow.map((product, index) => (
             <ProductCard
               product={product}
               translate={translateXReverse}
               key={product.title}
+              priority={index < 2}
             />
           ))}
         </motion.div>
