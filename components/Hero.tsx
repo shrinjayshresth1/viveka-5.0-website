@@ -3,7 +3,7 @@
 import { HeroParallax } from "./ui/hero-parallax";
 
 const events = [
-  { title: "Laser Light Show", link: "/events", thumbnail: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1974&auto=format&fit=crop" },
+  { title: "Laser Light Show", link: "/events", thumbnail: "/laser-show.png" },
   { title: "Drone Racing", link: "/events", thumbnail: "/drone-race.jpg" },
   { title: "Robo War", link: "/events", thumbnail: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop" },
   { title: "Robo Football", link: "/events", thumbnail: "https://images.unsplash.com/photo-1517420879524-86d64ac2f339?q=80&w=1926&auto=format&fit=crop" },
