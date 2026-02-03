@@ -169,7 +169,7 @@ export const ProductCard = ({
           width={480}
           className="object-cover object-left-top absolute h-full w-full inset-0"
           alt={product.title}
-          sizes="(max-width: 768px) 100vw, 480px"
+          sizes="480px"
           priority={priority}
           quality={75}
         />
