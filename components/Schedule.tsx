@@ -197,16 +197,16 @@ export default function Schedule() {
   return (
     <section id="schedule" className="py-24 relative min-h-screen flex flex-col items-center">
       <div className="container mx-auto px-4">
-        
+
         {/* Header */}
         <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true }}
-           className="text-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-6xl font-bold font-space-grotesk">
-            Timeline <span className="text-neon-cyan">Protocol</span>
+            Event <span className="text-neon-cyan">Schedule</span>
           </h2>
           <p className="mt-4 text-gray-400">Select a dimension to view events.</p>
         </motion.div>
@@ -219,8 +219,8 @@ export default function Schedule() {
               onClick={() => setActiveDay(day.id)}
               className={cn(
                 "relative group px-6 py-3 min-w-[140px] rounded-xl border transition-all duration-300 overflow-hidden",
-                activeDay === day.id 
-                  ? "border-neon-cyan bg-neon-cyan/10 text-white shadow-[0_0_20px_rgba(0,240,255,0.3)]" 
+                activeDay === day.id
+                  ? "border-neon-cyan bg-neon-cyan/10 text-white shadow-[0_0_20px_rgba(0,240,255,0.3)]"
                   : "border-white/10 bg-white/5 text-gray-500 hover:border-white/30"
               )}
             >
@@ -228,7 +228,7 @@ export default function Schedule() {
               <div className={cn("font-bold font-space-grotesk", activeDay === day.id ? "text-neon-cyan" : "text-gray-300")}>
                 {day.title}
               </div>
-              
+
               {/* Active styling flair */}
               {activeDay === day.id && (
                 <motion.div
@@ -265,7 +265,7 @@ export default function Schedule() {
               >
                 {/* Card Background Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/80 pointer-events-none" />
-                
+
                 {/* Content */}
                 <div className="relative z-10 h-full flex flex-col justify-between">
                   <div className="flex justify-between items-start">
@@ -290,7 +290,7 @@ export default function Schedule() {
                       {event.title}
                     </h3>
                     <p className="text-sm text-gray-400 line-clamp-2">{event.description}</p>
-                    
+
                     <div className="mt-4 pt-4 border-t border-white/5 flex items-center gap-2 text-xs text-gray-500">
                       <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
