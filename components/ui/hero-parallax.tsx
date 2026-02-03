@@ -53,13 +53,13 @@ export const HeroParallax = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-1000, 80]),
+    useTransform(scrollYProgress, [0, 0.2], [-300, 80]),
     springConfig
   );
   return (
     <div
       ref={ref}
-      className="h-[130vh] md:h-[320vh] py-20 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="min-h-screen md:min-h-[160vh] py-20 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -157,7 +157,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-72 md:h-96 w-full md:w-[30rem] relative flex-shrink-0"
     >
       <div
         className="block group-hover/product:shadow-2xl "
