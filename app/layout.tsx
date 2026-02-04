@@ -21,21 +21,55 @@ export const metadata: Metadata = {
   description:
     "Viveka 5.0 is the flagship technical festival of Shri Ramswaroop Memorial University, featuring 20+ events in Robotics, AI, Gaming, Coding, and more. Join us from February 18-20, 2026 in Lucknow.",
   keywords: [
+    // Brand & Event
     "Viveka 5.0",
+    "Viveka The Intelligence",
+    "Viveka Tech Fest",
     "SRMU Tech Fest",
-    "Technical Festival",
+    "SRMU Fest 2026",
+    
+    // University Names & Variations
+    "SRMU",
     "Shri Ramswaroop Memorial University",
+    "SRM University Lucknow",
+    "Ramswaroop University",
+    "SRMU Lucknow",
+    "Shri Ramswaroop Memorial University Barabanki",
+    "Best Private University in Lucknow",
+    "Top University in Uttar Pradesh",
+    
+    // Location & Context
     "Lucknow Tech Fest",
+    "Tech Festival in Lucknow",
+    "University Events Lucknow",
+    "Engineering Fest Lucknow",
+    "College Fests in India",
+    
+    // Event Categories
     "Robotics Competition",
     "Hackathon",
     "Coding Competition",
     "AI Workshop",
     "Gaming Tournament",
-    "Engineering Fest Lucknow",
-    "University Tech Events",
+    "Esports Tournament",
+    "Technical Workshop",
+    "Cultural Events",
+    "Model United Nations",
+    
+    // Specific Events
+    "Robo War",
+    "Mega Hackathon",
+    "Line Follower Robot",
+    "BGMI Tournament",
+    "Valorant Tournament",
+    "Laser Light Show",
+    
+    // Broader Terms
     "Student Innovation",
-    "Viveka SRMU",
-    "TechFest 2026"
+    "Technology Festival",
+    "Science and Technology",
+    "Inter-college Fest",
+    "University Campus Life"
   ],
   authors: [{ name: "TechFusion Club", url: "https://www.vivekatheintelligence.in" }],
   creator: "TechFusion Club - SRMU",
