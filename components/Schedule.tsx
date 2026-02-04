@@ -221,7 +221,7 @@ export default function Schedule() {
                 "relative group px-6 py-3 min-w-[140px] rounded-xl border transition-all duration-300 overflow-hidden",
                 activeDay === day.id
                   ? "border-neon-cyan bg-neon-cyan/10 text-white shadow-[0_0_20px_rgba(0,240,255,0.3)]"
-                  : "border-white/10 bg-white/5 text-gray-500 hover:border-white/30"
+                  : "border-white/10 bg-white/5 text-gray-400 hover:border-white/30"
               )}
             >
               <div className="text-xs uppercase tracking-widest mb-1 opacity-70">{day.name}</div>
