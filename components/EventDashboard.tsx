@@ -527,7 +527,7 @@ export default function EventDashboard() {
               </div>
 
               {/* Content Area */}
-              <div className="flex-1 p-6 md:p-10 overflow-y-auto">
+              <div className="flex-1 p-6 md:p-10 overflow-y-auto custom-scrollbar" data-lenis-prevent>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                   {/* Left: Description */}
