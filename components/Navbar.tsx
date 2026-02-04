@@ -9,6 +9,7 @@ import MobileMenu from "./MobileMenu";
 import { Menu } from "lucide-react";
 
 const navLinks = [
+  { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Events", href: "/events" },
   { name: "Organizers", href: "/organizers" },
