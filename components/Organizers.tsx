@@ -58,7 +58,7 @@ const teamData = {
     { name: "Pranshu Agrahari", role: "Student Organizing Secretary", course: "B.Tech CSE (DS+AI), 4th Year", image: "/pranshu.png", linkedin: "https://www.linkedin.com/in/pranshu-agrahari-956a37288/" },
     { name: "Shrinjay Shresth", role: "Student Organizing Secretary", course: "B.Tech CSE, 4th Year", image: "/shrinjay.png", linkedin: "https://www.linkedin.com/in/shrinjay-shresth-036010215/" },
     { name: "Nitin Jaiswal", role: "Student Organizing Secretary", course: "B.Tech CSE (DS+AI), 4th Year", image: "/nitin.png", linkedin: "https://www.linkedin.com/in/thenitinjaiswal/" },
-    { name: "Aadi Chandra", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/adii.jpg", linkedin: "https://www.linkedin.com/in/aadi-chandra-7a4185278/" },
+    { name: "Aadi Chandra", role: "Student Organizing Secretary", course: "B.Tech CSE (DS+AI), 4th Year", image: "/adii.jpg", linkedin: "https://www.linkedin.com/in/aadi-chandra-7a4185278/" },
     
   ],
   veterans: [
