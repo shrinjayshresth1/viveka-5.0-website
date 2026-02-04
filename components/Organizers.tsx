@@ -39,13 +39,13 @@ const teamData = {
     },
     { 
       name: "Er. Sunny Kumar", 
-      role: "Faculty Convener (Asst. Prof - DCSE)", 
+      role: "Assistant Professor, DCSE & Coordinator, Technical Society, SRMU", 
       image: "https://srmu.ac.in/storage/teams/11zon-cropped-5-11zon-23022411165423.jpeg",
       linkedin: "https://www.linkedin.com/in/sunny-kumar-a7910b234/"
     },
     { 
       name: "Er. Neeta Bhusal Sharma", 
-      role: "Faculty Convener (Asst. Prof - DCSE)", 
+      role: "Assistant Professor, DCSE & Coordinator, Technical Society, SRMU", 
       image: "https://srmu.ac.in/storage/teams/11zon-cropped-2-11zon-23022410512735.jpeg",
       linkedin: "https://www.linkedin.com/in/neeta-bhusal-13708037/"
     }
