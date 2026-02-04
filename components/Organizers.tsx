@@ -51,7 +51,8 @@ const teamData = {
     }
   ],
   webOps: [
-    { name: "Shrinjay Shresth", role: "WebOps Lead", image: "/shrinjay.png", linkedin: "https://www.linkedin.com/in/shrinjay-shresth-036010215/" }, 
+    { name: "Shrinjay Shresth", role: "WebOps Lead", image: "/shrinjay.png", linkedin: "https://www.linkedin.com/in/shrinjay-shresth-036010215/" },
+    { name: "Praveen Kumar Singh", role: "WebOps Team", course: "BCA, 1st Year", image: "/praveen-singh.webp", linkedin: "https://www.linkedin.com/in/praveensingh-" },
   ],
   secretaries: [
     { name: "Pranshu Agrahari", role: "Student Organizing Secretary", course: "B.Tech CSE (DS+AI), 4th Year", image: "/pranshu.png", linkedin: "https://www.linkedin.com/in/pranshu-agrahari-956a37288/" },
