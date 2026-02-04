@@ -97,6 +97,7 @@ export const HeroParallax = ({
               product={product}
               translate={translateX}
               key={product.title}
+              priority={true}
             />
           ))}
         </motion.div>
