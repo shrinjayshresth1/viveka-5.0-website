@@ -24,7 +24,7 @@ const teamData = {
     },
     { 
       name: "Er. Abhishek Kumar Saxena", 
-      role: "Counsellor, IEEE Student Chapter & Technical Society Head", 
+      role: "Assistant Director, IQAC & Assistant Professor, DEEE & Coordinator, Technical Society, SRMU", 
       image: "/abhishek.jpg",
       linkedin: "https://www.linkedin.com/in/abhishek-kumar-saxena-80a51111a/"
     },
