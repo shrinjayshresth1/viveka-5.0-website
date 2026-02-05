@@ -120,24 +120,12 @@ export default function EventModal({ event, onClose }: EventModalProps) {
                  </div>
 
                  {/* Section: Logistics */}
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 pt-6 border-t border-white/10">
+                 <div className="mb-8 pt-6 border-t border-white/10">
                      <div>
                         <h4 className="text-sm font-bold text-white mb-3 flex items-center gap-2">
                             <MapPin size={16} className="text-neon-cyan" /> Location
                         </h4>
                         <p className="text-gray-400 text-sm">{event.location}</p>
-                     </div>
-                     <div>
-                        <h4 className="text-sm font-bold text-white mb-3 flex items-center gap-2">
-                            <Phone size={16} className="text-neon-cyan" /> Contact
-                        </h4>
-                         <ul className="space-y-1">
-                             {event.contacts.map((c, i) => (
-                                 <li key={i} className="text-gray-400 text-sm">
-                                     <span className="text-white">{c.name}:</span> {c.phone}
-                                 </li>
-                             ))}
-                         </ul>
                      </div>
                  </div>
 
