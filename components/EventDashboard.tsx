@@ -149,12 +149,12 @@ const events: EventData[] = [
     image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=480&auto=format&fit=crop",
     category: "Gaming",
     teamSize: "4 Members",
-    fee: "160/- (Univ), 150/- (School)",
+    fee: "160/-",
     prizes: ["Pool Prize"],
     location: "B2-305/ 304 (Online Final)",
     timing: "TBA",
     contacts: [{ name: "Yash Mishra", phone: "" }, { name: "Sanskar Dixit", phone: "" }, { name: "Aiman Abidi", phone: "" }],
-    level: "both",
+    level: "university",
     registrationLink: "https://forms.gle/d6U8aJQQF7Cb72zYA"
   },
   {
