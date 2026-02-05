@@ -47,17 +47,19 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
               </motion.div>
             ))}
             
-            <motion.a
-                href="https://drive.google.com/file/d/1Q4r3-LrXJtsX1U092u9illk2rWkWKPZn/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
+            <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
-                className="mt-8 px-8 py-3 bg-neon-cyan text-black font-bold rounded-full hover:bg-white transition-colors block mx-auto"
             >
-                Sponsor Us
-            </motion.a>
+                <Link
+                    href="/events"
+                    onClick={onClose}
+                    className="mt-8 px-8 py-3 bg-neon-cyan text-black font-bold rounded-full hover:bg-white transition-colors block mx-auto shadow-[0_0_30px_rgba(0,240,255,0.3)]"
+                >
+                    Register
+                </Link>
+            </motion.div>
           </nav>
         </motion.div>
       )}

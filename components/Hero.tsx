@@ -38,9 +38,23 @@ export default function Hero() {
           <Countdown />
 
           <div className="mt-8 flex flex-wrap justify-center gap-4 z-20 relative">
-            <button className="px-8 py-3 rounded-full bg-neon-cyan text-black font-bold hover:scale-105 transition-transform shadow-[0_0_20px_rgba(0,240,255,0.3)] hover:shadow-[0_0_40px_rgba(0,240,255,0.6)] cursor-pointer pointer-events-auto">
-              Coming Soon
-            </button>
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-neon-cyan to-pink-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+            <a 
+              href="/events"
+              className="relative px-8 py-3 bg-black rounded-full leading-none flex items-center cursor-pointer pointer-events-auto hover:scale-105 transition-transform"
+            >
+              <span className="flex items-center space-x-3">
+                <span className="pr-6 text-gray-100 font-bold text-lg tracking-wider">Register Now</span>
+                <span className="pl-6 border-l border-neon-cyan/50 text-neon-cyan transition duration-200 flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                  <span className="text-xs font-mono">→</span>
+                </span>
+              </span>
+            </a>
+          </div>
             <a
               href="https://drive.google.com/file/d/1N7wEADfOzlOKdPCJPvfRAebJOfK1qTNh/view?usp=sharing"
               target="_blank"

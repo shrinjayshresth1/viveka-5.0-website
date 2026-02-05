@@ -71,15 +71,12 @@ export default function Navbar() {
           </div>
 
           {/* CTA */}
-          {/* CTA */}
-          <a
-            href="https://drive.google.com/file/d/1Q4r3-LrXJtsX1U092u9illk2rWkWKPZn/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:block px-5 py-2 bg-white/10 hover:bg-neon-cyan hover:text-black rounded-full text-sm font-medium transition-all duration-300 border border-white/20"
+          <Link
+            href="/events"
+            className="hidden md:block px-5 py-2 bg-neon-cyan/10 hover:bg-neon-cyan hover:text-black rounded-full text-sm font-bold transition-all duration-300 border border-neon-cyan/50 text-neon-cyan hover:shadow-[0_0_20px_rgba(0,240,255,0.4)]"
           >
-            Sponsor Us
-          </a>
+            Register
+          </Link>
 
           {/* Mobile Menu Toggle */}
           <button
