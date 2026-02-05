@@ -54,7 +54,7 @@ const teamData = {
   ],
   webOps: [
     { name: "Shrinjay Shresth", role: "WebOps Lead", image: "/shrinjay-v2.webp", linkedin: "https://www.linkedin.com/in/shrinjay-shresth-036010215/" },
-    { name: "Praveen Kumar Singh", role: "WebOps Team", course: "BCA, 1st Year", image: "/praveen-singh.webp", linkedin: "https://www.linkedin.com/in/praveensingh-" },
+    { name: "Praveen Kumar Singh", role: "WebOps Team", course: "BCA, 1st Year", image: "/praveen-singh-new.jpg", linkedin: "https://www.linkedin.com/in/praveensingh-", objectPosition: "object-center" },
   ],
   secretaries: [
     { name: "Pranshu Agrahari", role: "Student Organizing Secretary", course: "B.Tech CSE (DS+AI), 4th Year", image: "/pranshu.png", linkedin: "https://www.linkedin.com/in/pranshu-agrahari-956a37288/" },
@@ -80,7 +80,7 @@ const teamData = {
     { name: "Anshuma Yadav", role: "Student Co-Convener", course: "B.Tech CSE (CC+AI), 3rd Year", image: "/anshuma.jpg", linkedin: "https://www.linkedin.com/in/anshuma-yadav-487b1a28a/" },
     { name: "Rashi Malik", role: "Student Co-Convener", course: "B.Tech CSE (DS+AI), 3rd Year", image: "/rashi.jpg", linkedin: "https://www.linkedin.com/in/rashi-malik-ab442b289/" },
     { name: "Shiv Manglam Dubey", role: "Student Co-Convener", course: "B.Tech CSE, 3rd Year", image: "/shiv.jpg", linkedin: "https://www.linkedin.com/in/shiv-manglam-dubey-6a7467289/" },
-    { name: "Anshu Kasaudhan", role: "Student Co-Convener", course: "B.Tech CSE, 3rd Year", image: "/anshu.jpg", linkedin: "https://www.linkedin.com/in/anshu-kasaudhan-6073712ba/" },
+    { name: "Anshu Kasaudhan", role: "Student Co-Convener", course: "B.Tech CSE, 3rd Year", image: "/anshu-new.png", linkedin: "https://www.linkedin.com/in/anshu-kasaudhan-6073712ba/", objectPosition: "object-center" },
     { name: "Om Jaiswal", role: "Student Co-Convener", course: "B.Tech Biotech, 2nd Year", image: "/om.jpg", linkedin: "https://www.linkedin.com/in/ojaiswal" },
   ]
 };

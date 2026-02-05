@@ -234,7 +234,7 @@ const events: EventData[] = [
   },
   {
     id: "robo-race",
-    title: "Robo Race",
+    title: "Robo “दौड़”",
     description: "Welcome to Robo “दौड़”, where speed, precision, and engineering excellence collide! In this exciting event, teams will race their custom-built bots through an obstacle-laden course, with the goal of reaching the finish line in the fastest time possible. Test your robotic design and programming skills while navigating through a challenging path to claim victory!",
     image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=480&auto=format&fit=crop",
     category: "Robotics",
