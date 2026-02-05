@@ -27,7 +27,7 @@ const events: EventData[] = [
     id: "ai-workshop",
     title: "AI Workshop on Generative AI / Power BI",
     description: "Learn fundamentals of Generative AI and Neural Networks, or discover how to use Power BI for data visualization and interactive dashboards.",
-    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=480&auto=format&fit=crop",
+    image: "/events-page-banner.jpeg",
     category: "Workshop",
     teamSize: "1 Member",
     fee: "60/-",
@@ -41,7 +41,7 @@ const events: EventData[] = [
     id: "bgmi",
     title: "BGMI",
     description: "Gear up for the ultimate gaming showdown with BGMI Battle Royale, where strategy, skill, and teamwork take center stage! Step onto the battleground, lead your squad, and compete against the best to claim the title of champions in e-sports.",
-    image: "https://images.unsplash.com/photo-1593305841991-05c29736f87e?q=80&w=480&auto=format&fit=crop",
+    image: "/events-page-banner.jpeg",
     category: "Gaming",
     teamSize: "4 Members",
     fee: "200/-",
@@ -56,7 +56,7 @@ const events: EventData[] = [
     id: "boat-race",
     title: "Boat Race",
     description: "Join us for an exhilarating RC Boat Race Challenge, where enthusiasts and competitors will showcase their skills in navigating radio-controlled boats through a watercourse filled with obstacles. Participants will race their RC boats in a specially designed water body, maneuvering through twists, turns, and barriers in the shortest possible time to claim victory.",
-    image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=480&auto=format&fit=crop",
+    image: "/events-page-banner.jpeg",
     category: "Robotics",
     teamSize: "2 Members",
     fee: "100/-",
@@ -71,7 +71,7 @@ const events: EventData[] = [
     id: "buddhi-kshamta",
     title: "Buddhi “क्षमता”",
     description: "Buddhi “क्षमता” is an engaging event that tests memory through four fun levels card matching, bottle-color pairing, object pattern recreation, and identifying objects by name and color. It challenges focus, recall, and observation skills in an exciting way.",
-    image: "https://images.unsplash.com/photo-1559145694-850d986b8c9d?q=80&w=480&auto=format&fit=crop",
+    image: "/events-page-banner.jpeg",
     category: "Fun",
     teamSize: "1 Member",
     fee: "60/-",
@@ -149,12 +149,12 @@ const events: EventData[] = [
     image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=480&auto=format&fit=crop",
     category: "Gaming",
     teamSize: "4 Members",
-    fee: "160/- (Univ), 150/- (School)",
+    fee: "160/-",
     prizes: ["Pool Prize"],
     location: "B2-305/ 304 (Online Final)",
     timing: "TBA",
     contacts: [{ name: "Yash Mishra", phone: "" }, { name: "Sanskar Dixit", phone: "" }, { name: "Aiman Abidi", phone: "" }],
-    level: "both",
+    level: "university",
     registrationLink: "https://forms.gle/d6U8aJQQF7Cb72zYA"
   },
   {
@@ -179,7 +179,7 @@ const events: EventData[] = [
     image: "/laser-show-opt.webp",
     category: "Show",
     teamSize: "1-2 Members",
-    fee: "80/- (1), 150/- (2)",
+    fee: "Single - 90/-, Couple - 160/-, UpTo 5 - 400/-",
     prizes: ["TBA"],
     location: "Mini Auditorium",
     timing: "18th Feb, 2:00 PM - 6:00 PM",
@@ -501,33 +501,33 @@ export default function EventDashboard() {
               transition={{ duration: 0.3 }}
               className="relative z-10 h-full flex flex-col"
             >
-              {/* Hero Image Area - Fixed Height */}
-              <div className="h-[150px] md:h-[300px] relative w-full flex-shrink-0 overflow-hidden border-b border-white/10">
-                <img
-                  src={activeEvent.image}
-                  alt={activeEvent.title}
-                  className="w-full h-full object-cover opacity-70"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
 
-                <div className="absolute bottom-6 left-6 md:left-10">
+              {/* Content Area */}
+              <div className="flex-1 p-6 md:p-10 overflow-y-auto custom-scrollbar" data-lenis-prevent>
+
+                {/* Event Header Info - Moved from image overlay */}
+                <div className="mb-10">
                   <motion.h1
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.1 }}
-                    className="text-4xl md:text-6xl font-bold font-space-grotesk text-white uppercase tracking-tight"
+                    className="text-4xl md:text-6xl font-bold font-space-grotesk text-white uppercase tracking-tight leading-tight md:leading-none"
                   >
                     {activeEvent.title}
                   </motion.h1>
-                  <div className="flex items-center gap-4 mt-2 text-neon-cyan font-mono text-sm">
-                    <span className="flex items-center gap-1"><Calendar size={14} /> {activeEvent.timing}</span>
-                    <span className="flex items-center gap-1"><MapPin size={14} /> {activeEvent.location}</span>
+                  <div className="flex flex-wrap items-center gap-4 mt-4 text-neon-cyan font-mono text-sm">
+                    <span className="flex items-center gap-1 py-1 px-2 bg-neon-cyan/10 rounded-md border border-neon-cyan/20">
+                      <Calendar size={14} /> {activeEvent.timing}
+                    </span>
+                    <span className="flex items-center gap-1 py-1 px-2 bg-neon-cyan/10 rounded-md border border-neon-cyan/20">
+                      <MapPin size={14} /> {activeEvent.location}
+                    </span>
+                    <span className="flex items-center gap-1 py-1 px-2 bg-neon-cyan/10 rounded-md border border-neon-cyan/20 md:hidden">
+                      <Target size={14} /> {activeEvent.category}
+                    </span>
                   </div>
                 </div>
-              </div>
 
-              {/* Content Area */}
-              <div className="flex-1 p-6 md:p-10 overflow-y-auto custom-scrollbar" data-lenis-prevent>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                   {/* Left: Description */}
