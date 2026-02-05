@@ -457,40 +457,42 @@ export default function EventDashboard() {
         </div>
       </div>
 
-      {/* Mainframe: Details View */}
       <div className={cn(
         "w-full md:w-2/3 relative h-full flex flex-col transition-all duration-300",
         isMobileOpen ? "fixed inset-0 z-50 bg-[#0a0a0a] p-0" : "hidden md:flex"
       )}>
-        <div className="absolute inset-0 border border-white/10 md:rounded-2xl bg-black/40 backdrop-blur-md overflow-hidden flex flex-col">
+        {/* Mobile Controls Header - Moved outside the border */}
+        <div className="md:hidden p-4 flex justify-between items-center z-50">
+          <button
+            onClick={() => setIsMobileOpen(false)}
+            className="p-2 bg-white/5 backdrop-blur border border-white/10 rounded-full text-white hover:text-neon-cyan active:scale-95"
+          >
+            <X size={24} />
+          </button>
+
+          <div className="flex gap-2">
+            <button
+              onClick={(e) => { e.stopPropagation(); handlePrev(); }}
+              className="p-2 bg-white/5 backdrop-blur border border-white/10 rounded-full text-white hover:text-neon-cyan active:scale-95"
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <button
+              onClick={(e) => { e.stopPropagation(); handleNext(); }}
+              className="p-2 bg-white/5 backdrop-blur border border-white/10 rounded-full text-white hover:text-neon-cyan active:scale-95"
+            >
+              <ChevronRight size={24} />
+            </button>
+          </div>
+        </div>
+
+        <div className={cn(
+          "relative flex-1 border border-white/10 md:rounded-2xl bg-black/40 backdrop-blur-md overflow-hidden flex flex-col",
+          isMobileOpen ? "mx-4 mb-4 rounded-xl" : ""
+        )}>
 
           {/* Background Grid */}
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:30px_30px] z-0" />
-
-          {/* Mobile Controls Header */}
-          <div className="md:hidden absolute top-4 left-4 right-4 z-50 flex justify-between items-center pointer-events-none">
-            <button
-              onClick={() => setIsMobileOpen(false)}
-              className="pointer-events-auto p-2 bg-black/50 backdrop-blur border border-white/20 rounded-full text-white hover:text-neon-cyan active:scale-95"
-            >
-              <X size={24} />
-            </button>
-
-            <div className="pointer-events-auto flex gap-2">
-              <button
-                onClick={(e) => { e.stopPropagation(); handlePrev(); }}
-                className="p-2 bg-black/50 backdrop-blur border border-white/20 rounded-full text-white hover:text-neon-cyan active:scale-95"
-              >
-                <ChevronLeft size={24} />
-              </button>
-              <button
-                onClick={(e) => { e.stopPropagation(); handleNext(); }}
-                className="p-2 bg-black/50 backdrop-blur border border-white/20 rounded-full text-white hover:text-neon-cyan active:scale-95"
-              >
-                <ChevronRight size={24} />
-              </button>
-            </div>
-          </div>
 
           <AnimatePresence mode="wait">
             <motion.div
@@ -503,7 +505,7 @@ export default function EventDashboard() {
             >
 
               {/* Content Area */}
-              <div className="flex-1 p-6 md:p-10 overflow-y-auto custom-scrollbar" data-lenis-prevent>
+              <div className="flex-1 p-6 md:p-10 pt-6 md:pt-10 overflow-y-auto custom-scrollbar" data-lenis-prevent>
 
                 {/* Event Header Info - Moved from image overlay */}
                 <div className="mb-10">
@@ -511,7 +513,7 @@ export default function EventDashboard() {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.1 }}
-                    className="text-4xl md:text-6xl font-bold font-space-grotesk text-white uppercase tracking-tight leading-tight md:leading-none"
+                    className="text-3xl md:text-6xl font-bold font-space-grotesk text-white uppercase tracking-tight leading-none md:leading-none"
                   >
                     {activeEvent.title}
                   </motion.h1>
@@ -522,13 +524,13 @@ export default function EventDashboard() {
                     <span className="flex items-center gap-1 py-1 px-2 bg-neon-cyan/10 rounded-md border border-neon-cyan/20">
                       <MapPin size={14} /> {activeEvent.location}
                     </span>
-                    <span className="flex items-center gap-1 py-1 px-2 bg-neon-cyan/10 rounded-md border border-neon-cyan/20 md:hidden">
+                    <span className="flex items-center gap-1 py-1 px-2 bg-neon-cyan/10 rounded-md border border-neon-cyan/20">
                       <Target size={14} /> {activeEvent.category}
                     </span>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
 
                   {/* Left: Description */}
                   <div className="md:col-span-2 space-y-6">
