@@ -46,10 +46,24 @@ export default function Hero() {
           <Countdown />
 
           <div className="mt-8 flex flex-wrap justify-center gap-4 z-20 relative">
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-neon-cyan/50 via-neon-cyan to-purple-600 rounded-full blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-
-            </div>
+            <a 
+              href="/events"
+              className="group relative px-8 py-4 bg-neon-cyan text-black font-bold text-lg rounded-full 
+                         hover:bg-white transition-all duration-300 
+                         shadow-[0_0_40px_rgba(0,240,255,0.5)] hover:shadow-[0_0_60px_rgba(0,240,255,0.8)]
+                         flex items-center gap-3 cursor-pointer pointer-events-auto
+                         hover:scale-105 transform"
+            >
+              <span className="tracking-wide">Register Now</span>
+              <svg 
+                className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
             <a
               href="https://drive.google.com/file/d/1N7wEADfOzlOKdPCJPvfRAebJOfK1qTNh/view?usp=sharing"
               target="_blank"
