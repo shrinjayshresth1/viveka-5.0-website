@@ -123,7 +123,7 @@ export default function StarNightSpotlight() {
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
                 <Image
-                  src="/DarshanRawal.webp"
+                  src="/darshan2.jpeg"
                   alt="Darshan Raval"
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-500"

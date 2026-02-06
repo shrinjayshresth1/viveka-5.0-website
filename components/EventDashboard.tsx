@@ -63,7 +63,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "Volleyball Court",
     timing: "19th Feb, 3:30 PM",
-    contacts: [{ name: "Samarth Kumar", phone: "8081880868" }, { name: "Himanshu Sharma", phone: "6386531609" }, { name: "Ankit Singh", phone: "" }],
+    contacts: [{ name: "Samarth Kumar", phone: "8081880868" }, { name: "Himanshu Sharma", phone: "6386531609" },],
     level: "university",
     registrationLink: "https://forms.gle/4pDhh72JboG8BjwE9"
   },
@@ -273,7 +273,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "University Club Stage",
     timing: "18th Feb - 1:20 PM (Univ) | 2:00 PM (School)",
-    contacts: [{ name: "Rashi Malik", phone: "8707340147" }, { name: "Dhruv Pathak", phone: "" }, { name: "Aditya Verma", phone: "9839428105" }],
+    contacts: [{ name: "Rashi Malik", phone: "8707340147" }, { name: "Dhruv Pathak", phone: " 8604440669" }, { name: "Aditya Verma", phone: "9839428105" }],
     level: "both",
     registrationLink: "https://forms.gle/uK2wUFS4hEbZNy588"
   },
