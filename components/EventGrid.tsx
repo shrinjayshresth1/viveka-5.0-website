@@ -19,7 +19,8 @@ const events: EventData[] = [
     prizes: ["Exciting Awards"],
     location: "TBA",
     timing: "TBA",
-    contacts: [{ name: "Tech Team", phone: "" }]
+    contacts: [{ name: "Tech Team", phone: "" }],
+    rulebook: "https://drive.google.com/file/d/15Z7kQOfkL-PFwrr5yoKlWLEj0eoK0Fu4/view"
   },
   {
     id: "hackathon-university",
@@ -32,7 +33,8 @@ const events: EventData[] = [
     prizes: ["Grand Prize Pool"],
     location: "Innovation Hub",
     timing: "24 Hours",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1sYT00-ezryu_hOPSotRhJ7r85K47Fbwi/view"
   },
   {
     id: "hackathon-school",
@@ -45,7 +47,8 @@ const events: EventData[] = [
     prizes: ["Grand Prize Pool"],
     location: "Innovation Hub",
     timing: "24 Hours",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1sYT00-ezryu_hOPSotRhJ7r85K47Fbwi/view"
   },
   {
     id: "bug-hunting",
@@ -71,7 +74,8 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "TBA",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1Y9NQj6oUZ2A4-0-okvv_WUOvWNHafagf/view"
   },
 
   // --- ROBOTICS ---
@@ -86,7 +90,8 @@ const events: EventData[] = [
     prizes: ["Cash Prizes"],
     location: "War Arena",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1bArGi-WXcCRWSa58jgbXAKXlNU4pInNn/view"
   },
   {
     id: "robo-race",
@@ -99,7 +104,8 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "Track Area",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1j2zIV7JYpS2SyhL3Y2UGybH1iHcbQty6/view"
   },
   {
     id: "robo-soccer",
@@ -112,7 +118,8 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "Soccer Arena",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/18J_8K51RG7Qnx9EPrvdHk2qjOr50KscS/view"
   },
   {
     id: "drone-race",
@@ -125,7 +132,8 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "Open Ground",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1LHDxWjjUWbpK1JrotWdBMDjgrzg9c0YK/view"
   },
   {
     id: "path-finder",
@@ -151,7 +159,8 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "Water Body",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1onYRKELHdr4OkabbVt20KCqAFEiQLrIM/view"
   },
 
   // --- GAMING ---
@@ -179,7 +188,8 @@ const events: EventData[] = [
     prizes: ["Pool Prize"],
     location: "E-Sports Arena",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1M-Vm8jO74UnO1FXzMz4ezf6nk-LWeKjP/edit"
   },
 
   // --- BRAINSTORMING & FUN ---
@@ -194,7 +204,8 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "TBA",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1iLJLjAA-znBYhTzk1yOQZQjr6Qy7EAbw/view"
   },
   {
     id: "reasoning-rumble",
@@ -207,7 +218,8 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "TBA",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1_N6bE_UrRex7s-vCbM6sXfOaH20jSlUY/view"
   },
   {
     id: "rubiks-cube",
@@ -220,7 +232,8 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "TBA",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1JAG8pE_kOFEvFYJ5OZH7bHy-XHtjBJE8/view"
   },
   {
     id: "buddhi-kshamta",
@@ -233,7 +246,8 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "TBA",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/11snaRwV4FNMi4m9b704wVZLhcVbDXxR4/view"
   },
   {
     id: "laser-show",
@@ -246,7 +260,8 @@ const events: EventData[] = [
     prizes: ["Memories"],
     location: "Main Ground",
     timing: "Evening",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1_hw3edIKRfXt0unOSZV7N9OOnGdQMu1V/view"
   },
 
   // --- CREATIVE ---

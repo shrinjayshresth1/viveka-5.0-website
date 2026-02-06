@@ -20,6 +20,7 @@ export interface EventData {
   contacts: { name: string; phone: string }[];
   level: "school" | "university" | "both";
   registrationLink?: string;
+  rulebook?: string;
 }
 
 const events: EventData[] = [
@@ -50,7 +51,8 @@ const events: EventData[] = [
     timing: "20th Feb",
     contacts: [{ name: "Shashank Kumar", phone: "" }, { name: "Aviral Mishra", phone: "" }, { name: "Divyansh Srivastava", phone: "" }],
     level: "university",
-    registrationLink: "https://forms.gle/FPDw5HN32rgQhyyg7"
+    registrationLink: "https://forms.gle/FPDw5HN32rgQhyyg7",
+    rulebook: "https://drive.google.com/file/d/1M-Vm8jO74UnO1FXzMz4ezf6nk-LWeKjP/edit"
   },
   {
     id: "boat-race",
@@ -65,7 +67,8 @@ const events: EventData[] = [
     timing: "19th Feb, 3:30 PM",
     contacts: [{ name: "Samarth Kumar", phone: "" }, { name: "Himanshu Sharma", phone: "" }, { name: "Ankit Singh", phone: "" }],
     level: "university",
-    registrationLink: "https://forms.gle/4pDhh72JboG8BjwE9"
+    registrationLink: "https://forms.gle/4pDhh72JboG8BjwE9",
+    rulebook: "https://drive.google.com/file/d/1onYRKELHdr4OkabbVt20KCqAFEiQLrIM/view"
   },
   {
     id: "buddhi-kshamta",
@@ -80,7 +83,8 @@ const events: EventData[] = [
     timing: "18th Feb - 2:05 PM (Univ) | 1:00 PM (School)",
     contacts: [{ name: "Shipra Mishra", phone: "" }, { name: "Prateek Singh", phone: "" }, { name: "Jahnvi Pandey", phone: "" }],
     level: "both",
-    registrationLink: "https://forms.gle/zy14bmEJTQ9HzpXa7"
+    registrationLink: "https://forms.gle/zy14bmEJTQ9HzpXa7",
+    rulebook: "https://drive.google.com/file/d/11snaRwV4FNMi4m9b704wVZLhcVbDXxR4/view"
   },
   {
     id: "codex",
@@ -95,7 +99,8 @@ const events: EventData[] = [
     timing: "18th Feb, 12:30 PM",
     contacts: [{ name: "Shrinjay Shresth", phone: "" }, { name: "Neelabh Shukla", phone: "" }, { name: "Om Jaiswal", phone: "" }],
     level: "university",
-    registrationLink: "https://forms.gle/TAstKD4ENGMsFqB77"
+    registrationLink: "https://forms.gle/TAstKD4ENGMsFqB77",
+    rulebook: "https://drive.google.com/file/d/15Z7kQOfkL-PFwrr5yoKlWLEj0eoK0Fu4/view"
   },
   {
     id: "digi-art",
@@ -110,7 +115,8 @@ const events: EventData[] = [
     timing: "18th Feb, 2:15 PM",
     contacts: [{ name: "Prateek Kumar Singh", phone: "" }, { name: "Mohd Ayan", phone: "" }, { name: "Dilijan Ansari", phone: "" }],
     level: "university",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfQ60JeC5doeu_ZGahXm342zI3GvOfPGePq5Ew7foQ6yKni3w/viewform"
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfQ60JeC5doeu_ZGahXm342zI3GvOfPGePq5Ew7foQ6yKni3w/viewform",
+    rulebook: "https://drive.google.com/file/d/10MjuvOzJi9sEZpg077ydlA8-mEKrWL5g/view"
   },
   {
     id: "drone-race",
@@ -125,7 +131,8 @@ const events: EventData[] = [
     timing: "19th Feb, 3:30 PM",
     contacts: [{ name: "Kshitij Gupta", phone: "" }, { name: "Anurag Kumar Rai", phone: "" }, { name: "Vicky Kumar Mishra", phone: "" }],
     level: "both",
-    registrationLink: "https://forms.gle/DrEv4TLiGe9FTjZV7"
+    registrationLink: "https://forms.gle/DrEv4TLiGe9FTjZV7",
+    rulebook: "https://drive.google.com/file/d/1LHDxWjjUWbpK1JrotWdBMDjgrzg9c0YK/view"
   },
   {
     id: "find-the-language",
@@ -140,7 +147,8 @@ const events: EventData[] = [
     timing: "20th Feb, 12:30 PM",
     contacts: [{ name: "Ansh Kumar Singh", phone: "" }, { name: "Satyam Gupta", phone: "" }],
     level: "university",
-    registrationLink: "https://forms.gle/ViWJuZAuq7th7FWd9"
+    registrationLink: "https://forms.gle/ViWJuZAuq7th7FWd9",
+    rulebook: "https://drive.google.com/file/d/1Y9NQj6oUZ2A4-0-okvv_WUOvWNHafagf/view"
   },
   {
     id: "free-fire",
@@ -170,7 +178,8 @@ const events: EventData[] = [
     timing: "20th Feb, 12:30 PM",
     contacts: [{ name: "Shrinjay Shresth", phone: "" }, { name: "Akarsh Mishra", phone: "" }, { name: "Neelabh Shukla", phone: "" }],
     level: "both",
-    registrationLink: "https://forms.gle/aRw5qbeNHZqmMyyn9"
+    registrationLink: "https://forms.gle/aRw5qbeNHZqmMyyn9",
+    rulebook: "https://drive.google.com/file/d/1sYT00-ezryu_hOPSotRhJ7r85K47Fbwi/view"
   },
   {
     id: "laser-show",
@@ -185,7 +194,8 @@ const events: EventData[] = [
     timing: "18th Feb, 2:00 PM - 6:00 PM",
     contacts: [{ name: "Viveka Core Team", phone: "" }],
     level: "university",
-    registrationLink: "https://forms.gle/Uom8d5cAYFrhcSme6"
+    registrationLink: "https://forms.gle/Uom8d5cAYFrhcSme6",
+    rulebook: "https://drive.google.com/file/d/1_hw3edIKRfXt0unOSZV7N9OOnGdQMu1V/view"
   },
   {
     id: "reasoning-rumble",
@@ -200,7 +210,8 @@ const events: EventData[] = [
     timing: "20th Feb 2:50 PM (Univ) | 18th Feb 3:25 PM (School)",
     contacts: [{ name: "Anshuma Yadav", phone: "" }, { name: "Neha Yadav", phone: "" }, { name: "Nistha Arora", phone: "" }],
     level: "both",
-    registrationLink: "https://forms.gle/ETgf9kfMqPX1vMa98"
+    registrationLink: "https://forms.gle/ETgf9kfMqPX1vMa98",
+    rulebook: "https://drive.google.com/file/d/1_N6bE_UrRex7s-vCbM6sXfOaH20jSlUY/view"
   },
   {
     id: "recall-o-tune",
@@ -215,7 +226,8 @@ const events: EventData[] = [
     timing: "20th Feb 1:30 PM (Univ) | 18th Feb 2:45 PM (School)",
     contacts: [{ name: "Vinay Yadav", phone: "" }, { name: "Vinayak", phone: "" }, { name: "Divyata Maurya", phone: "" }],
     level: "both",
-    registrationLink: "https://forms.gle/Z4uFqqSUz1i8NEnE8"
+    registrationLink: "https://forms.gle/Z4uFqqSUz1i8NEnE8",
+    rulebook: "https://drive.google.com/file/d/1iLJLjAA-znBYhTzk1yOQZQjr6Qy7EAbw/view"
   },
   {
     id: "robo-soccer",
@@ -230,7 +242,8 @@ const events: EventData[] = [
     timing: "19th Feb 12:30 PM (Univ) | 18th Feb 2:00 PM (School)",
     contacts: [{ name: "Shiv Mangalam Dubey", phone: "" }, { name: "Aditya Singh", phone: "" }, { name: "Anubhav Jaiswal", phone: "" }],
     level: "both",
-    registrationLink: "https://forms.gle/jSG2d9sAQHoVe3hE6"
+    registrationLink: "https://forms.gle/jSG2d9sAQHoVe3hE6",
+    rulebook: "https://drive.google.com/file/d/18J_8K51RG7Qnx9EPrvdHk2qjOr50KscS/view"
   },
   {
     id: "robo-race",
@@ -260,7 +273,8 @@ const events: EventData[] = [
     timing: "19th Feb, 2:00 PM",
     contacts: [{ name: "Raunak Srivastava", phone: "" }, { name: "Aditya Pratap Singh", phone: "" }, { name: "Mahendra Maurya", phone: "" }],
     level: "university",
-    registrationLink: "https://forms.gle/C19QxDKbjjJAVGSw7"
+    registrationLink: "https://forms.gle/C19QxDKbjjJAVGSw7",
+    rulebook: "https://drive.google.com/file/d/1bArGi-WXcCRWSa58jgbXAKXlNU4pInNn/view"
   },
   {
     id: "rubiks-cube",
@@ -275,7 +289,8 @@ const events: EventData[] = [
     timing: "18th Feb - 1:20 PM (Univ) | 2:00 PM (School)",
     contacts: [{ name: "Rashi Malik", phone: "" }, { name: "Dhruv Pathak", phone: "" }, { name: "Aditya Verma", phone: "" }],
     level: "both",
-    registrationLink: "https://forms.gle/uK2wUFS4hEbZNy588"
+    registrationLink: "https://forms.gle/uK2wUFS4hEbZNy588",
+    rulebook: "https://drive.google.com/file/d/1JAG8pE_kOFEvFYJ5OZH7bHy-XHtjBJE8/view"
   },
   {
     id: "structromania",
@@ -290,7 +305,8 @@ const events: EventData[] = [
     timing: "18th Feb, 12:00 PM",
     contacts: [{ name: "Isha Singh", phone: "" }, { name: "Aakarsh Pandey", phone: "" }, { name: "Mohd Aghaz", phone: "" }],
     level: "university",
-    registrationLink: "https://forms.gle/h3WtGLPZARirgymPA"
+    registrationLink: "https://forms.gle/h3WtGLPZARirgymPA",
+    rulebook: "https://drive.google.com/file/d/1BI1LoZ5JxtK9VRgyX8F8Hq8nEHESeZe3/edit"
   },
   {
     id: "network-workshop",
@@ -537,6 +553,21 @@ export default function EventDashboard() {
                     <div>
                       <h4 className="text-gray-500 text-xs uppercase tracking-widest mb-2 font-bold">Protocol Description</h4>
                       <p className="text-gray-300 leading-relaxed text-sm md:text-base">{activeEvent.description}</p>
+                      
+                      {activeEvent.rulebook ? (
+                        <a 
+                            href={activeEvent.rulebook} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="mt-4 inline-block px-4 py-2 text-xs border border-neon-cyan/30 text-neon-cyan rounded hover:bg-neon-cyan/10 transition-colors"
+                        >
+                            View Rulebook →
+                        </a>
+                      ) : (
+                         <button disabled className="mt-4 px-4 py-2 text-xs border border-white/10 text-gray-500 rounded cursor-not-allowed">
+                            Rulebook: Coming Soon
+                        </button>
+                      )}
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">

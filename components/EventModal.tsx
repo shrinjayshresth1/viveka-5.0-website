@@ -18,6 +18,7 @@ export interface EventData {
   timing: string;
   contacts: { name: string; phone: string }[];
   note?: string;
+  rulebook?: string;
 }
 
 interface EventModalProps {
@@ -82,9 +83,20 @@ export default function EventModal({ event, onClose }: EventModalProps) {
                     <p className="text-gray-300 leading-relaxed text-sm md:text-base border-l-2 border-neon-cyan/30 pl-4">
                         {event.description}
                     </p>
-                    <button className="mt-4 px-4 py-2 text-xs border border-neon-cyan/30 text-neon-cyan rounded hover:bg-neon-cyan/10 transition-colors">
-                        View Rulebook →
-                    </button>
+                    {event.rulebook ? (
+                        <a 
+                            href={event.rulebook} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="mt-4 inline-block px-4 py-2 text-xs border border-neon-cyan/30 text-neon-cyan rounded hover:bg-neon-cyan/10 transition-colors"
+                        >
+                            View Rulebook →
+                        </a>
+                    ) : (
+                         <button disabled className="mt-4 px-4 py-2 text-xs border border-white/10 text-gray-500 rounded cursor-not-allowed">
+                            Rulebook: Coming Soon
+                        </button>
+                    )}
                 </div>
 
                  {/* Section: Category, Team, Fees */}
