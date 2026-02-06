@@ -78,7 +78,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "University Club Stage",
     timing: "18th Feb - 2:05 PM (Univ) | 1:00 PM (School)",
-    contacts: [{ name: "Shipra Mishra", phone: "" }, { name: "Prateek Singh", phone: "9044298094" }, { name: "Jahnvi Pandey", phone: "7523800560" }],
+    contacts: [{ name: "Shipra Mishra", phone: "9696494437" }, { name: "Prateek Singh", phone: "9044298094" }, { name: "Jahnvi Pandey", phone: "7523800560" }],
     level: "both",
     registrationLink: "https://forms.gle/zy14bmEJTQ9HzpXa7"
   },
