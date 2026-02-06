@@ -103,7 +103,7 @@ export default function StarNightSpotlight() {
 
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
-          {/* Left: Darshan Rawal Image */}
+          {/* Left: Darshan Raval Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -113,7 +113,7 @@ export default function StarNightSpotlight() {
           >
             {/* Decorative Border */}
             <div className="absolute -inset-4 bg-gradient-to-r from-neon-cyan via-white to-neon-cyan rounded-3xl opacity-20 blur-xl animate-pulse" />
-            
+
             {/* Image Container */}
             <div className="relative group">
               <motion.div
@@ -123,13 +123,13 @@ export default function StarNightSpotlight() {
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
                 <Image
-                  src="/DarshanRawal.webp"
-                  alt="Darshan Rawal"
+                  src="/darshan2.jpeg"
+                  alt="Darshan Raval"
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   priority
                 />
-                
+
                 {/* Glow Effect on Hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-neon-cyan/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
               </motion.div>
@@ -175,10 +175,10 @@ export default function StarNightSpotlight() {
                 <br />
                 <span className="relative inline-block">
                   <span className="absolute inset-0 text-neon-cyan blur-lg opacity-50 animate-pulse">
-                    RAWAL
+                    RAVAL
                   </span>
                   <span className="relative bg-gradient-to-r from-cyan-400 via-neon-cyan to-white bg-clip-text text-transparent">
-                    RAWAL
+                    RAVAL
                   </span>
                 </span>
               </motion.h1>
@@ -201,7 +201,7 @@ export default function StarNightSpotlight() {
               className="text-gray-300 text-lg md:text-xl leading-relaxed"
             >
               Get ready for an electrifying night as the sensational{" "}
-              <span className="text-neon-cyan font-semibold">Darshan Rawal</span>{" "}
+              <span className="text-neon-cyan font-semibold">Darshan Raval</span>{" "}
               takes the stage at SRMU! Experience his chart-topping hits live in an
               unforgettable musical extravaganza.
             </motion.p>
@@ -253,7 +253,7 @@ export default function StarNightSpotlight() {
                 <Sparkles className="text-neon-cyan mt-1 flex-shrink-0" size={20} />
                 <p className="text-white/90 leading-relaxed">
                   <span className="font-bold text-neon-cyan">Don't miss out!</span> Experience
-                  the magic of Darshan Rawal's soulful voice and energetic performance as we
+                  the magic of Darshan Raval's soulful voice and energetic performance as we
                   kick off Viveka 5.0 in style!
                 </p>
               </div>

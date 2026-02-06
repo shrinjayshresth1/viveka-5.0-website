@@ -35,7 +35,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "Mini Auditorium",
     timing: "20th Feb, 3:00 PM",
-    contacts: [{ name: "Anshu Kasaudhan", phone: "" }, { name: "Raghuvar Arya", phone: "" }, { name: "Jahnvi Pandey", phone: "" }],
+    contacts: [{ name: "Ayush Dwivedi", phone: "8115600381" }, { name: "Raghuvar Arya", phone: "8090465411" }, { name: "Jahnvi Pandey", phone: "7523800560" }],
     level: "university"
   },
   {
@@ -49,7 +49,7 @@ const events: EventData[] = [
     prizes: ["Pool Prize"],
     location: "Mini Auditorium (Admin) (Final Round)",
     timing: "20th Feb",
-    contacts: [{ name: "Shashank Kumar", phone: "" }, { name: "Aviral Mishra", phone: "" }, { name: "Divyansh Srivastava", phone: "" }],
+    contacts: [{ name: "Shashank Kumar", phone: "6306569583" }, { name: "Divyansh Srivastava", phone: "6394500934" }],
     level: "university",
     registrationLink: "https://forms.gle/FPDw5HN32rgQhyyg7",
     rulebook: "https://drive.google.com/file/d/1M-Vm8jO74UnO1FXzMz4ezf6nk-LWeKjP/edit"
@@ -65,7 +65,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "Volleyball Court",
     timing: "19th Feb, 3:30 PM",
-    contacts: [{ name: "Samarth Kumar", phone: "" }, { name: "Himanshu Sharma", phone: "" }, { name: "Ankit Singh", phone: "" }],
+    contacts: [{ name: "Samarth Kumar", phone: "8081880868" }, { name: "Himanshu Sharma", phone: "6386531609" }, { name: "Ansh Kumar Singh", phone: "7905551795" },],
     level: "university",
     registrationLink: "https://forms.gle/4pDhh72JboG8BjwE9",
     rulebook: "https://drive.google.com/file/d/1onYRKELHdr4OkabbVt20KCqAFEiQLrIM/view"
@@ -81,7 +81,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "University Club Stage",
     timing: "18th Feb - 2:05 PM (Univ) | 1:00 PM (School)",
-    contacts: [{ name: "Shipra Mishra", phone: "" }, { name: "Prateek Singh", phone: "" }, { name: "Jahnvi Pandey", phone: "" }],
+    contacts: [{ name: "Shipra Mishra", phone: "9696494437" }, { name: "Prateek Singh", phone: "9044298094" }, { name: "Jahnvi Pandey", phone: "7523800560" }],
     level: "both",
     registrationLink: "https://forms.gle/zy14bmEJTQ9HzpXa7",
     rulebook: "https://drive.google.com/file/d/11snaRwV4FNMi4m9b704wVZLhcVbDXxR4/view"
@@ -97,7 +97,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "All Labs (B2-Ground Floor)",
     timing: "18th Feb, 12:30 PM",
-    contacts: [{ name: "Shrinjay Shresth", phone: "" }, { name: "Neelabh Shukla", phone: "" }, { name: "Om Jaiswal", phone: "" }],
+    contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Neelabh Shukla", phone: "7307551512" }, { name: "Om Jaiswal", phone: "7068339541" }],
     level: "university",
     registrationLink: "https://forms.gle/TAstKD4ENGMsFqB77",
     rulebook: "https://drive.google.com/file/d/15Z7kQOfkL-PFwrr5yoKlWLEj0eoK0Fu4/view"
@@ -113,7 +113,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "B7-003, B7-004",
     timing: "18th Feb, 2:15 PM",
-    contacts: [{ name: "Prateek Kumar Singh", phone: "" }, { name: "Mohd Ayan", phone: "" }, { name: "Dilijan Ansari", phone: "" }],
+    contacts: [{ name: "Prateek Kumar Singh", phone: "8924046121" }, { name: "Mohd Ayan", phone: "8808738098" }, { name: "Dilijan Ansari", phone: "8400372991" }],
     level: "university",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfQ60JeC5doeu_ZGahXm342zI3GvOfPGePq5Ew7foQ6yKni3w/viewform",
     rulebook: "https://drive.google.com/file/d/10MjuvOzJi9sEZpg077ydlA8-mEKrWL5g/view"
@@ -129,7 +129,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "Admin Ground",
     timing: "19th Feb, 3:30 PM",
-    contacts: [{ name: "Kshitij Gupta", phone: "" }, { name: "Anurag Kumar Rai", phone: "" }, { name: "Vicky Kumar Mishra", phone: "" }],
+    contacts: [{ name: "Kshitij Gupta", phone: "9455813610" }, { name: "Anurag Kumar Rai", phone: "7991406755" }, { name: "Vicky Kumar Mishra", phone: "9334335156" }],
     level: "both",
     registrationLink: "https://forms.gle/DrEv4TLiGe9FTjZV7",
     rulebook: "https://drive.google.com/file/d/1LHDxWjjUWbpK1JrotWdBMDjgrzg9c0YK/view"
@@ -145,7 +145,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "B2-All Labs",
     timing: "20th Feb, 12:30 PM",
-    contacts: [{ name: "Ansh Kumar Singh", phone: "" }, { name: "Satyam Gupta", phone: "" }],
+    contacts: [{ name: "Prachi Maurya", phone: "6394376362" }, { name: "Ansh Kumar Singh", phone: "7905551795" }, { name: "Satyam Gupta", phone: "8318957671" }],
     level: "university",
     registrationLink: "https://forms.gle/ViWJuZAuq7th7FWd9",
     rulebook: "https://drive.google.com/file/d/1Y9NQj6oUZ2A4-0-okvv_WUOvWNHafagf/view"
@@ -161,7 +161,7 @@ const events: EventData[] = [
     prizes: ["Pool Prize"],
     location: "Mini Auditorium (Admin) (Final Round)",
     timing: "19th Feb",
-    contacts: [{ name: "Yash Mishra", phone: "" }, { name: "Sanskar Dixit", phone: "" }, { name: "Aiman Abidi", phone: "" }],
+    contacts: [{ name: "Yash Mishra", phone: "6306974406" }, { name: "Sanskar Dixit", phone: "7607124641" }, { name: "Aiman Abidi", phone: "8756821074" }],
     level: "university",
     registrationLink: "https://forms.gle/d6U8aJQQF7Cb72zYA"
   },
@@ -176,7 +176,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "B1-207, B1-007",
     timing: "20th Feb, 12:30 PM",
-    contacts: [{ name: "Shrinjay Shresth", phone: "" }, { name: "Akarsh Mishra", phone: "" }, { name: "Neelabh Shukla", phone: "" }],
+    contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Aakarsh Mishra", phone: "9682043203" }, { name: "Neelabh Shukla", phone: "7307551512" }],
     level: "both",
     registrationLink: "https://forms.gle/aRw5qbeNHZqmMyyn9",
     rulebook: "https://drive.google.com/file/d/1sYT00-ezryu_hOPSotRhJ7r85K47Fbwi/view"
@@ -208,7 +208,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "B7-003, B7-004 (Univ) | B7-005, B7-006 (School)",
     timing: "20th Feb 2:50 PM (Univ) | 18th Feb 3:25 PM (School)",
-    contacts: [{ name: "Anshuma Yadav", phone: "" }, { name: "Neha Yadav", phone: "" }, { name: "Nistha Arora", phone: "" }],
+    contacts: [{ name: "Anshuma Yadav", phone: "9369885065" }, { name: "Neha Yadav", phone: "6388223377" }, { name: "Nistha Arora", phone: "8707641236" }],
     level: "both",
     registrationLink: "https://forms.gle/ETgf9kfMqPX1vMa98",
     rulebook: "https://drive.google.com/file/d/1_N6bE_UrRex7s-vCbM6sXfOaH20jSlUY/view"
@@ -224,7 +224,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "B7-005, B7-006 (Univ) | B1-207 (School)",
     timing: "20th Feb 1:30 PM (Univ) | 18th Feb 2:45 PM (School)",
-    contacts: [{ name: "Vinay Yadav", phone: "" }, { name: "Vinayak", phone: "" }, { name: "Divyata Maurya", phone: "" }],
+    contacts: [{ name: "Vinay Yadav", phone: "8765072315" }, { name: "Vinayak", phone: "9140613407" }, { name: "Divyata Maurya", phone: "9250055785" }],
     level: "both",
     registrationLink: "https://forms.gle/Z4uFqqSUz1i8NEnE8",
     rulebook: "https://drive.google.com/file/d/1iLJLjAA-znBYhTzk1yOQZQjr6Qy7EAbw/view"
@@ -240,7 +240,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "Volleyball Court",
     timing: "19th Feb 12:30 PM (Univ) | 18th Feb 2:00 PM (School)",
-    contacts: [{ name: "Shiv Mangalam Dubey", phone: "" }, { name: "Aditya Singh", phone: "" }, { name: "Anubhav Jaiswal", phone: "" }],
+    contacts: [{ name: "Raunak Srivastava", phone: "7235918654" }, { name: "Aditya Singh", phone: "9794791608" }, { name: "Anubhav Jaiswal", phone: "9559107407" }],
     level: "both",
     registrationLink: "https://forms.gle/jSG2d9sAQHoVe3hE6",
     rulebook: "https://drive.google.com/file/d/18J_8K51RG7Qnx9EPrvdHk2qjOr50KscS/view"
@@ -256,7 +256,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "Volleyball Court",
     timing: "19th Feb 12:30 PM (Univ) | 18th Feb 2:00 PM (School)",
-    contacts: [{ name: "Abhishek Rao", phone: "" }, { name: "Ahad Ahmed", phone: "" }, { name: "Subhadeep pal", phone: "" }],
+    contacts: [{ name: "Abhishek Rao", phone: "9792815988" }, { name: "Ahad Ahmed", phone: "8299705189" }, { name: "Subhadeep Pal", phone: "7880499977" }],
     level: "both",
     registrationLink: "https://forms.gle/Goifd69cWuGo8V9C7"
   },
@@ -271,7 +271,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "Volleyball Court",
     timing: "19th Feb, 2:00 PM",
-    contacts: [{ name: "Raunak Srivastava", phone: "" }, { name: "Aditya Pratap Singh", phone: "" }, { name: "Mahendra Maurya", phone: "" }],
+    contacts: [{ name: "Raunak Srivastava", phone: "7235918654" }, { name: "Aditya Pratap Singh", phone: "9120058311" }, { name: "Mahendra Maurya", phone: "6393092836" }],
     level: "university",
     registrationLink: "https://forms.gle/C19QxDKbjjJAVGSw7",
     rulebook: "https://drive.google.com/file/d/1bArGi-WXcCRWSa58jgbXAKXlNU4pInNn/view"
@@ -287,7 +287,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "University Club Stage",
     timing: "18th Feb - 1:20 PM (Univ) | 2:00 PM (School)",
-    contacts: [{ name: "Rashi Malik", phone: "" }, { name: "Dhruv Pathak", phone: "" }, { name: "Aditya Verma", phone: "" }],
+    contacts: [{ name: "Rashi Malik", phone: "8707340147" }, { name: "Dhruv Pathak", phone: " 8604440669" }, { name: "Aditya Verma", phone: "9839428105" }],
     level: "both",
     registrationLink: "https://forms.gle/uK2wUFS4hEbZNy588",
     rulebook: "https://drive.google.com/file/d/1JAG8pE_kOFEvFYJ5OZH7bHy-XHtjBJE8/view"
@@ -303,7 +303,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "B5-Ground Floor",
     timing: "18th Feb, 12:00 PM",
-    contacts: [{ name: "Isha Singh", phone: "" }, { name: "Aakarsh Pandey", phone: "" }, { name: "Mohd Aghaz", phone: "" }],
+    contacts: [{ name: "Isha Singh", phone: "9305139337" }, { name: "Aakarsh Pandey", phone: "8545928982" }, { name: "Mohd Aghaz", phone: "7379068369" }],
     level: "university",
     registrationLink: "https://forms.gle/h3WtGLPZARirgymPA",
     rulebook: "https://drive.google.com/file/d/1BI1LoZ5JxtK9VRgyX8F8Hq8nEHESeZe3/edit"
@@ -319,7 +319,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "Mini Auditorium",
     timing: "19th Feb, 4:30 PM",
-    contacts: [{ name: "Rashi Malik", phone: "" }],
+    contacts: [{ name: "Rashi Malik", phone: "8707340147" }],
     level: "university"
   }
 ];
