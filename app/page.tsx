@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import StarNightSpotlight from "@/components/StarNightSpotlight";
 import Sponsors from "@/components/Sponsors";
 import WhyAttend from "@/components/WhyAttend";
 import ChiefGuest from "@/components/ChiefGuest";
@@ -18,6 +19,7 @@ export default function Home() {
       <Navbar />
       
       <Hero />
+      <StarNightSpotlight />
       <Sponsors />
       <WhyAttend />
       <ChiefGuest />

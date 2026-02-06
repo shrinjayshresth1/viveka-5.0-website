@@ -6,7 +6,7 @@
   --foreground: #ededed;
 
   /* Custom Neon Colors */
-  --neon-cyan: #00f0ff;
+  --neon-cyan: #00ffff;
   /* Bright Cyan from "5.0" and "THE INTELLIGENCE" */
   --neon-orange: #ff4d00;
   /* Accent from logos (optional) */
@@ -58,9 +58,25 @@ h6 {
   text-shadow: 0 0 20px rgba(188, 19, 254, 0.5);
 }
 
+.will-change-transform {
+  will-change: transform;
+}
+
+.force-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
+}
+
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee {
