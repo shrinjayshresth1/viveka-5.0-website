@@ -22,7 +22,7 @@ export default function StarNightSpotlight() {
           }}
           className="absolute top-1/4 -left-32 w-[500px] h-[500px] rounded-full"
           style={{
-            background: "radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, rgba(168, 85, 247, 0) 70%)"
+            background: "radial-gradient(circle, rgba(0, 255, 255, 0.2) 0%, rgba(0, 255, 255, 0) 70%)"
           }}
         />
         <motion.div
@@ -81,13 +81,13 @@ export default function StarNightSpotlight() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-6 py-2 mb-6 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-sm"
+            className="inline-flex items-center gap-2 px-6 py-2 mb-6 rounded-full border border-neon-cyan/30 bg-neon-cyan/10 backdrop-blur-sm"
           >
-            <Sparkles className="text-purple-400" size={20} />
-            <span className="text-purple-300 font-semibold text-sm uppercase tracking-wider">
+            <Sparkles className="text-neon-cyan" size={20} />
+            <span className="text-neon-cyan font-semibold text-sm uppercase tracking-wider">
               Star Night Special
             </span>
-            <Sparkles className="text-purple-400" size={20} />
+            <Sparkles className="text-neon-cyan" size={20} />
           </motion.div>
 
           <motion.h2
@@ -112,14 +112,14 @@ export default function StarNightSpotlight() {
             className="relative order-2 lg:order-1"
           >
             {/* Decorative Border */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-purple-500 via-neon-cyan to-purple-500 rounded-3xl opacity-20 blur-xl animate-pulse" />
+            <div className="absolute -inset-4 bg-gradient-to-r from-neon-cyan via-white to-neon-cyan rounded-3xl opacity-20 blur-xl animate-pulse" />
             
             {/* Image Container */}
             <div className="relative group">
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
-                className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-neon-cyan/30 bg-gradient-to-br from-purple-900/20 to-black shadow-2xl"
+                className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-neon-cyan/30 bg-gradient-to-br from-cyan-900/20 to-black shadow-2xl"
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
                 <Image
@@ -168,7 +168,7 @@ export default function StarNightSpotlight() {
                   <span className="absolute inset-0 text-neon-cyan blur-lg opacity-50 animate-pulse">
                     DARSHAN
                   </span>
-                  <span className="relative bg-gradient-to-r from-white via-neon-cyan to-purple-400 bg-clip-text text-transparent">
+                  <span className="relative bg-gradient-to-r from-white via-neon-cyan to-cyan-400 bg-clip-text text-transparent">
                     DARSHAN
                   </span>
                 </span>
@@ -177,7 +177,7 @@ export default function StarNightSpotlight() {
                   <span className="absolute inset-0 text-neon-cyan blur-lg opacity-50 animate-pulse">
                     RAWAL
                   </span>
-                  <span className="relative bg-gradient-to-r from-purple-400 via-neon-cyan to-white bg-clip-text text-transparent">
+                  <span className="relative bg-gradient-to-r from-cyan-400 via-neon-cyan to-white bg-clip-text text-transparent">
                     RAWAL
                   </span>
                 </span>
@@ -188,7 +188,7 @@ export default function StarNightSpotlight() {
                 whileInView={{ opacity: 1, scaleX: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.8, duration: 0.6 }}
-                className="h-1 w-32 bg-gradient-to-r from-neon-cyan to-purple-500 rounded-full"
+                className="h-1 w-32 bg-gradient-to-r from-neon-cyan to-cyan-600 rounded-full"
               />
             </div>
 
@@ -215,8 +215,8 @@ export default function StarNightSpotlight() {
                 transition={{ delay: 1.0, duration: 0.5 }}
                 className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-neon-cyan/30 transition-colors group"
               >
-                <div className="p-3 rounded-lg bg-purple-500/20 group-hover:bg-purple-500/30 transition-colors">
-                  <Calendar className="text-purple-400" size={24} />
+                <div className="p-3 rounded-lg bg-neon-cyan/10 group-hover:bg-neon-cyan/20 transition-colors">
+                  <Calendar className="text-neon-cyan" size={24} />
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm">Date</p>
@@ -247,10 +247,10 @@ export default function StarNightSpotlight() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 1.2, duration: 0.6 }}
-              className="p-6 rounded-2xl bg-gradient-to-r from-purple-500/10 to-neon-cyan/10 border border-purple-500/20"
+              className="p-6 rounded-2xl bg-gradient-to-r from-neon-cyan/5 to-cyan-900/10 border border-neon-cyan/20"
             >
               <div className="flex items-start gap-3">
-                <Sparkles className="text-purple-400 mt-1 flex-shrink-0" size={20} />
+                <Sparkles className="text-neon-cyan mt-1 flex-shrink-0" size={20} />
                 <p className="text-white/90 leading-relaxed">
                   <span className="font-bold text-neon-cyan">Don't miss out!</span> Experience
                   the magic of Darshan Rawal's soulful voice and energetic performance as we

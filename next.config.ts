@@ -27,6 +27,13 @@ const nextConfig: NextConfig = {
   // Enable CSS optimization
   experimental: {
     optimizeCss: true,
+    optimizePackageImports: [
+      "lucide-react",
+      "@tabler/icons-react",
+      "framer-motion",
+      "@tsparticles/react",
+      "@tsparticles/engine",
+    ],
   },
   // Security headers for Best Practices score
   async headers() {
