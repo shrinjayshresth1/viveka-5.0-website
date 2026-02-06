@@ -34,7 +34,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "Mini Auditorium",
     timing: "20th Feb, 3:00 PM",
-    contacts: [{ name: "Anshu Kasaudhan", phone: "8172996216" }, { name: "Raghuvar Arya", phone: "8090465411" }, { name: "Jahnvi Pandey", phone: "7523800560" }],
+    contacts: [{ name: "Ayush Dwivedi", phone: "8115600381" }, { name: "Raghuvar Arya", phone: "8090465411" }, { name: "Jahnvi Pandey", phone: "7523800560" }],
     level: "university"
   },
   {
@@ -138,7 +138,7 @@ const events: EventData[] = [
     prizes: ["Prizes"],
     location: "B2-All Labs",
     timing: "20th Feb, 12:30 PM",
-    contacts: [{ name: "Ansh Kumar Singh", phone: "7905551795" }, { name: "Satyam Gupta", phone: "8318957671" }],
+    contacts: [{ name: "Prachi Maurya", phone: "6394376362" }, { name: "Ansh Kumar Singh", phone: "7905551795" }, { name: "Satyam Gupta", phone: "8318957671" }],
     level: "university",
     registrationLink: "https://forms.gle/ViWJuZAuq7th7FWd9"
   },
