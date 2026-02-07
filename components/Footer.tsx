@@ -81,7 +81,7 @@ export default function Footer() {
                 </div>
 
                 <p className="mt-20 text-xs text-gray-600">
-                    © 2026 Viveka 5.0. Built by <span className="text-gray-400">Shrinjay Shresth</span>.
+                    © 2026 Viveka 5.0. Built by <a href="https://www.linkedin.com/in/shrinjay-shresth-036010215/" target="_blank" rel="noopener noreferrer" className="font-bold text-neon-cyan hover:text-neon-cyan/80 transition-colors">Shrinjay Shresth</a>.
                 </p>
             </div>
         </footer>
