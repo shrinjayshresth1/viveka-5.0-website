@@ -20,7 +20,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "TBA",
     contacts: [{ name: "Tech Team", phone: "" }],
-    rulebook: "https://drive.google.com/file/d/15Z7kQOfkL-PFwrr5yoKlWLEj0eoK0Fu4/view"
+    rulebook: "https://drive.google.com/file/d/1JjKKm1lzgl0Kktjg0_yjZpiG6Ugz5Xt0/view?usp=drive_link"
   },
   {
     id: "hackathon-university",
@@ -34,7 +34,7 @@ const events: EventData[] = [
     location: "Innovation Hub",
     timing: "24 Hours",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1sYT00-ezryu_hOPSotRhJ7r85K47Fbwi/view"
+    rulebook: "https://drive.google.com/file/d/1vAxIqaAdvfQTC2H7FU_PsqaTOeWRwyac/view?usp=drive_link"
   },
   {
     id: "hackathon-school",
@@ -48,7 +48,7 @@ const events: EventData[] = [
     location: "Innovation Hub",
     timing: "19th Feb, 12:30 PM",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1sYT00-ezryu_hOPSotRhJ7r85K47Fbwi/view"
+    rulebook: "https://drive.google.com/file/d/1vAxIqaAdvfQTC2H7FU_PsqaTOeWRwyac/view?usp=drive_link"
   },
   {
     id: "bug-hunting",
@@ -75,7 +75,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1Y9NQj6oUZ2A4-0-okvv_WUOvWNHafagf/view"
+    rulebook: "https://drive.google.com/file/d/1P4ebaiNbmjjJScGvJLPQkJ6sCBe4Z9v2/view?usp=drive_link"
   },
 
   // --- ROBOTICS ---
@@ -133,7 +133,7 @@ const events: EventData[] = [
     location: "Open Ground",
     timing: "19th Feb, 3:30 PM",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1LHDxWjjUWbpK1JrotWdBMDjgrzg9c0YK/view"
+    rulebook: "https://drive.google.com/file/d/19A2FG13rKeCGg86FfjVbZfOTAMckt_xH/view?usp=drive_link"
   },
   {
     id: "path-finder",
@@ -160,7 +160,7 @@ const events: EventData[] = [
     location: "Water Body",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1onYRKELHdr4OkabbVt20KCqAFEiQLrIM/view"
+    rulebook: "https://drive.google.com/file/d/1Gp_eUg06eHemEYtqbD6F6OASdbCB8lti/view?usp=drive_link"
   },
 
   // --- GAMING ---
@@ -175,7 +175,8 @@ const events: EventData[] = [
     prizes: ["Pool Prize"],
     location: "E-Sports Arena",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1m9Tar-PU5RT5KWgR86t7Nl2EhUFsdi8t/view?usp=drive_link"
   },
   {
     id: "bgmi",
@@ -189,7 +190,7 @@ const events: EventData[] = [
     location: "E-Sports Arena",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1M-Vm8jO74UnO1FXzMz4ezf6nk-LWeKjP/edit"
+    rulebook: "https://drive.google.com/file/d/1FwnOuSYFHRA-uF7wucMzZLsb6sS0Pnjn/view?usp=drive_link"
   },
 
   // --- BRAINSTORMING & FUN ---
@@ -247,7 +248,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/11snaRwV4FNMi4m9b704wVZLhcVbDXxR4/view"
+    rulebook: "https://drive.google.com/file/d/1Z39Olh-N6R44TKbJzkeGJ4Vq8zkwATqV/view?usp=drive_link"
   },
   {
     id: "laser-show",
@@ -261,7 +262,7 @@ const events: EventData[] = [
     location: "Main Ground",
     timing: "Evening",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1_hw3edIKRfXt0unOSZV7N9OOnGdQMu1V/view"
+    rulebook: "https://drive.google.com/file/d/1VzB6bKC1q7SgNPUiYXPyv8OTbP-ox92Q/view?usp=drive_link"
   },
 
   // --- CREATIVE ---
@@ -276,7 +277,8 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "TBA",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1SwHkTNtqxKzjHN0VvwHyIV6FWSSCSDqu/view?usp=drive_link"
   },
   {
     id: "structromania",
@@ -326,69 +328,69 @@ export default function EventGrid() {
 
   return (
     <div className="container mx-auto px-4 py-32">
-        <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="text-center mb-20"
+      >
+        <h1 className="text-5xl md:text-7xl font-bold font-space-grotesk mb-6">
+          Explore <span className="text-neon-cyan">Events</span>
+        </h1>
+        <p className="text-gray-400 max-w-2xl mx-auto">
+          Dive into a plethora of technical, cultural, and fun events designed to challenge your intellect and creativity.
+        </p>
+      </motion.div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        {events.map((event, i) => (
+          <motion.div
+            key={event.id}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="text-center mb-20"
-        >
-            <h1 className="text-5xl md:text-7xl font-bold font-space-grotesk mb-6">
-                Explore <span className="text-neon-cyan">Events</span>
-            </h1>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-                Dive into a plethora of technical, cultural, and fun events designed to challenge your intellect and creativity.
-            </p>
-        </motion.div>
+            transition={{ delay: i * 0.05 }}
+            className="group relative h-[380px] rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:border-neon-cyan/50 hover:shadow-[0_0_30px_rgba(0,240,255,0.15)] transition-all duration-300 flex flex-col"
+          >
+            <div className="relative h-48 overflow-hidden">
+              <Image
+                src={event.image}
+                alt={event.title}
+                fill
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a1f] to-transparent" />
+              <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
+                <span className="text-xs font-bold text-neon-cyan">{event.category}</span>
+              </div>
+            </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {events.map((event, i) => (
-                <motion.div
-                    key={event.id}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.05 }}
-                    className="group relative h-[380px] rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:border-neon-cyan/50 hover:shadow-[0_0_30px_rgba(0,240,255,0.15)] transition-all duration-300 flex flex-col"
+            <div className="p-6 flex-1 flex flex-col justify-between relative z-10 bg-[#0a0a1f]">
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2 font-space-grotesk leading-tight">
+                  {event.title}
+                </h3>
+                <p className="text-gray-400 text-sm line-clamp-3">
+                  {event.description}
+                </p>
+              </div>
+
+              <div className="pt-4 mt-auto">
+                <button
+                  onClick={() => setSelectedEvent(event)}
+                  className="w-full py-2 rounded-lg border border-white/20 text-sm font-bold hover:bg-neon-cyan hover:text-black hover:border-transparent transition-all duration-300"
                 >
-                    <div className="relative h-48 overflow-hidden">
-                         <Image 
-                            src={event.image} 
-                            alt={event.title} 
-                            fill
-                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
-                         />
-                         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a1f] to-transparent" />
-                         <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
-                            <span className="text-xs font-bold text-neon-cyan">{event.category}</span>
-                         </div>
-                    </div>
+                  View Details
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
 
-                    <div className="p-6 flex-1 flex flex-col justify-between relative z-10 bg-[#0a0a1f]">
-                        <div>
-                            <h3 className="text-xl font-bold text-white mb-2 font-space-grotesk leading-tight">
-                                {event.title}
-                            </h3>
-                            <p className="text-gray-400 text-sm line-clamp-3">
-                                {event.description}
-                            </p>
-                        </div>
-                        
-                        <div className="pt-4 mt-auto">
-                            <button 
-                                onClick={() => setSelectedEvent(event)}
-                                className="w-full py-2 rounded-lg border border-white/20 text-sm font-bold hover:bg-neon-cyan hover:text-black hover:border-transparent transition-all duration-300"
-                            >
-                                View Details
-                            </button>
-                        </div>
-                    </div>
-                </motion.div>
-            ))}
-        </div>
-
-        {selectedEvent && (
-            <EventModal event={selectedEvent} onClose={() => setSelectedEvent(null)} />
-        )}
+      {selectedEvent && (
+        <EventModal event={selectedEvent} onClose={() => setSelectedEvent(null)} />
+      )}
     </div>
   );
 }
