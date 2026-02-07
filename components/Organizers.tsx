@@ -72,7 +72,7 @@ const teamData = {
           { name: "Shashank Kumar", role: "Veteran Student Convener", course: "B.Tech CSE (DS+AI), 4th Year", image: "/shashank.jpg", linkedin: "https://www.linkedin.com/in/shashank-kumar-50098928a/" },
      ],
      conveners: [
-          { name: "Divyanshi Pandey", role: "Student Convener", course: "B.Tech CSE (CC+AI), 3rd Year", image: "/divyanshi.jpg", linkedin: "https://www.linkedin.com/in/divyanshipandey06/" },
+          { name: "Divyanshi Pandey", role: "Student Convener", course: "B.Tech CSE (CC+AI), 3rd Year", image: "/Divyanshi.jpeg", linkedin: "https://www.linkedin.com/in/divyanshipandey06/", objectPosition: "object-bottom" },
           { name: "Raunak Srivastava", role: "Student Convener", course: "B.Tech ECE, 3rd Year", image: "/raunak.jpg", linkedin: "https://www.linkedin.com/in/raunak-srivastava-a2a030276/" },
           { name: "Abhiinav Pratap Singh", role: "Student Convener", course: "B.Tech CSE, 3rd Year", image: "/abhiinav.jpg", linkedin: "https://www.linkedin.com/in/abhinav-pratap-singh-1a697728a/" },
      ],
