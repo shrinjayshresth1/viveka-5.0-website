@@ -6,12 +6,12 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const images1 = [
-  "/gallery/2.jpg",
-  "/gallery/1.jpg",
+  "/gallery/2.webp",
+  "/gallery/1.webp",
   "/gallery/6.jpg",
-  "/gallery/4.jpg",
+  "/gallery/4.webp",
   "/gallery/5.jpg",
-  "/gallery/3.jpg",
+  "/gallery/3.webp",
 ];
 
 const images2 = [
@@ -65,7 +65,7 @@ export default function Gallery() {
         <motion.div style={{ x: x2 }} className="flex gap-8 w-[200vw] -ml-[50vw]">
           {images2.map((src, i) => (
             <div key={i} className="relative w-[400px] h-[250px] md:w-[600px] md:h-[400px] rounded-xl overflow-hidden flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
-               <Image
+              <Image
                 src={src}
                 alt={`Gallery Row 2 - ${i}`}
                 fill
