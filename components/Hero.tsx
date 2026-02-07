@@ -26,7 +26,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-4 pointer-events-none w-full">
-        <div className="max-w-4xl w-full mx-auto pointer-events-auto flex flex-col items-center">
+        <div className="max-w-7xl w-full mx-auto pointer-events-auto flex flex-col items-center">
           <div className="relative z-10">
 
             <h1 className="text-5xl sm:text-6xl md:text-9xl font-bold font-space-grotesk tracking-tighter text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.1)] leading-tight">
@@ -39,7 +39,7 @@ export default function Hero() {
               </span>
             </h1>
           </div>
-          <p className="max-w-2xl text-sm sm:text-base md:text-xl mt-6 md:mt-8 mx-auto dark:text-neutral-200">
+          <p className="max-w-3xl text-sm sm:text-base md:text-xl mt-6 md:mt-8 mx-auto dark:text-neutral-200">
             Experience the fusion of technology and intelligence. The largest Techno-Cultural fest is here. Join us for 3 days of innovation, competition, and celebration.
           </p>
 
