@@ -52,7 +52,7 @@ const events: EventData[] = [
     contacts: [{ name: "Shashank Kumar", phone: "6306569583" }, { name: "Divyansh Srivastava", phone: "6394500934" }],
     level: "university",
     registrationLink: "https://forms.gle/FPDw5HN32rgQhyyg7",
-    rulebook: "https://drive.google.com/file/d/1M-Vm8jO74UnO1FXzMz4ezf6nk-LWeKjP/edit"
+    rulebook: "https://drive.google.com/file/d/1FwnOuSYFHRA-uF7wucMzZLsb6sS0Pnjn/view?usp=drive_link"
   },
   {
     id: "boat-race",
@@ -68,7 +68,7 @@ const events: EventData[] = [
     contacts: [{ name: "Samarth Kumar", phone: "8081880868" }, { name: "Himanshu Sharma", phone: "6386531609" }, { name: "Ansh Kumar Singh", phone: "7905551795" },],
     level: "university",
     registrationLink: "https://forms.gle/4pDhh72JboG8BjwE9",
-    rulebook: "https://drive.google.com/file/d/1onYRKELHdr4OkabbVt20KCqAFEiQLrIM/view"
+    rulebook: "https://drive.google.com/file/d/1Gp_eUg06eHemEYtqbD6F6OASdbCB8lti/view?usp=drive_link"
   },
   {
     id: "buddhi-kshamta",
@@ -84,7 +84,7 @@ const events: EventData[] = [
     contacts: [{ name: "Shipra Mishra", phone: "9696494437" }, { name: "Prateek Singh", phone: "9044298094" }, { name: "Jahnvi Pandey", phone: "7523800560" }],
     level: "both",
     registrationLink: "https://forms.gle/zy14bmEJTQ9HzpXa7",
-    rulebook: "https://drive.google.com/file/d/11snaRwV4FNMi4m9b704wVZLhcVbDXxR4/view"
+    rulebook: "https://drive.google.com/file/d/1Z39Olh-N6R44TKbJzkeGJ4Vq8zkwATqV/view?usp=drive_link"
   },
   {
     id: "codex",
@@ -100,7 +100,7 @@ const events: EventData[] = [
     contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Neelabh Shukla", phone: "7307551512" }, { name: "Om Jaiswal", phone: "7068339541" }],
     level: "university",
     registrationLink: "https://forms.gle/TAstKD4ENGMsFqB77",
-    rulebook: "https://drive.google.com/file/d/15Z7kQOfkL-PFwrr5yoKlWLEj0eoK0Fu4/view"
+    rulebook: "https://drive.google.com/file/d/1JjKKm1lzgl0Kktjg0_yjZpiG6Ugz5Xt0/view?usp=drive_link"
   },
   {
     id: "digi-art",
@@ -116,7 +116,7 @@ const events: EventData[] = [
     contacts: [{ name: "Prateek Kumar Singh", phone: "8924046121" }, { name: "Mohd Ayan", phone: "8808738098" }, { name: "Dilijan Ansari", phone: "8400372991" }],
     level: "university",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfQ60JeC5doeu_ZGahXm342zI3GvOfPGePq5Ew7foQ6yKni3w/viewform",
-    rulebook: "https://drive.google.com/file/d/10MjuvOzJi9sEZpg077ydlA8-mEKrWL5g/view"
+    rulebook: "https://drive.google.com/file/d/1SwHkTNtqxKzjHN0VvwHyIV6FWSSCSDqu/view?usp=drive_link"
   },
   {
     id: "drone-race",
@@ -132,7 +132,7 @@ const events: EventData[] = [
     contacts: [{ name: "Kshitij Gupta", phone: "9455813610" }, { name: "Anurag Kumar Rai", phone: "7991406755" }, { name: "Vicky Kumar Mishra", phone: "9334335156" }],
     level: "both",
     registrationLink: "https://forms.gle/DrEv4TLiGe9FTjZV7",
-    rulebook: "https://drive.google.com/file/d/1LHDxWjjUWbpK1JrotWdBMDjgrzg9c0YK/view"
+    rulebook: "https://drive.google.com/file/d/19A2FG13rKeCGg86FfjVbZfOTAMckt_xH/view?usp=drive_link"
   },
   {
     id: "find-the-language",
@@ -148,7 +148,7 @@ const events: EventData[] = [
     contacts: [{ name: "Prachi Maurya", phone: "6394376362" }, { name: "Ansh Kumar Singh", phone: "7905551795" }, { name: "Satyam Gupta", phone: "8318957671" }],
     level: "university",
     registrationLink: "https://forms.gle/ViWJuZAuq7th7FWd9",
-    rulebook: "https://drive.google.com/file/d/1Y9NQj6oUZ2A4-0-okvv_WUOvWNHafagf/view"
+    rulebook: "https://drive.google.com/file/d/1P4ebaiNbmjjJScGvJLPQkJ6sCBe4Z9v2/view?usp=drive_link"
   },
   {
     id: "free-fire",
@@ -163,7 +163,8 @@ const events: EventData[] = [
     timing: "19th Feb",
     contacts: [{ name: "Yash Mishra", phone: "6306974406" }, { name: "Sanskar Dixit", phone: "7607124641" }, { name: "Aiman Abidi", phone: "8756821074" }],
     level: "university",
-    registrationLink: "https://forms.gle/d6U8aJQQF7Cb72zYA"
+    registrationLink: "https://forms.gle/d6U8aJQQF7Cb72zYA",
+    rulebook: "https://drive.google.com/file/d/1m9Tar-PU5RT5KWgR86t7Nl2EhUFsdi8t/view?usp=drive_link"
   },
   {
     id: "hackathon",
@@ -179,7 +180,7 @@ const events: EventData[] = [
     contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Aakarsh Mishra", phone: "9682043203" }, { name: "Neelabh Shukla", phone: "7307551512" }],
     level: "both",
     registrationLink: "https://forms.gle/aRw5qbeNHZqmMyyn9",
-    rulebook: "https://drive.google.com/file/d/1sYT00-ezryu_hOPSotRhJ7r85K47Fbwi/view"
+    rulebook: "https://drive.google.com/file/d/1vAxIqaAdvfQTC2H7FU_PsqaTOeWRwyac/view?usp=drive_link"
   },
   {
     id: "laser-show",
@@ -195,7 +196,7 @@ const events: EventData[] = [
     contacts: [{ name: "Viveka Core Team", phone: "" }],
     level: "university",
     registrationLink: "https://forms.gle/Uom8d5cAYFrhcSme6",
-    rulebook: "https://drive.google.com/file/d/1_hw3edIKRfXt0unOSZV7N9OOnGdQMu1V/view"
+    rulebook: "https://drive.google.com/file/d/1VzB6bKC1q7SgNPUiYXPyv8OTbP-ox92Q/view?usp=drive_link"
   },
   {
     id: "reasoning-rumble",
@@ -225,7 +226,7 @@ const events: EventData[] = [
     location: "B7-005, B7-006 (Univ) | B1-207 (School)",
     timing: "20th Feb 1:30 PM (Univ) | 18th Feb 2:45 PM (School)",
     contacts: [{ name: "Vinay Yadav", phone: "8765072315" }, { name: "Vinayak", phone: "9140613407" }, { name: "Divyata Maurya", phone: "9250055785" }],
-    level: "both",
+    level: "university",
     registrationLink: "https://forms.gle/Z4uFqqSUz1i8NEnE8",
     rulebook: "https://drive.google.com/file/d/1iLJLjAA-znBYhTzk1yOQZQjr6Qy7EAbw/view"
   },
@@ -553,19 +554,19 @@ export default function EventDashboard() {
                     <div>
                       <h4 className="text-gray-500 text-xs uppercase tracking-widest mb-2 font-bold">Protocol Description</h4>
                       <p className="text-gray-300 leading-relaxed text-sm md:text-base">{activeEvent.description}</p>
-                      
+
                       {activeEvent.rulebook ? (
-                        <a 
-                            href={activeEvent.rulebook} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="mt-4 inline-block px-4 py-2 text-xs border border-neon-cyan/30 text-neon-cyan rounded hover:bg-neon-cyan/10 transition-colors"
+                        <a
+                          href={activeEvent.rulebook}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-4 inline-block px-4 py-2 text-xs border border-neon-cyan/30 text-neon-cyan rounded hover:bg-neon-cyan/10 transition-colors"
                         >
-                            View Rulebook →
+                          View Rulebook →
                         </a>
                       ) : (
-                         <button disabled className="mt-4 px-4 py-2 text-xs border border-white/10 text-gray-500 rounded cursor-not-allowed">
-                            Rulebook: Coming Soon
+                        <button disabled className="mt-4 px-4 py-2 text-xs border border-white/10 text-gray-500 rounded cursor-not-allowed">
+                          Rulebook: Coming Soon
                         </button>
                       )}
                     </div>
