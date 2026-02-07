@@ -51,10 +51,11 @@ export default function OrganizerCard({ name, role, image, linkedin, course, obj
           <div className="relative w-full h-64 overflow-hidden rounded-xl group-hover/card:shadow-xl">
                <Image
                 src={image}
-                height={1000}
-                width={1000}
+                height={500}
+                width={500}
                 className={`h-full w-full object-cover rounded-xl group-hover/card:scale-110 transition-transform duration-500 ${objectPosition || 'object-top'}`}
                 alt={name}
+                sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 320px"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
           </div>
