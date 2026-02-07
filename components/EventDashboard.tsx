@@ -212,7 +212,7 @@ const events: EventData[] = [
     contacts: [{ name: "Anshuma Yadav", phone: "9369885065" }, { name: "Neha Yadav", phone: "6388223377" }, { name: "Nistha Arora", phone: "8707641236" }],
     level: "both",
     registrationLink: "https://forms.gle/ETgf9kfMqPX1vMa98",
-    rulebook: "https://drive.google.com/file/d/1_N6bE_UrRex7s-vCbM6sXfOaH20jSlUY/view"
+    rulebook: "https://drive.google.com/file/d/1HbdVSBo-7nUrNn9-fwGjqGkXBpU7uw-S/view?usp=drive_link"
   },
   {
     id: "recall-o-tune",
@@ -228,7 +228,7 @@ const events: EventData[] = [
     contacts: [{ name: "Vinay Yadav", phone: "8765072315" }, { name: "Vinayak", phone: "9140613407" }, { name: "Divyata Maurya", phone: "9250055785" }],
     level: "university",
     registrationLink: "https://forms.gle/Z4uFqqSUz1i8NEnE8",
-    rulebook: "https://drive.google.com/file/d/1iLJLjAA-znBYhTzk1yOQZQjr6Qy7EAbw/view"
+    rulebook: "https://drive.google.com/file/d/1CdGKWR9IRZTuM-IjuyptOXODMB7w_0st/view?usp=drive_link"
   },
   {
     id: "robo-soccer",
@@ -244,7 +244,7 @@ const events: EventData[] = [
     contacts: [{ name: "Shiv Manglam Dubey", phone: "" }, { name: "Aditya Singh", phone: "9794791608" }, { name: "Anubhav Jaiswal", phone: "9559107407" }],
     level: "both",
     registrationLink: "https://forms.gle/jSG2d9sAQHoVe3hE6",
-    rulebook: "https://drive.google.com/file/d/18J_8K51RG7Qnx9EPrvdHk2qjOr50KscS/view"
+    rulebook: "https://drive.google.com/file/d/19uO8lyB5qYmusAEMaNl2tbGdZBhoxzLh/view?usp=drive_link"
   },
   {
     id: "robo-race",
@@ -259,7 +259,8 @@ const events: EventData[] = [
     timing: "19th Feb 12:30 PM (Univ) | 19th Feb 2:00 PM (School)",
     contacts: [{ name: "Abhishek Rao", phone: "9792815988" }, { name: "Ahad Ahmed", phone: "8299705189" }, { name: "Subhadeep Pal", phone: "7880499977" }],
     level: "both",
-    registrationLink: "https://forms.gle/Goifd69cWuGo8V9C7"
+    registrationLink: "https://forms.gle/Goifd69cWuGo8V9C7",
+    rulebook: "https://drive.google.com/file/d/1DthINe_AgJnMKer5RRtJcG6L0Nj_FKlT/view?usp=drive_link"
   },
   {
     id: "robo-war",
@@ -275,7 +276,7 @@ const events: EventData[] = [
     contacts: [{ name: "Raunak Srivastava", phone: "7235918654" }, { name: "Aditya Pratap Singh", phone: "9120058311" }, { name: "Mahendra Maurya", phone: "6393092836" }],
     level: "university",
     registrationLink: "https://forms.gle/C19QxDKbjjJAVGSw7",
-    rulebook: "https://drive.google.com/file/d/1bArGi-WXcCRWSa58jgbXAKXlNU4pInNn/view"
+    rulebook: "https://drive.google.com/file/d/1Prn-3YT46TsbWFqLcE3JpHaAcJJsZCuo/view?usp=drive_link"
   },
   {
     id: "rubiks-cube",
@@ -291,7 +292,7 @@ const events: EventData[] = [
     contacts: [{ name: "Rashi Malik", phone: "8707340147" }, { name: "Dhruv Pathak", phone: " 8604440669" }, { name: "Aditya Verma", phone: "9839428105" }],
     level: "both",
     registrationLink: "https://forms.gle/uK2wUFS4hEbZNy588",
-    rulebook: "https://drive.google.com/file/d/1JAG8pE_kOFEvFYJ5OZH7bHy-XHtjBJE8/view"
+    rulebook: "https://drive.google.com/file/d/177gEckRSDaQT86g5xTJDYWRheYmpk0Rs/view?usp=drive_link"
   },
   {
     id: "structromania",
@@ -307,7 +308,7 @@ const events: EventData[] = [
     contacts: [{ name: "Isha Singh", phone: "9305139337" }, { name: "Aakarsh Pandey", phone: "8545928982" }, { name: "Mohd Aghaz", phone: "7379068369" }],
     level: "university",
     registrationLink: "https://forms.gle/h3WtGLPZARirgymPA",
-    rulebook: "https://drive.google.com/file/d/1BI1LoZ5JxtK9VRgyX8F8Hq8nEHESeZe3/edit"
+    rulebook: "https://drive.google.com/file/d/1lP7BK1iwe1ZhsBk5gdU91SxEFTyHTbTt/view?usp=drive_link"
   },
   {
     id: "network-workshop",

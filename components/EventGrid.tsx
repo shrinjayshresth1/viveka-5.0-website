@@ -91,7 +91,7 @@ const events: EventData[] = [
     location: "War Arena",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1bArGi-WXcCRWSa58jgbXAKXlNU4pInNn/view"
+    rulebook: "https://drive.google.com/file/d/1Prn-3YT46TsbWFqLcE3JpHaAcJJsZCuo/view?usp=drive_link"
   },
   {
     id: "robo-race",
@@ -105,7 +105,7 @@ const events: EventData[] = [
     location: "Track Area",
     timing: "19th Feb, 2:00 PM",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1j2zIV7JYpS2SyhL3Y2UGybH1iHcbQty6/view"
+    rulebook: "https://drive.google.com/file/d/1DthINe_AgJnMKer5RRtJcG6L0Nj_FKlT/view?usp=drive_link"
   },
   {
     id: "robo-soccer",
@@ -119,7 +119,7 @@ const events: EventData[] = [
     location: "Soccer Arena",
     timing: "19th Feb, 2:00 PM",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/18J_8K51RG7Qnx9EPrvdHk2qjOr50KscS/view"
+    rulebook: "https://drive.google.com/file/d/19uO8lyB5qYmusAEMaNl2tbGdZBhoxzLh/view?usp=drive_link"
   },
   {
     id: "drone-race",
@@ -206,7 +206,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1iLJLjAA-znBYhTzk1yOQZQjr6Qy7EAbw/view"
+    rulebook: "https://drive.google.com/file/d/1CdGKWR9IRZTuM-IjuyptOXODMB7w_0st/view?usp=drive_link"
   },
   {
     id: "reasoning-rumble",
@@ -220,7 +220,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "19th Feb, 3:25 PM",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1_N6bE_UrRex7s-vCbM6sXfOaH20jSlUY/view"
+    rulebook: "https://drive.google.com/file/d/1HbdVSBo-7nUrNn9-fwGjqGkXBpU7uw-S/view?usp=drive_link"
   },
   {
     id: "rubiks-cube",
@@ -234,7 +234,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1JAG8pE_kOFEvFYJ5OZH7bHy-XHtjBJE8/view"
+    rulebook: "https://drive.google.com/file/d/177gEckRSDaQT86g5xTJDYWRheYmpk0Rs/view?usp=drive_link"
   },
   {
     id: "buddhi-kshamta",
@@ -291,7 +291,8 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "TBA",
     timing: "TBA",
-    contacts: []
+    contacts: [],
+    rulebook: "https://drive.google.com/file/d/1lP7BK1iwe1ZhsBk5gdU91SxEFTyHTbTt/view?usp=drive_link"
   },
 
   // --- WORKSHOPS ---
