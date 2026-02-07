@@ -8,7 +8,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Image data organized by year
 const galleryData = {
-    "VIVEKA 5.0": [
+    "VIVEKA 4.0": [
         "/gallery/1.jpg",
         "/gallery/2.jpg",
         "/gallery/3.jpg",
@@ -17,7 +17,7 @@ const galleryData = {
         "/gallery/6.jpg",
         "/gallery/7.jpg",
     ],
-    "VIVEKA 4.0": [
+    "VIVEKA 3.0": [
         "/gallery/7.jpg",
         "/gallery/8.jpg",
         "/gallery/9.jpg",
@@ -26,19 +26,57 @@ const galleryData = {
         "/gallery/12.jpg",
         "/gallery/13.JPG",
     ],
-    "VIVEKA 3.0": [
-        "/gallery/3.jpg",
-        "/gallery/5.jpg",
-        "/gallery/1.jpg",
-        "/gallery/9.jpg",
-        "/gallery/11.jpg",
+    "VIVEKA 2.0": [
+        "/gallery/viveka2/DSC_0016.JPG",
+        "/gallery/viveka2/DSC_0060.JPG",
+        "/gallery/viveka2/DSC_0092.JPG",
+        "/gallery/viveka2/DSC_0097.JPG",
+        "/gallery/viveka2/DSC_0113.JPG",
+        "/gallery/viveka2/DSC_0132.JPG",
+        "/gallery/viveka2/DSC_0140.JPG",
+        "/gallery/viveka2/DSC_0158.JPG",
+        "/gallery/viveka2/DSC_0191.JPG",
+        "/gallery/viveka2/DSC_0196.JPG",
+        "/gallery/viveka2/DSC_0199.JPG",
+        "/gallery/viveka2/DSC_0204.JPG",
+        "/gallery/viveka2/DSC_0237.JPG",
+        "/gallery/viveka2/DSC_0286.JPG",
+        "/gallery/viveka2/DSC_0300.JPG",
+        "/gallery/viveka2/DSC_0306.JPG",
+        "/gallery/viveka2/DSC_0317.JPG",
+        "/gallery/viveka2/DSC_0408.JPG",
+        "/gallery/viveka2/DSC_0418.JPG",
+        "/gallery/viveka2/DSC_0431.JPG",
+        "/gallery/viveka2/DSC_0435.JPG",
+        "/gallery/viveka2/DSC_0486.JPG",
+        "/gallery/viveka2/DSC_0493.JPG",
+        "/gallery/viveka2/DSC_0497.JPG",
+    ],
+    "VIVEKA 1.0": [
+        "/gallery/viveka1/IMG_1316.JPG",
+        "/gallery/viveka1/IMG_1397.JPG",
+        "/gallery/viveka1/IMG_1400.JPG",
+        "/gallery/viveka1/IMG_1511.JPG",
+        "/gallery/viveka1/IMG_2116.JPG",
+        "/gallery/viveka1/_MG_1240.JPG",
+        "/gallery/viveka1/_MG_1268.JPG",
+        "/gallery/viveka1/_MG_1354.JPG",
+        "/gallery/viveka1/_MG_1368.JPG",
+        "/gallery/viveka1/_MG_1691.JPG",
+        "/gallery/viveka1/_MG_1720.JPG",
+        "/gallery/viveka1/_MG_1749.JPG",
+        "/gallery/viveka1/_MG_1761.JPG",
+        "/gallery/viveka1/_MG_1798.JPG",
+        "/gallery/viveka1/_MG_1858.JPG",
+        "/gallery/viveka1/_MG_1865.JPG",
+        "/gallery/viveka1/_MG_1936.JPG",
     ],
 };
 
 type YearKey = keyof typeof galleryData;
 
 export default function GalleryPage() {
-    const [activeYear, setActiveYear] = useState<YearKey>("VIVEKA 5.0");
+    const [activeYear, setActiveYear] = useState<YearKey>("VIVEKA 4.0");
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
