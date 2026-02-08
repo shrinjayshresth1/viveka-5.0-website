@@ -21,6 +21,17 @@ export interface EventData {
   level: "school" | "university" | "both";
   registrationLink?: string;
   rulebook?: string;
+  isSpecialEvent?: boolean;
+  speaker?: {
+    name: string;
+    role: string;
+    company: string;
+    socials?: {
+      youtube?: string;
+      instagram?: string;
+      linkedin?: string;
+    };
+  };
 }
 
 const events: EventData[] = [
@@ -311,6 +322,31 @@ const events: EventData[] = [
     rulebook: "https://drive.google.com/file/d/1BI1LoZ5JxtK9VRgyX8F8Hq8nEHESeZe3/edit"
   },
   {
+    id: "career-roadmap",
+    title: "First year to placement: A complete career roadmap of AI era",
+    description: "Join Durgesh Tiwari for an exclusive session on navigating your career in the AI era. From your first year in college to securing a top-tier placement, get a complete roadmap to success.",
+    image: "/codex.jpg", // Placeholder, using a generic one if not available or let user know
+    category: "Seminar",
+    teamSize: "Individual",
+    fee: "TBA",
+    prizes: ["Career Guidance"],
+    location: "Main Auditorium",
+    timing: "TBA", // Placeholder time, user didn't specify so I will use a placeholder and ask or leave generic
+    contacts: [{ name: "Tech Fusion Club", phone: "" }],
+    level: "both",
+    registrationLink: "https://forms.gle/ZfdKn6Q5Xgn7M1Th8/",
+    isSpecialEvent: true,
+    speaker: {
+      name: "Durgesh Tiwari",
+      role: "Founder & Educator",
+      company: "Learn Code With Durgesh",
+      socials: {
+        youtube: "3.5 Lakh+ Subscribers",
+        instagram: "39k+ Followers"
+      }
+    }
+  },
+  {
     id: "network-workshop",
     title: "Workshop on Configuring The Network Layers",
     description: "Gain in-depth understanding of network architecture, protocols, IP addressing, and security. Learn how to configure network layers for seamless communication.",
@@ -436,16 +472,20 @@ export default function EventDashboard() {
               className={cn(
                 "w-full group relative p-4 text-left border rounded-lg transition-all duration-300 flex-shrink-0",
                 activeId === event.id
-                  ? "border-neon-cyan bg-neon-cyan/5 shadow-[inset_0_0_20px_rgba(0,240,255,0.1)]"
-                  : "border-white/10 bg-black/20 hover:border-white/30"
+                  ? event.isSpecialEvent
+                    ? "border-amber-400 bg-amber-400/10 shadow-[inset_0_0_20px_rgba(251,191,36,0.2)]"
+                    : "border-neon-cyan bg-neon-cyan/5 shadow-[inset_0_0_20px_rgba(0,240,255,0.1)]"
+                  : event.isSpecialEvent
+                    ? "border-amber-400/50 bg-amber-900/10 hover:border-amber-400"
+                    : "border-white/10 bg-black/20 hover:border-white/30"
               )}
             >
               <div className="flex justify-between items-center mb-1">
                 <span className={cn(
                   "text-xs font-bold uppercase tracking-wider",
-                  activeId === event.id ? "text-neon-cyan" : "text-gray-500"
+                  activeId === event.id ? (event.isSpecialEvent ? "text-amber-400" : "text-neon-cyan") : "text-gray-500"
                 )}>
-                  [{event.category}]
+                  {event.isSpecialEvent ? "⭐ SPECIAL EVENT" : `[${event.category}]`}
                 </span>
                 {activeId === event.id && (
                   <motion.div layoutId="activeDot" className="w-2 h-2 rounded-full bg-neon-cyan shadow-[0_0_10px_#00f0ff]" />
@@ -545,6 +585,11 @@ export default function EventDashboard() {
                     <span className="flex items-center gap-1 py-1 px-2 bg-neon-cyan/10 rounded-md border border-neon-cyan/20">
                       <Target size={14} /> {activeEvent.category}
                     </span>
+                    {activeEvent.isSpecialEvent && (
+                      <span className="flex items-center gap-1 py-1 px-2 bg-amber-400/10 rounded-md border border-amber-400/20 text-amber-400 animate-pulse">
+                        ⭐ Sponsored Event
+                      </span>
+                    )}
                   </div>
                 </div>
 
@@ -556,7 +601,22 @@ export default function EventDashboard() {
                       <h4 className="text-gray-500 text-xs uppercase tracking-widest mb-2 font-bold">Protocol Description</h4>
                       <p className="text-gray-300 leading-relaxed text-sm md:text-base">{activeEvent.description}</p>
 
-                      {activeEvent.rulebook ? (
+                      {activeEvent.isSpecialEvent && activeEvent.speaker?.socials ? (
+                        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                          {activeEvent.speaker.socials.youtube && (
+                            <div className="p-3 border border-red-500/30 bg-red-500/5 rounded-lg text-center">
+                              <span className="block text-gray-400 text-[10px] uppercase tracking-wider mb-1">YouTube</span>
+                              <span className="block text-base font-bold text-white">{activeEvent.speaker.socials.youtube}</span>
+                            </div>
+                          )}
+                          {activeEvent.speaker.socials.instagram && (
+                            <div className="p-3 border border-pink-500/30 bg-pink-500/5 rounded-lg text-center">
+                              <span className="block text-gray-400 text-[10px] uppercase tracking-wider mb-1">Instagram</span>
+                              <span className="block text-base font-bold text-white">{activeEvent.speaker.socials.instagram}</span>
+                            </div>
+                          )}
+                        </div>
+                      ) : activeEvent.rulebook ? (
                         <a
                           href={activeEvent.rulebook}
                           target="_blank"
@@ -592,17 +652,60 @@ export default function EventDashboard() {
                     </div>
                   </div>
 
-                  {/* Right: Stats & CTA */}
+                  {/* Right: Stats & CTA - Customized for Special Events */}
                   <div className="space-y-4">
-                    <div className="p-4 border border-neon-cyan/30 bg-neon-cyan/5 rounded-lg text-center">
-                      <span className="block text-gray-400 text-xs uppercase tracking-wider mb-1">Registration Fee</span>
-                      <span className="block text-2xl font-bold text-white font-space-grotesk">{activeEvent.fee}</span>
-                    </div>
+                    {activeEvent.isSpecialEvent && activeEvent.speaker ? (
+                      <>
+                        <div className="p-4 border border-amber-400/30 bg-amber-400/5 rounded-lg text-center">
+                          <span className="block text-gray-400 text-xs uppercase tracking-wider mb-1">Speaker</span>
+                          <span className="block text-xl font-bold text-white font-space-grotesk">{activeEvent.speaker.name}</span>
+                          <span className="text-xs text-amber-400 block mt-1">{activeEvent.speaker.role}</span>
+                        </div>
 
-                    <div className="p-4 border border-white/10 bg-white/5 rounded-lg text-center">
-                      <span className="block text-gray-400 text-xs uppercase tracking-wider mb-1">Squad Size</span>
-                      <span className="block text-lg font-bold text-white">{activeEvent.teamSize}</span>
-                    </div>
+                        {/* Event Logistics / Details to fill space */}
+                        <div className="p-4 border border-white/10 bg-white/5 rounded-lg space-y-3">
+                          <h5 className="flex items-center gap-2 text-amber-400 text-sm font-bold mb-2 pb-2 border-b border-white/10 uppercase tracking-wider">
+                            <Calendar size={14} /> Event Details
+                          </h5>
+
+                          <div className="flex items-start gap-3 text-sm">
+                            <Calendar className="text-gray-500 mt-0.5" size={16} />
+                            <div>
+                              <span className="block text-gray-400 text-xs uppercase">Date & Time</span>
+                              <span className="text-gray-200 font-medium">{activeEvent.timing}</span>
+                            </div>
+                          </div>
+
+                          <div className="flex items-start gap-3 text-sm">
+                            <MapPin className="text-gray-500 mt-0.5" size={16} />
+                            <div>
+                              <span className="block text-gray-400 text-xs uppercase">Venue</span>
+                              <span className="text-gray-200 font-medium">{activeEvent.location}</span>
+                            </div>
+                          </div>
+
+                          <div className="flex items-start gap-3 text-sm">
+                            <Zap className="text-gray-500 mt-0.5" size={16} />
+                            <div>
+                              <span className="block text-gray-400 text-xs uppercase">Registration Fee</span>
+                              <span className="text-neon-cyan font-bold">TBA</span>
+                            </div>
+                          </div>
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="p-4 border border-neon-cyan/30 bg-neon-cyan/5 rounded-lg text-center">
+                          <span className="block text-gray-400 text-xs uppercase tracking-wider mb-1">Registration Fee</span>
+                          <span className="block text-2xl font-bold text-white font-space-grotesk">{activeEvent.fee}</span>
+                        </div>
+
+                        <div className="p-4 border border-white/10 bg-white/5 rounded-lg text-center">
+                          <span className="block text-gray-400 text-xs uppercase tracking-wider mb-1">Squad Size</span>
+                          <span className="block text-lg font-bold text-white">{activeEvent.teamSize}</span>
+                        </div>
+                      </>
+                    )}
 
                     {activeEvent.registrationLink ? (
                       <a
