@@ -259,7 +259,8 @@ const events: EventData[] = [
     timing: "19th Feb 12:30 PM (Univ) | 19th Feb 2:00 PM (School)",
     contacts: [{ name: "Abhishek Rao", phone: "9792815988" }, { name: "Ahad Ahmed", phone: "8299705189" }, { name: "Subhadeep Pal", phone: "7880499977" }],
     level: "both",
-    registrationLink: "https://forms.gle/Goifd69cWuGo8V9C7"
+    registrationLink: "https://forms.gle/Goifd69cWuGo8V9C7",
+    rulebook: "https://drive.google.com/file/d/1DthINe_AgJnMKer5RRtJcG6L0Nj_FKlT/view?usp=sharing"
   },
   {
     id: "robo-war",
