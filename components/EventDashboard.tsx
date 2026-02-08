@@ -112,11 +112,11 @@ const events: EventData[] = [
     fee: "₹60/-",
     prizes: ["TBA"],
     location: "B7-003, B7-004",
-    timing: "18th Feb, 2:15 PM",
-    contacts: [{ name: "Prateek Kumar Singh", phone: "8924046121" }, { name: "Mohd Ayan", phone: "8808738098" }, { name: "Dilijan Ansari", phone: "8400372991" }],
+    timing: "19th Feb, 10:00 AM",
+    contacts: [{ name: "Prateek Kumar Singh", phone: "8924046121" }, { name: "Mohd Ayaan", phone: "8528628809" }, { name: "Dilijan Ansari", phone: "8400372991" }],
     level: "university",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfQ60JeC5doeu_ZGahXm342zI3GvOfPGePq5Ew7foQ6yKni3w/viewform",
-    rulebook: "https://drive.google.com/file/d/1SwHkTNtqxKzjHN0VvwHyIV6FWSSCSDqu/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/11QIBnBbVyEWgBQPMcvNuKobFL_VsZDYl/view?usp=sharing"
   },
   {
     id: "drone-race",
@@ -124,7 +124,7 @@ const events: EventData[] = [
     description: "Take to the skies in the exhilarating Drone Race! This high-speed, action-packed event challenges participants to race their drones through a complex obstacle course, testing their piloting skills, precision, and speed. Whether you're an experienced drone racer or a beginner, this event offers the ultimate test of your aerial abilities!",
     image: "/drone-race-mobile-v2.jpg",
     category: "Robotics",
-    teamSize: "4 Members",
+    teamSize: "Max 4 Members",
     fee: "₹200/-",
     prizes: ["TBA"],
     location: "Admin Ground",
@@ -177,7 +177,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "B1-207, B1-007",
     timing: "20th Feb, 12:30 PM (Univ) | 19th Feb, 12:30 PM (School)",
-    contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Aakarsh Mishra", phone: "9682043203" }, { name: "Neelabh Shukla", phone: "7307551512" }],
+    contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Rashi Malik", phone: "8707340147" }, { name: "Aakarsh Mishra", phone: "9682043203" }, { name: "Neelabh Shukla", phone: "7307551612" }],
     level: "both",
     registrationLink: "https://forms.gle/aRw5qbeNHZqmMyyn9",
     rulebook: "https://drive.google.com/file/d/1vAxIqaAdvfQTC2H7FU_PsqaTOeWRwyac/view?usp=drive_link"
@@ -223,8 +223,8 @@ const events: EventData[] = [
     teamSize: "1 Member",
     fee: "₹60/-",
     prizes: ["TBA"],
-    location: "B7-005, B7-006 (Univ) | B1-207 (School)",
-    timing: "20th Feb 1:30 PM (Univ) | 18th Feb 2:45 PM (School)",
+    location: "B7-005, B7-006",
+    timing: "20th Feb 1:30 PM",
     contacts: [{ name: "Vinay Yadav", phone: "8765072315" }, { name: "Vinayak", phone: "9140613407" }, { name: "Divyata Maurya", phone: "9250055785" }],
     level: "university",
     registrationLink: "https://forms.gle/Z4uFqqSUz1i8NEnE8",
@@ -257,7 +257,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "Volleyball Court",
     timing: "19th Feb 12:30 PM (Univ) | 19th Feb 2:00 PM (School)",
-    contacts: [{ name: "Abhishek Rao", phone: "9792815988" }, { name: "Ahad Ahmed", phone: "8299705189" }, { name: "Subhadeep Pal", phone: "7880499977" }],
+    contacts: [{ name: "Abhishek Rao", phone: "9792815988" }, { name: "Ahad Ahmad", phone: "8299705189" }, { name: "Subhadeep Pal", phone: "7880499977" }],
     level: "both",
     registrationLink: "https://forms.gle/Goifd69cWuGo8V9C7",
     rulebook: "https://drive.google.com/file/d/1DthINe_AgJnMKer5RRtJcG6L0Nj_FKlT/view?usp=sharing"
