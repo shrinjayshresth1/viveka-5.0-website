@@ -49,7 +49,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "Mini Auditorium (Admin) (Final Round)",
     timing: "20th Feb",
-    contacts: [{ name: "Shashank Kumar", phone: "6306569583" }, { name: "Divyansh Srivastava", phone: "6394500934" }],
+    contacts: [{ name: "Shashank Kumar", phone: "6306569583" }, { name: "Divyansh Srivastava", phone: "6394500934" }, { name: "Sanskar Dixit", phone: "7607124641" }, { name: "Ashutosh Singh", phone: "9026830316" }],
     level: "university",
     registrationLink: "https://forms.gle/FPDw5HN32rgQhyyg7",
     rulebook: "https://drive.google.com/file/d/1FwnOuSYFHRA-uF7wucMzZLsb6sS0Pnjn/view?usp=drive_link"
@@ -161,7 +161,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "Mini Auditorium (Admin) (Final Round)",
     timing: "19th Feb",
-    contacts: [{ name: "Yash Mishra", phone: "6306974406" }, { name: "Sanskar Dixit", phone: "7607124641" }, { name: "Aiman Abidi", phone: "8756821074" }],
+    contacts: [{ name: "Yash Mishra", phone: "6306974406" }, { name: "Nirbhay Singh", phone: "7607124641" }, { name: "Aviral Mishra", phone: "9519255113" }, { name: "Aiman Abidi", phone: "8756821074" }],
     level: "university",
     registrationLink: "https://forms.gle/d6U8aJQQF7Cb72zYA",
     rulebook: "https://drive.google.com/file/d/1m9Tar-PU5RT5KWgR86t7Nl2EhUFsdi8t/view?usp=drive_link"
