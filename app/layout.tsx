@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     "Viveka Tech Fest",
     "SRMU Tech Fest",
     "SRMU Fest 2026",
+    "Viveka Fest 2026",
     
     // University Names & Variations
     "SRMU",
@@ -44,13 +45,52 @@ export const metadata: Metadata = {
     "Shri Ramswaroop Memorial University Barabanki",
     "Best Private University in Lucknow",
     "Top University in Uttar Pradesh",
+    "Engineering College Lucknow",
+    "Engineering College Barabanki",
     
-    // Location & Context
+    // Location - Primary (Lucknow & Barabanki)
     "Lucknow Tech Fest",
     "Tech Festival in Lucknow",
     "University Events Lucknow",
     "Engineering Fest Lucknow",
-    "College Fests in India",
+    "Barabanki Tech Fest",
+    "Barabanki College Events",
+    "Events in Lucknow 2026",
+    "College Fest Lucknow 2026",
+    "Lucknow University Festival",
+    "Technical Events Lucknow",
+    "Barabanki University Events",
+    
+    // Location - Uttar Pradesh State
+    "Uttar Pradesh Tech Fest",
+    "UP Tech Fest 2026",
+    "Best Tech Fest in UP",
+    "Technical Festival Uttar Pradesh",
+    "College Events in UP",
+    "University Fest UP",
+    "Engineering Fest Uttar Pradesh",
+    
+    // Location - Nearby Districts & Cities
+    "Kanpur Tech Fest",
+    "Ayodhya College Events",
+    "Faizabad University Events",
+    "Sitapur College Fest",
+    "Sultanpur Tech Events",
+    "Rae Bareli College Events",
+    "Unnao Technical Fest",
+    "Hardoi College Events",
+    "Gonda University Events",
+    "Bahraich College Fest",
+    "Central UP Tech Fest",
+    "Awadh Region College Events",
+    
+    // Location - Regional Search Terms
+    "North India Tech Fest",
+    "Tech Fest near Lucknow",
+    "Best College Fest in North India",
+    "Engineering Events Central India",
+    "Technical Festival near me Lucknow",
+    "College Fest near Barabanki",
     
     // Event Categories
     "Robotics Competition",
@@ -62,6 +102,8 @@ export const metadata: Metadata = {
     "Technical Workshop",
     "Cultural Events",
     "Model United Nations",
+    "Star Night Concert",
+    "Darshan Raval Concert",
     
     // Specific Events
     "Robo War",
@@ -70,13 +112,17 @@ export const metadata: Metadata = {
     "BGMI Tournament",
     "Valorant Tournament",
     "Laser Light Show",
+    "Drone Race Competition",
+    "Boat Race Competition",
     
     // Broader Terms
     "Student Innovation",
     "Technology Festival",
     "Science and Technology",
     "Inter-college Fest",
-    "University Campus Life"
+    "University Campus Life",
+    "College Fests in India",
+    "Best Technical Fest India 2026"
   ],
   authors: [{ name: "TechFusion Club", url: "https://www.vivekatheintelligence.in" }],
   creator: "TechFusion Club - SRMU",
