@@ -66,29 +66,84 @@ export default function GlobalBackground() {
 
     const particles: Particle[] = [];
     const particleCount = 100;
+    const connectionDistance = 100;
+    const cellSize = connectionDistance; // Grid cell size = connection distance
 
     for (let i = 0; i < particleCount; i++) {
       particles.push(new Particle());
+    }
+
+    // Spatial hashing helper - O(N) algorithm
+    function getGridKey(x: number, y: number): string {
+      const cellX = Math.floor(x / cellSize);
+      const cellY = Math.floor(y / cellSize);
+      return `${cellX},${cellY}`;
+    }
+
+    function buildSpatialGrid(): Map<string, Particle[]> {
+      const grid = new Map<string, Particle[]>();
+      for (const particle of particles) {
+        const key = getGridKey(particle.x, particle.y);
+        if (!grid.has(key)) {
+          grid.set(key, []);
+        }
+        grid.get(key)!.push(particle);
+      }
+      return grid;
+    }
+
+    function getNeighborKeys(x: number, y: number): string[] {
+      const cellX = Math.floor(x / cellSize);
+      const cellY = Math.floor(y / cellSize);
+      const keys: string[] = [];
+      // Check 3x3 grid of cells (current + 8 neighbors)
+      for (let dx = -1; dx <= 1; dx++) {
+        for (let dy = -1; dy <= 1; dy++) {
+          keys.push(`${cellX + dx},${cellY + dy}`);
+        }
+      }
+      return keys;
     }
 
     function animate() {
       if (!ctx) return;
       ctx.clearRect(0, 0, width, height);
 
-      // Connect particles (O(N²) - but only on desktop)
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
+      // Build spatial grid - O(N)
+      const grid = buildSpatialGrid();
+      const checkedPairs = new Set<string>();
 
-          if (distance < 100) {
-            ctx.beginPath();
-            ctx.strokeStyle = `rgba(0, 240, 255, ${0.1 * (1 - distance / 100)})`;
-            ctx.lineWidth = 0.5;
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.stroke();
+      // Connect particles using spatial hashing - O(N) average case
+      for (const particle of particles) {
+        const neighborKeys = getNeighborKeys(particle.x, particle.y);
+        
+        for (const key of neighborKeys) {
+          const neighbors = grid.get(key);
+          if (!neighbors) continue;
+          
+          for (const neighbor of neighbors) {
+            if (particle === neighbor) continue;
+            
+            // Avoid checking the same pair twice
+            const pairKey = particle.x < neighbor.x 
+              ? `${particle.x},${particle.y}-${neighbor.x},${neighbor.y}`
+              : `${neighbor.x},${neighbor.y}-${particle.x},${particle.y}`;
+            if (checkedPairs.has(pairKey)) continue;
+            checkedPairs.add(pairKey);
+
+            const dx = particle.x - neighbor.x;
+            const dy = particle.y - neighbor.y;
+            const distSq = dx * dx + dy * dy;
+
+            if (distSq < connectionDistance * connectionDistance) {
+              const distance = Math.sqrt(distSq);
+              ctx.beginPath();
+              ctx.strokeStyle = `rgba(0, 240, 255, ${0.1 * (1 - distance / connectionDistance)})`;
+              ctx.lineWidth = 0.5;
+              ctx.moveTo(particle.x, particle.y);
+              ctx.lineTo(neighbor.x, neighbor.y);
+              ctx.stroke();
+            }
           }
         }
       }
