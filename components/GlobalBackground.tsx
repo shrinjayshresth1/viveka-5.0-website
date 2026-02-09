@@ -2,11 +2,16 @@
 
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 export default function GlobalBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
+    // Skip canvas entirely on mobile for performance
+    if (isMobile) return;
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -54,37 +59,37 @@ export default function GlobalBackground() {
         if (!ctx) return;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(0, 240, 255, ${this.opacity})`; // Neon Cyan
+        ctx.fillStyle = `rgba(0, 240, 255, ${this.opacity})`;
         ctx.fill();
       }
     }
 
     const particles: Particle[] = [];
-    const particleCount = width < 768 ? 30 : 100; // Optimization: Reduce particles on mobile
+    const particleCount = 100;
 
     for (let i = 0; i < particleCount; i++) {
-        particles.push(new Particle());
+      particles.push(new Particle());
     }
 
     function animate() {
       if (!ctx) return;
       ctx.clearRect(0, 0, width, height);
 
-      // Connect particles
+      // Connect particles (O(N²) - but only on desktop)
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
-            const dx = particles[i].x - particles[j].x;
-            const dy = particles[i].y - particles[j].y;
-            const distance = Math.sqrt(dx * dx + dy * dy);
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
 
-            if (distance < 100) {
-                ctx.beginPath();
-                ctx.strokeStyle = `rgba(0, 240, 255, ${0.1 * (1 - distance / 100)})`;
-                ctx.lineWidth = 0.5;
-                ctx.moveTo(particles[i].x, particles[i].y);
-                ctx.lineTo(particles[j].x, particles[j].y);
-                ctx.stroke();
-            }
+          if (distance < 100) {
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(0, 240, 255, ${0.1 * (1 - distance / 100)})`;
+            ctx.lineWidth = 0.5;
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
+          }
         }
       }
 
@@ -98,12 +103,32 @@ export default function GlobalBackground() {
 
     animate();
 
-  }, []);
+  }, [isMobile]);
 
+  // Mobile: Simple static gradient background (no canvas, no animations)
+  if (isMobile) {
+    return (
+      <div className="fixed inset-0 -z-50 overflow-hidden bg-[#020617]">
+        {/* Static gradient orbs for visual interest without animation */}
+        <div className="absolute top-[-10%] left-[-10%] w-[60vw] h-[60vw] bg-blue-900/30 rounded-full blur-[80px]" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-cyan-900/20 rounded-full blur-[60px]" />
+        
+        {/* Grid overlay (static) */}
+        <div 
+          className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"
+        />
+        
+        {/* Vignette */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(2,6,23,0.8)_100%)] pointer-events-none" />
+      </div>
+    );
+  }
+
+  // Desktop: Full animated experience
   return (
     <div className="fixed inset-0 -z-50 overflow-hidden bg-[#020617]">
         
-        {/* 1. Animated Gradient Orbs (Ambient) - Boosted Opacity */}
+        {/* 1. Animated Gradient Orbs (Ambient) */}
         <div className="absolute inset-0 opacity-60">
             <motion.div 
                 animate={{
@@ -131,16 +156,15 @@ export default function GlobalBackground() {
             className="absolute inset-0 w-full h-full opacity-70"
         />
 
-        {/* 3. NEW: Cyber Grid Overlay (Texture) - Boosted Visibility */}
+        {/* 3. Cyber Grid Overlay */}
         <div 
             className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"
         />
         
-        {/* 4. NEW: Perspective Floor Grid - Boosted Visibility */}
+        {/* 4. Perspective Floor Grid */}
         <div className="absolute bottom-0 left-[-50%] right-[-50%] h-[50vh] bg-[linear-gradient(to_right,#00f0ff_1px,transparent_1px),linear-gradient(to_bottom,#00f0ff_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:linear-gradient(to_top,#000_0%,transparent_100%)] opacity-[0.5] [transform:perspective(500px)_rotateX(60deg)] pointer-events-none origin-bottom" />
 
-
-        {/* 5. Noise Overlay (Grain) */}
+        {/* 5. Noise Overlay */}
         <div 
             className="absolute inset-0 opacity-[0.04] pointer-events-none mix-blend-overlay"
             style={{

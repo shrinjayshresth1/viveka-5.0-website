@@ -4,6 +4,7 @@ import { useEffect, useRef, useMemo } from 'react';
 import { gsap } from 'gsap';
 import Image from 'next/image';
 import styles from './GridMotion.module.css';
+import { useIsMobile } from '@/lib/useIsMobile';
 
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -19,6 +20,7 @@ const GridMotion: React.FC<GridMotionProps> = ({ items = [], gradientColor = 'bl
   const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
   const mouseXRef = useRef(0);
   const lastUpdateRef = useRef(0);
+  const isMobile = useIsMobile();
 
   // Memoize combined items to prevent re-calculation
   const combinedItems = useMemo(() => {
@@ -29,6 +31,9 @@ const GridMotion: React.FC<GridMotionProps> = ({ items = [], gradientColor = 'bl
   }, [items]);
 
   useEffect(() => {
+    // Skip all animations on mobile for performance
+    if (isMobile) return;
+
     // Initialize mouse position safely
     if (typeof window !== "undefined") {
       mouseXRef.current = window.innerWidth / 2;
@@ -110,7 +115,7 @@ const GridMotion: React.FC<GridMotionProps> = ({ items = [], gradientColor = 'bl
       scrollAnims.forEach(anim => anim.kill());
       ScrollTrigger.getAll().forEach(t => t.kill());
     };
-  }, []);
+  }, [isMobile]);
 
   return (
     <div className={`${styles.noscroll} loading`} ref={gridRef}>

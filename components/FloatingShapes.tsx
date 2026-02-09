@@ -1,8 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 export default function FloatingShapes() {
+  const isMobile = useIsMobile();
+
+  // Skip entirely on mobile for performance
+  if (isMobile) return null;
+
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden -z-[5]">
       {/* Shape 1 - Cyan/Navy */}

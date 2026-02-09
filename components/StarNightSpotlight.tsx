@@ -3,69 +3,74 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Sparkles, Calendar, MapPin, Music2 } from "lucide-react";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 export default function StarNightSpotlight() {
+  const isMobile = useIsMobile();
+
   return (
     <section className="relative w-full min-h-screen py-20 md:py-32 bg-gradient-to-b from-[#020617] via-[#0a0a1f] to-[#020617] z-10">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Gradient Orbs */}
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="absolute top-1/4 -left-32 w-[500px] h-[500px] rounded-full"
-          style={{
-            background: "radial-gradient(circle, rgba(0, 255, 255, 0.2) 0%, rgba(0, 255, 255, 0) 70%)"
-          }}
-        />
-        <motion.div
-          animate={{
-            scale: [1.2, 1, 1.2],
-            opacity: [0.4, 0.6, 0.4],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="absolute bottom-1/4 -right-32 w-[500px] h-[500px] rounded-full"
-          style={{
-            background: "radial-gradient(circle, rgba(0, 255, 255, 0.15) 0%, rgba(0, 255, 255, 0) 70%)"
-          }}
-        />
-
-        {/* Floating Music Notes */}
-        {[...Array(6)].map((_, i) => (
+      {/* Animated Background Elements - Desktop only */}
+      {!isMobile && (
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Gradient Orbs */}
           <motion.div
-            key={i}
-            initial={{ y: 0, opacity: 0 }}
             animate={{
-              y: [-20, -100],
-              opacity: [0, 1, 0],
+              scale: [1, 1.2, 1],
+              opacity: [0.3, 0.5, 0.3],
             }}
             transition={{
-              duration: 3 + i * 0.5,
+              duration: 8,
               repeat: Infinity,
-              delay: i * 0.8,
-              ease: "easeOut",
+              ease: "easeInOut",
             }}
-            className="absolute"
+            className="absolute top-1/4 -left-32 w-[500px] h-[500px] rounded-full"
             style={{
-              left: `${20 + i * 15}%`,
-              bottom: `${10 + (i % 3) * 20}%`,
+              background: "radial-gradient(circle, rgba(0, 255, 255, 0.2) 0%, rgba(0, 255, 255, 0) 70%)"
             }}
-          >
-            <Music2 className="text-neon-cyan/30" size={20 + i * 4} />
-          </motion.div>
-        ))}
-      </div>
+          />
+          <motion.div
+            animate={{
+              scale: [1.2, 1, 1.2],
+              opacity: [0.4, 0.6, 0.4],
+            }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="absolute bottom-1/4 -right-32 w-[500px] h-[500px] rounded-full"
+            style={{
+              background: "radial-gradient(circle, rgba(0, 255, 255, 0.15) 0%, rgba(0, 255, 255, 0) 70%)"
+            }}
+          />
+
+          {/* Floating Music Notes */}
+          {[...Array(6)].map((_, i) => (
+            <motion.div
+              key={i}
+              initial={{ y: 0, opacity: 0 }}
+              animate={{
+                y: [-20, -100],
+                opacity: [0, 1, 0],
+              }}
+              transition={{
+                duration: 3 + i * 0.5,
+                repeat: Infinity,
+                delay: i * 0.8,
+                ease: "easeOut",
+              }}
+              className="absolute"
+              style={{
+                left: `${20 + i * 15}%`,
+                bottom: `${10 + (i % 3) * 20}%`,
+              }}
+            >
+              <Music2 className="text-neon-cyan/30" size={20 + i * 4} />
+            </motion.div>
+          ))}
+        </div>
+      )}
 
       <div className="container mx-auto px-4 relative z-20">
         {/* Section Header */}
