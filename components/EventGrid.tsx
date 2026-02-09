@@ -20,7 +20,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "TBA",
     contacts: [{ name: "Tech Team", phone: "" }],
-    rulebook: "https://drive.google.com/file/d/1JjKKm1lzgl0Kktjg0_yjZpiG6Ugz5Xt0/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1JjKKm1lzgl0Kktjg0_yjZpiG6Ugz5Xt0/view?usp=sharing"
   },
   {
     id: "hackathon-university",
@@ -34,7 +34,7 @@ const events: EventData[] = [
     location: "Innovation Hub",
     timing: "24 Hours",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1vAxIqaAdvfQTC2H7FU_PsqaTOeWRwyac/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/16f_A1ANiSkokLpipELYu4oNsXGTI3IKm/view?usp=sharing"
   },
   {
     id: "hackathon-school",
@@ -48,7 +48,7 @@ const events: EventData[] = [
     location: "Innovation Hub",
     timing: "19th Feb, 12:30 PM",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1vAxIqaAdvfQTC2H7FU_PsqaTOeWRwyac/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/16f_A1ANiSkokLpipELYu4oNsXGTI3IKm/view?usp=sharing"
   },
   {
     id: "bug-hunting",
@@ -75,7 +75,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1P4ebaiNbmjjJScGvJLPQkJ6sCBe4Z9v2/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1P4ebaiNbmjjJScGvJLPQkJ6sCBe4Z9v2/view?usp=sharing"
   },
 
   // --- ROBOTICS ---
@@ -91,7 +91,7 @@ const events: EventData[] = [
     location: "War Arena",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1bArGi-WXcCRWSa58jgbXAKXlNU4pInNn/view"
+    rulebook: "https://drive.google.com/file/d/1Prn-3YT46TsbWFqLcE3JpHaAcJJsZCuo/view?usp=sharing"
   },
   {
     id: "robo-race",
@@ -105,7 +105,7 @@ const events: EventData[] = [
     location: "Track Area",
     timing: "19th Feb, 2:00 PM",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1j2zIV7JYpS2SyhL3Y2UGybH1iHcbQty6/view"
+    rulebook: "https://drive.google.com/file/d/1DthINe_AgJnMKer5RRtJcG6L0Nj_FKlT/view?usp=sharing"
   },
   {
     id: "robo-soccer",
@@ -119,7 +119,7 @@ const events: EventData[] = [
     location: "Soccer Arena",
     timing: "19th Feb, 2:00 PM",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/18J_8K51RG7Qnx9EPrvdHk2qjOr50KscS/view"
+    rulebook: "https://drive.google.com/file/d/19uO8lyB5qYmusAEMaNl2tbGdZBhoxzLh/view?usp=sharing"
   },
   {
     id: "drone-race",
@@ -133,7 +133,7 @@ const events: EventData[] = [
     location: "Open Ground",
     timing: "19th Feb, 3:30 PM",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/19A2FG13rKeCGg86FfjVbZfOTAMckt_xH/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/19A2FG13rKeCGg86FfjVbZfOTAMckt_xH/view?usp=sharing"
   },
   {
     id: "path-finder",
@@ -160,7 +160,7 @@ const events: EventData[] = [
     location: "Water Body",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1Gp_eUg06eHemEYtqbD6F6OASdbCB8lti/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1Gp_eUg06eHemEYtqbD6F6OASdbCB8lti/view?usp=sharing"
   },
 
   // --- GAMING ---
@@ -176,7 +176,7 @@ const events: EventData[] = [
     location: "E-Sports Arena",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1m9Tar-PU5RT5KWgR86t7Nl2EhUFsdi8t/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1m9Tar-PU5RT5KWgR86t7Nl2EhUFsdi8t/view?usp=sharing"
   },
   {
     id: "bgmi",
@@ -190,7 +190,7 @@ const events: EventData[] = [
     location: "E-Sports Arena",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1FwnOuSYFHRA-uF7wucMzZLsb6sS0Pnjn/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1FwnOuSYFHRA-uF7wucMzZLsb6sS0Pnjn/view?usp=sharing"
   },
 
   // --- BRAINSTORMING & FUN ---
@@ -206,7 +206,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1iLJLjAA-znBYhTzk1yOQZQjr6Qy7EAbw/view"
+    rulebook: "https://drive.google.com/file/d/1CdGKWR9IRZTuM-IjuyptOXODMB7w_0st/view?usp=sharing"
   },
   {
     id: "reasoning-rumble",
@@ -220,7 +220,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "19th Feb, 3:25 PM",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1_N6bE_UrRex7s-vCbM6sXfOaH20jSlUY/view"
+    rulebook: "https://drive.google.com/file/d/1HbdVSBo-7nUrNn9-fwGjqGkXBpU7uw-S/view?usp=sharing"
   },
   {
     id: "rubiks-cube",
@@ -234,7 +234,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1JAG8pE_kOFEvFYJ5OZH7bHy-XHtjBJE8/view"
+    rulebook: "https://drive.google.com/file/d/177gEckRSDaQT86g5xTJDYWRheYmpk0Rs/view?usp=sharing"
   },
   {
     id: "buddhi-kshamta",
@@ -248,7 +248,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1Z39Olh-N6R44TKbJzkeGJ4Vq8zkwATqV/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1Z39Olh-N6R44TKbJzkeGJ4Vq8zkwATqV/view?usp=sharing"
   },
   {
     id: "laser-show",
@@ -262,7 +262,7 @@ const events: EventData[] = [
     location: "Main Ground",
     timing: "Evening",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1VzB6bKC1q7SgNPUiYXPyv8OTbP-ox92Q/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1VzB6bKC1q7SgNPUiYXPyv8OTbP-ox92Q/view?usp=sharing"
   },
 
   // --- CREATIVE ---
@@ -278,7 +278,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "TBA",
     contacts: [],
-    rulebook: "https://drive.google.com/file/d/1SwHkTNtqxKzjHN0VvwHyIV6FWSSCSDqu/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1NbRZZdiGWlEuI90NF7xyaoPUdyzoAq2_/view?usp=sharing"
   },
   {
     id: "structromania",
@@ -291,6 +291,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "TBA",
     timing: "TBA",
+    rulebook: "https://drive.google.com/file/d/1lP7BK1iwe1ZhsBk5gdU91SxEFTyHTbTt/view?usp=sharing",
     contacts: []
   },
 

@@ -63,7 +63,7 @@ const events: EventData[] = [
     contacts: [{ name: "Shashank Kumar", phone: "6306569583" }, { name: "Divyansh Srivastava", phone: "6394500934" }, { name: "Sanskar Dixit", phone: "7607124641" }, { name: "Ashutosh Singh", phone: "9026830316" }],
     level: "university",
     registrationLink: "https://forms.gle/FPDw5HN32rgQhyyg7",
-    rulebook: "https://drive.google.com/file/d/1FwnOuSYFHRA-uF7wucMzZLsb6sS0Pnjn/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1FwnOuSYFHRA-uF7wucMzZLsb6sS0Pnjn/view?usp=sharing"
   },
   {
     id: "boat-race",
@@ -79,7 +79,7 @@ const events: EventData[] = [
     contacts: [{ name: "Samarth Kumar", phone: "8081880868" }, { name: "Himanshu Sharma", phone: "6386531609" }, { name: "Ansh Kumar Singh", phone: "7905551795" },],
     level: "university",
     registrationLink: "https://forms.gle/4pDhh72JboG8BjwE9",
-    rulebook: "https://drive.google.com/file/d/1Gp_eUg06eHemEYtqbD6F6OASdbCB8lti/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1Gp_eUg06eHemEYtqbD6F6OASdbCB8lti/view?usp=sharing"
   },
   {
     id: "buddhi-kshamta",
@@ -95,7 +95,7 @@ const events: EventData[] = [
     contacts: [{ name: "Shipra Mishra", phone: "9696494437" }, { name: "Prateek Singh", phone: "9044298094" }, { name: "Jahnvi Pandey", phone: "7523800560" }],
     level: "both",
     registrationLink: "https://forms.gle/zy14bmEJTQ9HzpXa7",
-    rulebook: "https://drive.google.com/file/d/1Z39Olh-N6R44TKbJzkeGJ4Vq8zkwATqV/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1Z39Olh-N6R44TKbJzkeGJ4Vq8zkwATqV/view?usp=sharing"
   },
   {
     id: "codex",
@@ -111,7 +111,7 @@ const events: EventData[] = [
     contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Neelabh Shukla", phone: "7307551512" }, { name: "Om Jaiswal", phone: "7068339541" }],
     level: "university",
     registrationLink: "https://forms.gle/TAstKD4ENGMsFqB77",
-    rulebook: "https://drive.google.com/file/d/1JjKKm1lzgl0Kktjg0_yjZpiG6Ugz5Xt0/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1JjKKm1lzgl0Kktjg0_yjZpiG6Ugz5Xt0/view?usp=sharing"
   },
   {
     id: "digi-art",
@@ -127,7 +127,7 @@ const events: EventData[] = [
     contacts: [{ name: "Prateek Kumar Singh", phone: "8924046121" }, { name: "Mohd Ayaan", phone: "8528628809" }, { name: "Dilijan Ansari", phone: "8400372991" }],
     level: "university",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfQ60JeC5doeu_ZGahXm342zI3GvOfPGePq5Ew7foQ6yKni3w/viewform",
-    rulebook: "https://drive.google.com/file/d/11QIBnBbVyEWgBQPMcvNuKobFL_VsZDYl/view?usp=sharing"
+    rulebook: "https://drive.google.com/file/d/1NbRZZdiGWlEuI90NF7xyaoPUdyzoAq2_/view?usp=sharing"
   },
   {
     id: "drone-race",
@@ -143,7 +143,7 @@ const events: EventData[] = [
     contacts: [{ name: "Kshitij Gupta", phone: "9455813610" }, { name: "Anurag Kumar Rai", phone: "7991406755" }, { name: "Vicky Kumar Mishra", phone: "9334335156" }],
     level: "both",
     registrationLink: "https://forms.gle/DrEv4TLiGe9FTjZV7",
-    rulebook: "https://drive.google.com/file/d/19A2FG13rKeCGg86FfjVbZfOTAMckt_xH/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/19A2FG13rKeCGg86FfjVbZfOTAMckt_xH/view?usp=sharing"
   },
   {
     id: "find-the-language",
@@ -159,7 +159,7 @@ const events: EventData[] = [
     contacts: [{ name: "Prachi Maurya", phone: "6394376362" }, { name: "Ansh Kumar Singh", phone: "7905551795" }, { name: "Satyam Gupta", phone: "8318957671" }],
     level: "university",
     registrationLink: "https://forms.gle/ViWJuZAuq7th7FWd9",
-    rulebook: "https://drive.google.com/file/d/1P4ebaiNbmjjJScGvJLPQkJ6sCBe4Z9v2/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1P4ebaiNbmjjJScGvJLPQkJ6sCBe4Z9v2/view?usp=sharing"
   },
   {
     id: "free-fire",
@@ -175,7 +175,7 @@ const events: EventData[] = [
     contacts: [{ name: "Yash Mishra", phone: "6306974406" }, { name: "Nirbhay Singh", phone: "7607124641" }, { name: "Aviral Mishra", phone: "9519255113" }, { name: "Aiman Abidi", phone: "8756821074" }],
     level: "university",
     registrationLink: "https://forms.gle/d6U8aJQQF7Cb72zYA",
-    rulebook: "https://drive.google.com/file/d/1m9Tar-PU5RT5KWgR86t7Nl2EhUFsdi8t/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1m9Tar-PU5RT5KWgR86t7Nl2EhUFsdi8t/view?usp=sharing"
   },
   {
     id: "hackathon",
@@ -191,7 +191,7 @@ const events: EventData[] = [
     contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Rashi Malik", phone: "8707340147" }, { name: "Aakarsh Mishra", phone: "9682043203" }, { name: "Neelabh Shukla", phone: "7307551612" }],
     level: "both",
     registrationLink: "https://forms.gle/aRw5qbeNHZqmMyyn9",
-    rulebook: "https://drive.google.com/file/d/1vAxIqaAdvfQTC2H7FU_PsqaTOeWRwyac/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/16f_A1ANiSkokLpipELYu4oNsXGTI3IKm/view?usp=sharing"
   },
   {
     id: "laser-show",
@@ -207,7 +207,7 @@ const events: EventData[] = [
     contacts: [{ name: "Viveka Core Team", phone: "" }],
     level: "university",
     registrationLink: "https://forms.gle/Uom8d5cAYFrhcSme6",
-    rulebook: "https://drive.google.com/file/d/1VzB6bKC1q7SgNPUiYXPyv8OTbP-ox92Q/view?usp=drive_link"
+    rulebook: "https://drive.google.com/file/d/1VzB6bKC1q7SgNPUiYXPyv8OTbP-ox92Q/view?usp=sharing"
   },
   {
     id: "reasoning-rumble",
@@ -223,7 +223,7 @@ const events: EventData[] = [
     contacts: [{ name: "Anshuma Yadav", phone: "9369885065" }, { name: "Neha Yadav", phone: "6388223377" }, { name: "Nistha Arora", phone: "8707641236" }],
     level: "both",
     registrationLink: "https://forms.gle/ETgf9kfMqPX1vMa98",
-    rulebook: "https://drive.google.com/file/d/1_N6bE_UrRex7s-vCbM6sXfOaH20jSlUY/view"
+    rulebook: "https://drive.google.com/file/d/1HbdVSBo-7nUrNn9-fwGjqGkXBpU7uw-S/view?usp=sharing"
   },
   {
     id: "recall-o-tune",
@@ -239,7 +239,7 @@ const events: EventData[] = [
     contacts: [{ name: "Vinay Yadav", phone: "8765072315" }, { name: "Vinayak", phone: "9140613407" }, { name: "Divyata Maurya", phone: "9250055785" }],
     level: "university",
     registrationLink: "https://forms.gle/Z4uFqqSUz1i8NEnE8",
-    rulebook: "https://drive.google.com/file/d/1iLJLjAA-znBYhTzk1yOQZQjr6Qy7EAbw/view"
+    rulebook: "https://drive.google.com/file/d/1CdGKWR9IRZTuM-IjuyptOXODMB7w_0st/view?usp=sharing"
   },
   {
     id: "robo-soccer",
@@ -255,7 +255,7 @@ const events: EventData[] = [
     contacts: [{ name: "Shiv Manglam Dubey", phone: "" }, { name: "Aditya Singh", phone: "9794791608" }, { name: "Anubhav Jaiswal", phone: "9559107407" }],
     level: "both",
     registrationLink: "https://forms.gle/jSG2d9sAQHoVe3hE6",
-    rulebook: "https://drive.google.com/file/d/18J_8K51RG7Qnx9EPrvdHk2qjOr50KscS/view"
+    rulebook: "https://drive.google.com/file/d/19uO8lyB5qYmusAEMaNl2tbGdZBhoxzLh/view?usp=sharing"
   },
   {
     id: "robo-race",
@@ -287,7 +287,7 @@ const events: EventData[] = [
     contacts: [{ name: "Raunak Srivastava", phone: "7235918654" }, { name: "Aditya Pratap Singh", phone: "9120058311" }, { name: "Mahendra Maurya", phone: "6393092836" }],
     level: "university",
     registrationLink: "https://forms.gle/C19QxDKbjjJAVGSw7",
-    rulebook: "https://drive.google.com/file/d/1bArGi-WXcCRWSa58jgbXAKXlNU4pInNn/view"
+    rulebook: "https://drive.google.com/file/d/1Prn-3YT46TsbWFqLcE3JpHaAcJJsZCuo/view?usp=sharing"
   },
   {
     id: "rubiks-cube",
@@ -303,7 +303,7 @@ const events: EventData[] = [
     contacts: [{ name: "Rashi Malik", phone: "8707340147" }, { name: "Dhruv Pathak", phone: " 8604440669" }, { name: "Aditya Verma", phone: "9839428105" }],
     level: "both",
     registrationLink: "https://forms.gle/uK2wUFS4hEbZNy588",
-    rulebook: "https://drive.google.com/file/d/1JAG8pE_kOFEvFYJ5OZH7bHy-XHtjBJE8/view"
+    rulebook: "https://drive.google.com/file/d/177gEckRSDaQT86g5xTJDYWRheYmpk0Rs/view?usp=sharing"
   },
   {
     id: "structromania",
@@ -319,7 +319,7 @@ const events: EventData[] = [
     contacts: [{ name: "Isha Singh", phone: "9305139337" }, { name: "Aakarsh Pandey", phone: "8545928982" }, { name: "Mohd Aghaz", phone: "7379068369" }],
     level: "university",
     registrationLink: "https://forms.gle/h3WtGLPZARirgymPA",
-    rulebook: "https://drive.google.com/file/d/1BI1LoZ5JxtK9VRgyX8F8Hq8nEHESeZe3/edit"
+    rulebook: "https://drive.google.com/file/d/1lP7BK1iwe1ZhsBk5gdU91SxEFTyHTbTt/view?usp=sharing"
   },
   {
     id: "career-roadmap",
