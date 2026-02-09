@@ -36,9 +36,34 @@ export interface EventData {
 
 const events: EventData[] = [
   {
+    id: "career-roadmap",
+    title: "First year to placement: A complete career roadmap of AI era",
+    description: "Join Durgesh Tiwari for an exclusive session on navigating your career in the AI era. From your first year in college to securing a top-tier placement, get a complete roadmap to success.",
+    image: "/codex.jpg", // Placeholder, using a generic one if not available or let user know
+    category: "Seminar",
+    teamSize: "Individual",
+    fee: "TBA",
+    prizes: ["Career Guidance"],
+    location: "Main Auditorium",
+    timing: "TBA", // Placeholder time, user didn't specify so I will use a placeholder and ask or leave generic
+    contacts: [{ name: "Tech Fusion Club", phone: "" }],
+    level: "both",
+    registrationLink: "https://forms.gle/ZfdKn6Q5Xgn7M1Th8/",
+    isSpecialEvent: true,
+    speaker: {
+      name: "Durgesh Tiwari",
+      role: "Founder & Educator",
+      company: "Learn Code With Durgesh",
+      socials: {
+        youtube: "3.5 Lakh+ Subscribers",
+        instagram: "39k+ Followers"
+      }
+    }
+  },
+  {
     id: "ai-workshop",
-    title: "AI Workshop on Generative AI / Power BI",
-    description: "Learn fundamentals of Generative AI and Neural Networks, or discover how to use Power BI for data visualization and interactive dashboards.",
+    title: "AI Workshop on Generative AI / Cyber Security",
+    description: "Learn fundamentals of Generative AI and Neural Networks, or explore the essentials of Cyber Security and digital protection.",
     image: "/events-page-banner.jpeg",
     category: "Workshop",
     teamSize: "1 Member",
@@ -194,6 +219,20 @@ const events: EventData[] = [
     rulebook: "https://drive.google.com/file/d/16f_A1ANiSkokLpipELYu4oNsXGTI3IKm/view?usp=sharing"
   },
   {
+    id: "junkyard",
+    title: "Junkyard",
+    description: "Get ready to unleash your creativity in Junkyard Wars! This event challenges teams to transform scraps, e-waste, and discarded materials into innovative, functional models. It’s a test of engineering skills, resourcefulness, and artistic vision proving that even 'junk' can be turned into a masterpiece.",
+    image: "/events-page-banner.jpeg", // Placeholder
+    category: "Creative",
+    teamSize: "TBA",
+    fee: "₹60/-",
+    prizes: ["TBA"],
+    location: "B5-Ground Floor",
+    timing: "20th Feb, 12:30 PM",
+    contacts: [{ name: "TBA", phone: "" }],
+    level: "university"
+  },
+  {
     id: "laser-show",
     title: "Laser Light Show",
     description: "Step into a world of magic and rhythm with the Laser Light Extravaganza, the highlight of TechFest! This immersive event combines dazzling laser displays with pulsating music and energetic dance performances, creating an unforgettable experience. To add a spark of romance, special couple events bring an enchanting charm to the festivities",
@@ -320,45 +359,6 @@ const events: EventData[] = [
     level: "university",
     registrationLink: "https://forms.gle/h3WtGLPZARirgymPA",
     rulebook: "https://drive.google.com/file/d/1lP7BK1iwe1ZhsBk5gdU91SxEFTyHTbTt/view?usp=sharing"
-  },
-  {
-    id: "career-roadmap",
-    title: "First year to placement: A complete career roadmap of AI era",
-    description: "Join Durgesh Tiwari for an exclusive session on navigating your career in the AI era. From your first year in college to securing a top-tier placement, get a complete roadmap to success.",
-    image: "/codex.jpg", // Placeholder, using a generic one if not available or let user know
-    category: "Seminar",
-    teamSize: "Individual",
-    fee: "TBA",
-    prizes: ["Career Guidance"],
-    location: "Main Auditorium",
-    timing: "TBA", // Placeholder time, user didn't specify so I will use a placeholder and ask or leave generic
-    contacts: [{ name: "Tech Fusion Club", phone: "" }],
-    level: "both",
-    registrationLink: "https://forms.gle/ZfdKn6Q5Xgn7M1Th8/",
-    isSpecialEvent: true,
-    speaker: {
-      name: "Durgesh Tiwari",
-      role: "Founder & Educator",
-      company: "Learn Code With Durgesh",
-      socials: {
-        youtube: "3.5 Lakh+ Subscribers",
-        instagram: "39k+ Followers"
-      }
-    }
-  },
-  {
-    id: "network-workshop",
-    title: "Workshop on Configuring The Network Layers",
-    description: "Gain in-depth understanding of network architecture, protocols, IP addressing, and security. Learn how to configure network layers for seamless communication.",
-    image: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?q=80&w=480&auto=format&fit=crop",
-    category: "Workshop",
-    teamSize: "1 Member",
-    fee: "₹60/-",
-    prizes: ["TBA"],
-    location: "Mini Auditorium",
-    timing: "19th Feb, 4:30 PM",
-    contacts: [{ name: "Rashi Malik", phone: "8707340147" }],
-    level: "university"
   }
 ];
 
