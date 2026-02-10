@@ -134,7 +134,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "All Labs (B2-Ground Floor)",
     timing: "18th Feb, 11:30 AM",
-    contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Neelabh Shukla", phone: "7307551512" }, { name: "Om Jaiswal", phone: "7068339541" }],
+    contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Neelabh Shukla", phone: "7307551612" }, { name: "Om Jaiswal", phone: "7068339541" }],
     level: "university",
     registrationLink: "https://forms.gle/TAstKD4ENGMsFqB77",
     rulebook: "https://drive.google.com/file/d/1JjKKm1lzgl0Kktjg0_yjZpiG6Ugz5Xt0/view?usp=sharing"
