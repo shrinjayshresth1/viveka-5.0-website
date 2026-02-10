@@ -201,7 +201,7 @@ const scheduleData: Record<number, Event[]> = {
       rowSpan: 1,
     },
     {
-      title: "First year to placement- A complete career roadmap of AI Era",
+      title: "First year to placement: A complete career roadmap of AI era",
       category: "Workshop",
       time: "01:30 PM",
       venue: "B5 Auditorium",
@@ -210,11 +210,11 @@ const scheduleData: Record<number, Event[]> = {
       rowSpan: 1,
     },
     {
-      title: "AI Workshop on Generative AI / Cyber Security",
+      title: "Hack With Smile: Workshop on Cyber Security",
       category: "Workshop",
       time: "03:30 PM",
       venue: "B5 Auditorium",
-      description: "Explore the latest trends and techniques in Generative AI and Cyber Security.",
+      description: "Join Mr. Somendra Nath Tiwari (Director, AiCyber.Guru) for an insightful workshop on Cyber Security. Learn about ethical hacking, digital safety, and the latest trends in cybersecurity.",
       colSpan: 2,
       rowSpan: 1,
     },
