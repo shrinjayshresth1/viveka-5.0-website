@@ -231,7 +231,8 @@ const events: EventData[] = [
     location: "B5-Ground Floor",
     timing: "20th Feb, 12:30 PM",
     contacts: [{ name: "TBA", phone: "" }],
-    level: "university"
+    level: "university",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfp1YDYkguSOpV1-tWO9QcmUbxhjWDUxW3k6HOxOpiwTelQKg/viewform"
   },
   {
     id: "laser-show",
