@@ -42,7 +42,7 @@ const events: EventData[] = [
     image: "/codex.jpg", // Placeholder, using a generic one if not available or let user know
     category: "Seminar",
     teamSize: "Individual",
-    fee: "TBA",
+    fee: "60/-",
     prizes: ["Career Guidance"],
     location: "Main Auditorium",
     timing: "TBA", // Placeholder time, user didn't specify so I will use a placeholder and ask or leave generic
@@ -257,8 +257,8 @@ const events: EventData[] = [
     teamSize: "1 Member",
     fee: "₹60/-",
     prizes: ["TBA"],
-    location: "B7-003, B7-004 (Univ) | B7-005, B7-006 (School)",
-    timing: "20th Feb 2:50 PM (Univ) | 19th Feb 3:25 PM (School)",
+    location: "B2-306, B2-310 (Univ) | B7-005, B7-006 (School)",
+    timing: "18th Feb 2:00 PM (Univ) | 19th Feb 3:25 PM (School)",
     contacts: [{ name: "Anshuma Yadav", phone: "9369885065" }, { name: "Neha Yadav", phone: "6388223377" }, { name: "Nistha Arora", phone: "8707641236" }],
     level: "both",
     registrationLink: "https://forms.gle/ETgf9kfMqPX1vMa98",
@@ -688,7 +688,7 @@ export default function EventDashboard() {
                             <Zap className="text-gray-500 mt-0.5" size={16} />
                             <div>
                               <span className="block text-gray-400 text-xs uppercase">Registration Fee</span>
-                              <span className="text-neon-cyan font-bold">TBA</span>
+                              <span className="text-neon-cyan font-bold">₹60/-</span>
                             </div>
                           </div>
                         </div>

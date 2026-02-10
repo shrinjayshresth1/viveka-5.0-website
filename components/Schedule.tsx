@@ -188,7 +188,7 @@ const scheduleData: Record<number, Event[]> = {
       time: "12:30 PM",
       venue: "B5-Ground Floor",
       description: "Transform scrap materials into innovative functional models.",
-      colSpan: 2,
+      colSpan: 1,
       rowSpan: 1,
     },
     {
@@ -197,16 +197,7 @@ const scheduleData: Record<number, Event[]> = {
       time: "01:30 PM",
       venue: "B7-005, B7-006",
       description: "Test general intelligence and memory in this quiz.",
-      colSpan: 2,
-      rowSpan: 1,
-    },
-    {
-      title: "Reasoning Rumble",
-      category: "Logic",
-      time: "02:50 PM",
-      venue: "B7-003, B7-004",
-      description: "Logic puzzles and aptitude challenges.",
-      colSpan: 2,
+      colSpan: 1,
       rowSpan: 1,
     },
     {
