@@ -188,7 +188,7 @@ const scheduleData: Record<number, Event[]> = {
       time: "12:30 PM",
       venue: "B5-Ground Floor",
       description: "Transform scrap materials into innovative functional models.",
-      colSpan: 2,
+      colSpan: 1,
       rowSpan: 1,
     },
     {
@@ -207,6 +207,12 @@ const scheduleData: Record<number, Event[]> = {
       venue: "B5 Auditorium",
       description: "Join Durgesh Tiwari for an exclusive session on navigating your career in the AI era. From your first year in college to securing a top-tier placement, get a complete roadmap to success.",
       colSpan: 2,
+      title: "Recall-O-Tune",
+      category: "Logic",
+      time: "01:30 PM",
+      venue: "B7-005, B7-006",
+      description: "Test general intelligence and memory in this quiz.",
+      colSpan: 1,
       rowSpan: 1,
     },
     {
