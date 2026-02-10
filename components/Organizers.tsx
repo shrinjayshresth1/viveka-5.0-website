@@ -34,7 +34,7 @@ const teamData = {
      faculty: [
 
           {
-               name: "Dr. Mrityunjay Rai",
+               name: "Dr. Mritunjay Rai",
                role: "Assistant Director, IQAC & Assistant Professor, DEEE & Coordinator, Technical Society, SRMU",
                image: "https://srmu.ac.in/storage/teams/dr.-mritumjay-rai-ec--14062401043979.jpg",
                linkedin: "https://www.linkedin.com/in/dr-mritunjay-rai-36b85118/"
