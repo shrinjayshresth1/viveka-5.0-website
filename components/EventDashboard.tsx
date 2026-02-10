@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calendar, MapPin, User, Trophy, ArrowRight, Zap, Target, X, ChevronLeft, ChevronRight, GraduationCap, School } from "lucide-react";
+import { Calendar, MapPin, User, Trophy, ArrowRight, Zap, Target, X, ChevronLeft, ChevronRight, GraduationCap, School, Linkedin, Globe, Facebook } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 // Reusing the same data structure for consistency
@@ -29,8 +29,11 @@ export interface EventData {
     socials?: {
       youtube?: string;
       instagram?: string;
+      facebook?: string;
       linkedin?: string;
+      companyLinkedin?: string;
     };
+    websites?: string[];
   };
 }
 
@@ -38,7 +41,7 @@ const events: EventData[] = [
   {
     id: "career-roadmap",
     title: "First year to placement: A complete career roadmap of AI era",
-    description: "Join Durgesh Tiwari for an exclusive session on navigating your career in the AI era. From your first year in college to securing a top-tier placement, get a complete roadmap to success.",
+    description: "Join Mr. Durgesh Tiwari for an exclusive session on navigating your career in the AI era. From your first year in college to securing a top-tier placement, get a complete roadmap to success.",
     image: "/codex.jpg", // Placeholder, using a generic one if not available or let user know
     category: "Seminar",
     teamSize: "Individual",
@@ -51,29 +54,42 @@ const events: EventData[] = [
     registrationLink: "https://forms.gle/ZfdKn6Q5Xgn7M1Th8/",
     isSpecialEvent: true,
     speaker: {
-      name: "Durgesh Tiwari",
+      name: "Mr. Durgesh Tiwari",
       role: "Founder & Educator",
       company: "Learn Code With Durgesh",
       socials: {
-        youtube: "3.5 Lakh+ Subscribers",
-        instagram: "39k+ Followers"
+        linkedin: "https://www.linkedin.com/in/durgeshkumartiwari/",
+        youtube: "https://www.youtube.com/learncodewithdurgesh",
+        instagram: "http://instagram.com/durgesh_k_t",
+        facebook: "http://facebook.com/learncodewithdurgesh"
       }
     }
   },
   {
     id: "ai-workshop",
-    title: "AI Workshop on Generative AI / Cyber Security",
-    description: "Learn fundamentals of Generative AI and Neural Networks, or explore the essentials of Cyber Security and digital protection.",
+    title: "Hack With Smile: Workshop on Cyber Security",
+    description: "Join Mr. Somendra Nath Tiwari (Director, AiCyber.Guru) for an insightful workshop on Cyber Security. Learn about ethical hacking, digital safety, and the latest trends in cybersecurity.",
     image: "/events-page-banner.jpeg",
     category: "Workshop",
-    teamSize: "1 Member",
+    teamSize: "Individual",
     fee: "₹60/-",
-    prizes: ["TBA"],
+    prizes: ["Certificates"],
     location: "Auditorium-B5",
     timing: "20th Feb, 03:30 PM",
-    contacts: [{ name: "Ayush Dwivedi", phone: "8115600381" }, { name: "Raghuvar Arya", phone: "8090465411" }, { name: "Jahnvi Pandey", phone: "7523800560" }],
+    contacts: [{ name: "Tech Fusion Club", phone: "" }],
     level: "university",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfAZkVI9O6fbDWZ718qS8Ji2cc2MClOmZxhexsafwEId1MJYQ/viewform"
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfAZkVI9O6fbDWZ718qS8Ji2cc2MClOmZxhexsafwEId1MJYQ/viewform",
+    isSpecialEvent: true,
+    speaker: {
+      name: "Mr. Somendra Nath Tiwari",
+      role: "Director, AiCyber.Guru",
+      company: "AiCyber.Guru",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/somnt/",
+        companyLinkedin: "https://www.linkedin.com/company/aicyberguru/"
+      },
+      websites: ["https://aicyber.guru/", "https://hackwithsmile.in/"]
+    }
   },
   {
     id: "bgmi",
@@ -606,17 +622,95 @@ export default function EventDashboard() {
                       {activeEvent.isSpecialEvent && activeEvent.speaker?.socials ? (
                         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
                           {activeEvent.speaker.socials.youtube && (
-                            <div className="p-3 border border-red-500/30 bg-red-500/5 rounded-lg text-center">
-                              <span className="block text-gray-400 text-[10px] uppercase tracking-wider mb-1">YouTube</span>
-                              <span className="block text-base font-bold text-white">{activeEvent.speaker.socials.youtube}</span>
-                            </div>
+                            <a
+                              href={activeEvent.speaker.socials.youtube.startsWith('http') ? activeEvent.speaker.socials.youtube : '#'}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={cn(
+                                "p-3 border rounded-lg text-center transition-colors group",
+                                activeEvent.speaker.socials.youtube.startsWith('http')
+                                  ? "border-red-500/30 bg-red-500/5 hover:bg-red-500/10 cursor-pointer"
+                                  : "border-red-500/30 bg-red-500/5 cursor-default"
+                              )}
+                            >
+                              <span className="block text-gray-400 text-[10px] uppercase tracking-wider mb-1 group-hover:text-red-400">YouTube</span>
+                              <span className="block text-base font-bold text-white max-w-full truncate px-1">
+                                {activeEvent.speaker.socials.youtube.startsWith('http') ? 'View Channel' : activeEvent.speaker.socials.youtube}
+                              </span>
+                            </a>
                           )}
                           {activeEvent.speaker.socials.instagram && (
-                            <div className="p-3 border border-pink-500/30 bg-pink-500/5 rounded-lg text-center">
-                              <span className="block text-gray-400 text-[10px] uppercase tracking-wider mb-1">Instagram</span>
-                              <span className="block text-base font-bold text-white">{activeEvent.speaker.socials.instagram}</span>
-                            </div>
+                            <a
+                              href={activeEvent.speaker.socials.instagram.startsWith('http') ? activeEvent.speaker.socials.instagram : '#'}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={cn(
+                                "p-3 border rounded-lg text-center transition-colors group",
+                                activeEvent.speaker.socials.instagram.startsWith('http')
+                                  ? "border-pink-500/30 bg-pink-500/5 hover:bg-pink-500/10 cursor-pointer"
+                                  : "border-pink-500/30 bg-pink-500/5 cursor-default"
+                              )}
+                            >
+                              <span className="block text-gray-400 text-[10px] uppercase tracking-wider mb-1 group-hover:text-pink-400">Instagram</span>
+                              <span className="block text-base font-bold text-white max-w-full truncate px-1">
+                                {activeEvent.speaker.socials.instagram.startsWith('http') ? 'View Profile' : activeEvent.speaker.socials.instagram}
+                              </span>
+                            </a>
                           )}
+                          {activeEvent.speaker.socials.facebook && (
+                            <a
+                              href={activeEvent.speaker.socials.facebook}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="p-3 border border-blue-600/30 bg-blue-600/5 rounded-lg text-center hover:bg-blue-600/10 transition-colors group"
+                            >
+                              <span className="block text-gray-400 text-[10px] uppercase tracking-wider mb-1 group-hover:text-blue-500">Facebook</span>
+                              <span className="flex items-center justify-center gap-2 text-base font-bold text-white">
+                                <Facebook size={16} /> View Page
+                              </span>
+                            </a>
+                          )}
+                          {activeEvent.speaker.socials.linkedin && (
+                            <a
+                              href={activeEvent.speaker.socials.linkedin}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="p-3 border border-blue-500/30 bg-blue-500/5 rounded-lg text-center hover:bg-blue-500/10 transition-colors group"
+                            >
+                              <span className="block text-gray-400 text-[10px] uppercase tracking-wider mb-1 group-hover:text-blue-400">LinkedIn</span>
+                              <span className="flex items-center justify-center gap-2 text-base font-bold text-white">
+                                <Linkedin size={16} /> View Profile
+                              </span>
+                            </a>
+                          )}
+
+                          {activeEvent.speaker.socials.companyLinkedin && (
+                            <a
+                              href={activeEvent.speaker.socials.companyLinkedin}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="p-3 border border-blue-500/30 bg-blue-500/5 rounded-lg text-center hover:bg-blue-500/10 transition-colors group"
+                            >
+                              <span className="block text-gray-400 text-[10px] uppercase tracking-wider mb-1 group-hover:text-blue-400">Company LinkedIn</span>
+                              <span className="flex items-center justify-center gap-2 text-base font-bold text-white">
+                                <Linkedin size={16} /> View Page
+                              </span>
+                            </a>
+                          )}
+                          {activeEvent.speaker.websites?.map((site, i) => (
+                            <a
+                              key={i}
+                              href={site}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="p-3 border border-purple-500/30 bg-purple-500/5 rounded-lg text-center hover:bg-purple-500/10 transition-colors group"
+                            >
+                              <span className="block text-gray-400 text-[10px] uppercase tracking-wider mb-1 group-hover:text-purple-400">Website</span>
+                              <span className="flex items-center justify-center gap-2 text-base font-bold text-white truncate px-2">
+                                <Globe size={16} /> {new URL(site).hostname.replace('www.', '')}
+                              </span>
+                            </a>
+                          ))}
                         </div>
                       ) : activeEvent.rulebook ? (
                         <a
@@ -690,7 +784,7 @@ export default function EventDashboard() {
                             <Zap className="text-gray-500 mt-0.5" size={16} />
                             <div>
                               <span className="block text-gray-400 text-xs uppercase">Registration Fee</span>
-                              <span className="text-neon-cyan font-bold">₹60/-</span>
+                              <span className="text-neon-cyan font-bold">{activeEvent.fee}</span>
                             </div>
                           </div>
                         </div>
