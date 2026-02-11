@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 export interface EventData {
   id: string;
   title: string;
-  description: string;
+  description: string | React.ReactNode;
   image: string;
   category: string;
   teamSize: string;
@@ -68,7 +68,7 @@ const events: EventData[] = [
   {
     id: "ai-workshop",
     title: "Hack With Smile: Workshop on Cyber Security",
-    description: "Join Mr. Somendra Nath Tiwari (Director, AiCyber.Guru) for an insightful workshop on Cyber Security. Learn about ethical hacking, digital safety, and the latest trends in cybersecurity.",
+    description: <><a href="https://hackwithsmile.in/" target="_blank" rel="noopener noreferrer" className="font-bold text-neon-cyan hover:underline">hackwithsmile.in</a> (Powered by <a href="https://aicyber.guru/" target="_blank" rel="noopener noreferrer" className="font-bold text-neon-cyan hover:underline">www.AiCyber.Guru</a>)<br />Join Mr. Somendra Nath Tiwari (Director, AiCyber.Guru) for an insightful workshop on Cyber Security. Learn about ethical hacking, digital safety, and the latest trends in cybersecurity.</>,
     image: "/events-page-banner.jpeg",
     category: "Workshop",
     teamSize: "Individual",
@@ -617,7 +617,7 @@ export default function EventDashboard() {
                   <div className="md:col-span-2 space-y-6">
                     <div>
                       <h4 className="text-gray-500 text-xs uppercase tracking-widest mb-2 font-bold">Protocol Description</h4>
-                      <p className="text-gray-300 leading-relaxed text-sm md:text-base">{activeEvent.description}</p>
+                      <p className="text-gray-300 leading-relaxed text-sm md:text-base whitespace-pre-line">{activeEvent.description}</p>
 
                       {activeEvent.isSpecialEvent && activeEvent.speaker?.socials ? (
                         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
