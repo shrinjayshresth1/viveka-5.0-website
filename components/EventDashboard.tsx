@@ -118,7 +118,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "Volleyball Court",
     timing: "19th Feb, 02:00 PM",
-    contacts: [{ name: "Samarth Kumar", phone: "8081880868" }, { name: "Himanshu Sharma", phone: "6386531609" }, { name: "Ansh Kumar Singh", phone: "7905551795" },],
+    contacts: [{ name: "Samarth Kumar", phone: "8081880868" }, { name: "Himanshu Sharma", phone: "6386531609" }],
     level: "university",
     registrationLink: "https://forms.gle/4pDhh72JboG8BjwE9",
     rulebook: "https://drive.google.com/file/d/1Gp_eUg06eHemEYtqbD6F6OASdbCB8lti/view?usp=sharing"
@@ -198,7 +198,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "B2-All Labs",
     timing: "20th Feb, 10:00 AM",
-    contacts: [{ name: "Prachi Maurya", phone: "6394376362" }, { name: "Ansh Kumar Singh", phone: "7905551795" }, { name: "Satyam Gupta", phone: "8318957671" }],
+    contacts: [{ name: "Prachi Maurya", phone: "6394376362" }, { name: "Sparsh Awasthi", phone: "9219382816" }, { name: "Satyam Gupta", phone: "8318957671" }],
     level: "university",
     registrationLink: "https://forms.gle/ViWJuZAuq7th7FWd9",
     rulebook: "https://drive.google.com/file/d/1P4ebaiNbmjjJScGvJLPQkJ6sCBe4Z9v2/view?usp=sharing"
