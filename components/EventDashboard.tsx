@@ -248,7 +248,8 @@ const events: EventData[] = [
     timing: "20th Feb, 12:30 PM",
     contacts: [{ name: "TBA", phone: "" }],
     level: "university",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfp1YDYkguSOpV1-tWO9QcmUbxhjWDUxW3k6HOxOpiwTelQKg/viewform"
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfp1YDYkguSOpV1-tWO9QcmUbxhjWDUxW3k6HOxOpiwTelQKg/viewform",
+    rulebook: "https://drive.google.com/file/d/1YokkhFDOWowmHLAoegLsdxQWZEC1n5Zr/view?usp=drive_link"
   },
   {
     id: "laser-show",
