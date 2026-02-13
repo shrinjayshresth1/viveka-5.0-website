@@ -20,8 +20,6 @@ export interface EventData {
   contacts: { name: string; phone: string }[];
   level: "school" | "university" | "both";
   registrationLink?: string;
-  registrationClosed?: boolean;
-  registrationClosedMessage?: string;
   rulebook?: string;
   isSpecialEvent?: boolean;
   speaker?: {
@@ -181,8 +179,7 @@ const events: EventData[] = [
     timing: "20th Feb, 10:00 AM (Univ) | 19th Feb, 12:30 PM (School)",
     contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Rashi Malik", phone: "8707340147" }, { name: "Aakarsh Mishra", phone: "9682043203" }, { name: "Neelabh Shukla", phone: "7307551612" }],
     level: "both",
-    registrationClosed: true,
-    registrationClosedMessage: "Registrations are currently closed. Stay tuned — they may reopen soon! Keep checking this site for updates.",
+    registrationLink: "https://forms.gle/aRw5qbeNHZqmMyyn9",
     rulebook: "https://drive.google.com/file/d/16f_A1ANiSkokLpipELYu4oNsXGTI3IKm/view?usp=sharing"
   },
   {
@@ -803,18 +800,7 @@ export default function EventDashboard() {
                       </>
                     )}
 
-                    {activeEvent.registrationClosed ? (
-                      <div className="hidden md:block w-full text-center">
-                        <div className="w-full py-4 bg-red-500/20 border border-red-500/40 text-red-400 font-bold uppercase tracking-wider rounded flex items-center justify-center gap-2">
-                          <X size={18} /> Registrations Closed
-                        </div>
-                        {activeEvent.registrationClosedMessage && (
-                          <p className="mt-2 text-xs text-amber-400/80 animate-pulse">
-                            {activeEvent.registrationClosedMessage}
-                          </p>
-                        )}
-                      </div>
-                    ) : activeEvent.registrationLink ? (
+                    {activeEvent.registrationLink ? (
                       <a
                         href={activeEvent.registrationLink}
                         target="_blank"
@@ -835,18 +821,7 @@ export default function EventDashboard() {
 
               {/* Mobile Floating Footer */}
               <div className="p-4 border-t border-white/10 bg-black/80 backdrop-blur-md md:hidden shrink-0 z-20">
-                {activeEvent.registrationClosed ? (
-                  <div className="w-full text-center">
-                    <div className="w-full py-3 bg-red-500/20 border border-red-500/40 text-red-400 font-bold uppercase tracking-wider rounded flex items-center justify-center gap-2">
-                      <X size={18} /> Registrations Closed
-                    </div>
-                    {activeEvent.registrationClosedMessage && (
-                      <p className="mt-2 text-xs text-amber-400/80 animate-pulse">
-                        {activeEvent.registrationClosedMessage}
-                      </p>
-                    )}
-                  </div>
-                ) : activeEvent.registrationLink ? (
+                {activeEvent.registrationLink ? (
                   <a
                     href={activeEvent.registrationLink}
                     target="_blank"
