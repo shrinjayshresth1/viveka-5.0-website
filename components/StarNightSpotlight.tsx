@@ -102,7 +102,7 @@ export default function StarNightSpotlight() {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold font-space-grotesk mb-4"
           >
-            <span className="text-white">Start Night Presents</span>
+            <span className="text-white">Star Night Presents</span>
           </motion.h2>
         </motion.div>
 

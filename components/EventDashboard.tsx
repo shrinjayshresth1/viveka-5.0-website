@@ -41,59 +41,6 @@ export interface EventData {
 
 const events: EventData[] = [
   {
-    id: "career-roadmap",
-    title: "First year to placement: A complete career roadmap of AI era",
-    description: "Join Mr. Durgesh Tiwari for an exclusive session on navigating your career in the AI era. From your first year in college to securing a top-tier placement, get a complete roadmap to success.",
-    image: "/codex.jpg", // Placeholder, using a generic one if not available or let user know
-    category: "Seminar",
-    teamSize: "Individual",
-    fee: "60/-",
-    prizes: ["Career Guidance"],
-    location: "Auditorium-B5",
-    timing: "20th Feb, 01:30 PM",
-    contacts: [{ name: "Tech Fusion Club", phone: "" }],
-    level: "both",
-    registrationLink: "https://forms.gle/ZfdKn6Q5Xgn7M1Th8/",
-    isSpecialEvent: true,
-    speaker: {
-      name: "Mr. Durgesh Tiwari",
-      role: "Founder & Educator",
-      company: "Learn Code With Durgesh",
-      socials: {
-        linkedin: "https://www.linkedin.com/in/durgeshkumartiwari/",
-        youtube: "https://www.youtube.com/learncodewithdurgesh",
-        instagram: "http://instagram.com/durgesh_k_t",
-        facebook: "http://facebook.com/learncodewithdurgesh"
-      }
-    }
-  },
-  {
-    id: "ai-workshop",
-    title: "Hack With Smile: Workshop on Cyber Security",
-    description: <><a href="https://hackwithsmile.in/" target="_blank" rel="noopener noreferrer" className="font-bold text-neon-cyan hover:underline">hackwithsmile.in</a> (Powered by <a href="https://aicyber.guru/" target="_blank" rel="noopener noreferrer" className="font-bold text-neon-cyan hover:underline">www.AiCyber.Guru</a>)<br />Join Mr. Somendra Nath Tiwari (Director, AiCyber.Guru) for an insightful workshop on Cyber Security. Learn about ethical hacking, digital safety, and the latest trends in cybersecurity.</>,
-    image: "/events-page-banner.jpeg",
-    category: "Workshop",
-    teamSize: "Individual",
-    fee: "₹60/-",
-    prizes: ["Certificates"],
-    location: "Auditorium-B5",
-    timing: "20th Feb, 03:30 PM",
-    contacts: [{ name: "Tech Fusion Club", phone: "" }],
-    level: "university",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfAZkVI9O6fbDWZ718qS8Ji2cc2MClOmZxhexsafwEId1MJYQ/viewform",
-    isSpecialEvent: true,
-    speaker: {
-      name: "Mr. Somendra Nath Tiwari",
-      role: "Director, AiCyber.Guru",
-      company: "AiCyber.Guru",
-      socials: {
-        linkedin: "https://www.linkedin.com/in/somnt/",
-        companyLinkedin: "https://www.linkedin.com/company/aicyberguru/"
-      },
-      websites: ["https://aicyber.guru/", "https://hackwithsmile.in/"]
-    }
-  },
-  {
     id: "bgmi",
     title: "BGMI",
     description: "Gear up for the ultimate gaming showdown with BGMI Battle Royale, where strategy, skill, and teamwork take center stage! Step onto the battleground, lead your squad, and compete against the best to claim the title of champions in e-sports.",
@@ -381,6 +328,59 @@ const events: EventData[] = [
     level: "university",
     registrationLink: "https://forms.gle/h3WtGLPZARirgymPA",
     rulebook: "https://drive.google.com/file/d/1lP7BK1iwe1ZhsBk5gdU91SxEFTyHTbTt/view?usp=sharing"
+  },
+  {
+    id: "career-roadmap",
+    title: "First year to placement: A complete career roadmap of AI era",
+    description: "Join Mr. Durgesh Tiwari for an exclusive session on navigating your career in the AI era. From your first year in college to securing a top-tier placement, get a complete roadmap to success.",
+    image: "/codex.jpg", // Placeholder, using a generic one if not available or let user know
+    category: "Workshop",
+    teamSize: "Individual",
+    fee: "60/-",
+    prizes: ["Career Guidance"],
+    location: "Auditorium-B5",
+    timing: "20th Feb, 01:30 PM",
+    contacts: [{ name: "Tech Fusion Club", phone: "" }],
+    level: "university",
+    registrationLink: "https://forms.gle/ZfdKn6Q5Xgn7M1Th8/",
+    isSpecialEvent: true,
+    speaker: {
+      name: "Mr. Durgesh Tiwari",
+      role: "Founder & Educator",
+      company: "Learn Code With Durgesh",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/durgeshkumartiwari/",
+        youtube: "https://www.youtube.com/learncodewithdurgesh",
+        instagram: "http://instagram.com/durgesh_k_t",
+        facebook: "http://facebook.com/learncodewithdurgesh"
+      }
+    }
+  },
+  {
+    id: "ai-workshop",
+    title: "Hack With Smile: Workshop on Cyber Security",
+    description: <><a href="https://hackwithsmile.in/" target="_blank" rel="noopener noreferrer" className="font-bold text-neon-cyan hover:underline">hackwithsmile.in</a> (Powered by <a href="https://aicyber.guru/" target="_blank" rel="noopener noreferrer" className="font-bold text-neon-cyan hover:underline">www.AiCyber.Guru</a>)<br />Join Mr. Somendra Nath Tiwari (Director, AiCyber.Guru) for an insightful workshop on Cyber Security. Learn about ethical hacking, digital safety, and the latest trends in cybersecurity.</>,
+    image: "/events-page-banner.jpeg",
+    category: "Workshop",
+    teamSize: "Individual",
+    fee: "₹60/-",
+    prizes: ["Certificates"],
+    location: "Auditorium-B5",
+    timing: "20th Feb, 03:30 PM",
+    contacts: [{ name: "Tech Fusion Club", phone: "" }],
+    level: "university",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfAZkVI9O6fbDWZ718qS8Ji2cc2MClOmZxhexsafwEId1MJYQ/viewform",
+    isSpecialEvent: true,
+    speaker: {
+      name: "Mr. Somendra Nath Tiwari",
+      role: "Director, AiCyber.Guru",
+      company: "AiCyber.Guru",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/somnt/",
+        companyLinkedin: "https://www.linkedin.com/company/aicyberguru/"
+      },
+      websites: ["https://aicyber.guru/", "https://hackwithsmile.in/"]
+    }
   }
 ];
 
@@ -494,20 +494,16 @@ export default function EventDashboard() {
               className={cn(
                 "w-full group relative p-4 text-left border rounded-lg transition-all duration-300 flex-shrink-0",
                 activeId === event.id
-                  ? event.isSpecialEvent
-                    ? "border-amber-400 bg-amber-400/10 shadow-[inset_0_0_20px_rgba(251,191,36,0.2)]"
-                    : "border-neon-cyan bg-neon-cyan/5 shadow-[inset_0_0_20px_rgba(0,240,255,0.1)]"
-                  : event.isSpecialEvent
-                    ? "border-amber-400/50 bg-amber-900/10 hover:border-amber-400"
-                    : "border-white/10 bg-black/20 hover:border-white/30"
+                  ? "border-neon-cyan bg-neon-cyan/5 shadow-[inset_0_0_20px_rgba(0,240,255,0.1)]"
+                  : "border-white/10 bg-black/20 hover:border-white/30"
               )}
             >
               <div className="flex justify-between items-center mb-1">
                 <span className={cn(
                   "text-xs font-bold uppercase tracking-wider",
-                  activeId === event.id ? (event.isSpecialEvent ? "text-amber-400" : "text-neon-cyan") : "text-gray-500"
+                  activeId === event.id ? "text-neon-cyan" : "text-gray-500"
                 )}>
-                  {event.isSpecialEvent ? "⭐ SPECIAL EVENT" : `[${event.category}]`}
+                  {`[${event.category}]`}
                 </span>
                 {activeId === event.id && (
                   <motion.div layoutId="activeDot" className="w-2 h-2 rounded-full bg-neon-cyan shadow-[0_0_10px_#00f0ff]" />
