@@ -180,7 +180,7 @@ const events: EventData[] = [
     contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Rashi Malik", phone: "8707340147" }, { name: "Aakarsh Mishra", phone: "9682043203" }, { name: "Neelabh Shukla", phone: "7307551612" }],
     level: "both",
     registrationLink: "https://forms.gle/aRw5qbeNHZqmMyyn9",
-    rulebook: "https://drive.google.com/file/d/16f_A1ANiSkokLpipELYu4oNsXGTI3IKm/view?usp=sharing"
+    rulebook: "https://drive.google.com/file/d/1pRNFbfJED6xpbfd4YGi6JXaNTrgzeVj0/view?usp=sharing"
   },
   {
     id: "junkyard",
@@ -720,10 +720,24 @@ export default function EventDashboard() {
                             View Rulebook →
                           </a>
                           {activeEvent.id === "hackathon" && (
-                            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-red-400 bg-red-500/10 border border-red-500/30 rounded-full animate-pulse">
-                              <span className="w-2 h-2 rounded-full bg-red-400 shadow-[0_0_8px_rgba(248,113,113,0.6)]" />
-                              Registrations Closing Soon!
-                            </span>
+                            <>
+                              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-green-400 bg-green-500/10 border border-green-500/30 rounded-full animate-pulse">
+                                <span className="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.6)]" />
+                                Problem Statement is Live!
+                              </span>
+                              <a
+                                href="https://docs.google.com/presentation/d/1nDSyIwlzO5VmWy_xr-GStpLHgKkVsO_W/edit?usp=sharing&ouid=103361635269968516305&rtpof=true&sd=true"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold border border-amber-400/30 text-amber-400 rounded hover:bg-amber-400/10 transition-colors"
+                              >
+                                📄 Download PPT Template →
+                              </a>
+                              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-red-400 bg-red-500/10 border border-red-500/30 rounded-full">
+                                <span className="w-2 h-2 rounded-full bg-red-400 shadow-[0_0_8px_rgba(248,113,113,0.6)]" />
+                                Registrations Closed
+                              </span>
+                            </>
                           )}
                         </div>
                       ) : (
@@ -808,7 +822,11 @@ export default function EventDashboard() {
                       </>
                     )}
 
-                    {activeEvent.registrationLink ? (
+                    {activeEvent.id === "hackathon" ? (
+                      <button className="hidden md:flex w-full py-4 bg-red-500/20 cursor-not-allowed text-red-400 font-bold uppercase tracking-wider rounded items-center justify-center gap-2 border border-red-500/30">
+                        Registrations Closed
+                      </button>
+                    ) : activeEvent.registrationLink ? (
                       <a
                         href={activeEvent.registrationLink}
                         target="_blank"
@@ -829,7 +847,11 @@ export default function EventDashboard() {
 
               {/* Mobile Floating Footer */}
               <div className="p-4 border-t border-white/10 bg-black/80 backdrop-blur-md md:hidden shrink-0 z-20">
-                {activeEvent.registrationLink ? (
+                {activeEvent.id === "hackathon" ? (
+                  <button className="w-full py-3 bg-red-500/20 cursor-not-allowed text-red-400 font-bold uppercase tracking-wider rounded flex items-center justify-center gap-2 border border-red-500/30">
+                    Registrations Closed
+                  </button>
+                ) : activeEvent.registrationLink ? (
                   <a
                     href={activeEvent.registrationLink}
                     target="_blank"
