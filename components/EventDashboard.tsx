@@ -710,14 +710,22 @@ export default function EventDashboard() {
                           ))}
                         </div>
                       ) : activeEvent.rulebook ? (
-                        <a
-                          href={activeEvent.rulebook}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="mt-4 inline-block px-4 py-2 text-xs border border-neon-cyan/30 text-neon-cyan rounded hover:bg-neon-cyan/10 transition-colors"
-                        >
-                          View Rulebook →
-                        </a>
+                        <div className="mt-4 flex flex-wrap items-center gap-3">
+                          <a
+                            href={activeEvent.rulebook}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block px-4 py-2 text-xs border border-neon-cyan/30 text-neon-cyan rounded hover:bg-neon-cyan/10 transition-colors"
+                          >
+                            View Rulebook →
+                          </a>
+                          {activeEvent.id === "hackathon" && (
+                            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-red-400 bg-red-500/10 border border-red-500/30 rounded-full animate-pulse">
+                              <span className="w-2 h-2 rounded-full bg-red-400 shadow-[0_0_8px_rgba(248,113,113,0.6)]" />
+                              Registrations Closing Soon!
+                            </span>
+                          )}
+                        </div>
                       ) : (
                         <button disabled className="mt-4 px-4 py-2 text-xs border border-white/10 text-gray-500 rounded cursor-not-allowed">
 
