@@ -54,7 +54,7 @@ const teamData = {
      ],
      webOps: [
           { name: "Shrinjay Shresth", role: "WebOps Lead", image: "/shrinjay-v2.webp", linkedin: "https://www.linkedin.com/in/shrinjay-shresth-036010215/" },
-          { name: "Praveen Kumar Singh", role: "WebOps Team", course: "BCA, 1st Year", image: "/praveen-singh-new.jpg", linkedin: "https://www.linkedin.com/in/praveensingh-", objectPosition: "object-center" },
+          { name: "Praveen Kumar Singh", role: "WebOps Team", course: "BCA, 1st Year", image: "/praveenfinal2.jpg", linkedin: "https://www.linkedin.com/in/praveensingh-", objectPosition: "object-center" },
      ],
      secretaries: [
           { name: "Pranshu Agrahari", role: "Student Organizing Secretary", course: "B.Tech CSE (DS+AI), 4th Year", image: "/pranshu.png", linkedin: "https://www.linkedin.com/in/pranshu-agrahari-956a37288/" },
@@ -82,6 +82,20 @@ const teamData = {
           { name: "Shiv Manglam Dubey", role: "Student Co-Convener", course: "B.Tech CSE, 3rd Year", image: "/shiv.jpg", linkedin: "https://www.linkedin.com/in/shiv-manglam-dubey-6a7467289/" },
           { name: "Anshu Kasaudhan", role: "Student Co-Convener", course: "B.Tech CSE, 3rd Year", image: "/anshu-new.png", linkedin: "https://www.linkedin.com/in/anshu-kasaudhan-6073712ba/", objectPosition: "object-center" },
           { name: "Om Jaiswal", role: "Student Co-Convener", course: "B.Tech Biotech, 2nd Year", image: "/om.jpg", linkedin: "https://www.linkedin.com/in/ojaiswal" },
+     ],
+     sponsorTeam: [
+          { name: "Shivam Singh", role: "Sponsor Team", course: "B.Tech CSE (DS AI) II year", image: "/shivam.jpeg", linkedin: "https://www.linkedin.com/in/singhadi01" },
+          { name: "Jagriti", role: "Sponsor Team", course: "BSc IT", image: "/jagriti.jpeg", linkedin: "https://www.linkedin.com/in/jagriti-jaiswal-1847353b0" },
+          { name: "Richa Yadav", role: "Sponsor Team", course: "2nd year", image: "/richayadav.jpeg", linkedin: "https://www.linkedin.com/in/richa-yadav-8011313b0" },
+          { name: "Prateek Singh", role: "Sponsor Team", course: "BCA(DS)/2nd year", image: "/prateeksingh.jpeg", linkedin: "https://www.linkedin.com/in/thakur-prateek-singh-suryavanshi-79312a3b0" },
+          { name: "Mohd Ayaan", role: "Sponsor Team", course: "BCA ( Normal ) 2nd Year", image: "/ayaan.jpeg", linkedin: "https://www.linkedin.com/in/mohd-ayaan-6a2930363" },
+          { name: "Insha Fatima", role: "Sponsor Team", course: "BCA (DS+AI)", image: "/inshafatima.jpeg", linkedin: "https://www.linkedin.com/in/insha-fatima-87061127a" },
+          { name: "Shipra Mishra", role: "Sponsor Team", course: "B.tech [Cs(DS+AI)] 3rd year", image: "/shipramishra2.jpeg", linkedin: "https://www.linkedin.com/in/shipra-mishra-09a106368" },
+          { name: "Diljan Ansari", role: "Sponsor Team", course: "B Tech CSE (DS+AI) , 2 year", image: "/diljanansari.jpeg", linkedin: "https://www.linkedin.com/in/diljan-ansari" },
+          { name: "Riya rai", role: "Sponsor Team", course: "BCA (DS+AI)", image: "/riyarai.jpeg" },
+          { name: "Isha Singh", role: "Sponsor Team", course: "Btech cse", image: "/ishasingh.jpeg", linkedin: "https://www.linkedin.com/in/isha-singh-0295ba255" },
+          { name: "Jahnvi Pandey", role: "Sponsor Team", course: "BCA(DS+AI)", image: "/jhanvipandey.jpeg", linkedin: "https://www.linkedin.com/in/jahnvipandey-sudo" },
+
      ]
 };
 
@@ -217,8 +231,8 @@ export default function Organizers() {
                               </div>
                          </div>
 
-                         {/* Section 8: WebOps Team */}
-                         <div className="mb-12">
+                         {/* Section 10: WebOps Team */}
+                         <div className="mb-24">
                               <div className="text-center mb-10">
                                    <h2 className="text-2xl font-mono text-neon-cyan tracking-widest uppercase inline-block border-b border-neon-cyan/50 pb-2">
                                         WebOps Team
@@ -229,7 +243,40 @@ export default function Organizers() {
                               </div>
                          </div>
 
+                         {/* Section 11: Sponsor Team */}
+                         <div className="mb-12">
+                              <div className="text-center mb-10">
+                                   <h2 className="text-2xl font-mono text-green-500 tracking-widest uppercase inline-block border-b border-green-500/50 pb-2">
+                                        Sponsor Team
+                                   </h2>
+                              </div>
+                              <div className="flex flex-wrap justify-center gap-10">
+                                   {teamData.sponsorTeam.map((p, i) => <OrganizerCard key={i} {...p} />)}
+                              </div>
+                         </div>
+
                     </div>
+
+                    {/* End of Page Indicator */}
+                    <div className="mt-32 mb-20 text-center relative">
+                         <div className="absolute inset-0 flex items-center justify-center opacity-20">
+                              <SparklesCore
+                                   background="transparent"
+                                   minSize={1}
+                                   maxSize={2}
+                                   particleDensity={100}
+                                   className="w-full h-full"
+                                   particleColor="#FFFFFF"
+                              />
+                         </div>
+                         <h3 className="text-xl md:text-3xl font-bold text-gray-500 font-space-grotesk tracking-widest uppercase">
+                              /// End of Team ///
+                         </h3>
+                         <p className="text-gray-600 mt-2 text-sm font-mono">
+                              Viveka 5.0 • TechFusion Club
+                         </p>
+                    </div>
+
                </TracingBeam>
 
           </div>

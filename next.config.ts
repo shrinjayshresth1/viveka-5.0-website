@@ -19,6 +19,18 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "www.vivekatheintelligence.tech",
       },
+      {
+        protocol: "https",
+        hostname: "drive.google.com",
+      },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "doc.google.com",
+      },
     ],
     // Optimize image sizes for common device widths
     deviceSizes: [480, 640, 750, 828, 960, 1080, 1200],
