@@ -19,6 +19,7 @@ export interface EventData {
   timing: string;
   contacts: { name: string; phone: string }[];
   level: "school" | "university" | "both";
+  status?: "open" | "closed" | "closing_soon";
   registrationLink?: string;
   rulebook?: string;
   isSpecialEvent?: boolean;
@@ -83,6 +84,7 @@ const events: EventData[] = [
     timing: "18th Feb - 04:00 PM",
     contacts: [{ name: "Shipra Mishra", phone: "9696494437" }, { name: "Prateek Singh", phone: "9044298094" }, { name: "Jahnvi Pandey", phone: "7523800560" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/zy14bmEJTQ9HzpXa7",
     rulebook: "https://drive.google.com/file/d/1Z39Olh-N6R44TKbJzkeGJ4Vq8zkwATqV/view?usp=sharing"
   },
@@ -99,6 +101,7 @@ const events: EventData[] = [
     timing: "18th Feb, 11:30 AM",
     contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Neelabh Shukla", phone: "7307551612" }, { name: "Om Jaiswal", phone: "7068339541" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/TAstKD4ENGMsFqB77",
     rulebook: "https://drive.google.com/file/d/1JjKKm1lzgl0Kktjg0_yjZpiG6Ugz5Xt0/view?usp=sharing"
   },
@@ -179,6 +182,7 @@ const events: EventData[] = [
     timing: "20th Feb, 10:00 AM (Univ) | 19th Feb, 12:30 PM (School)",
     contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Rashi Malik", phone: "8707340147" }, { name: "Aakarsh Mishra", phone: "9682043203" }, { name: "Neelabh Shukla", phone: "7307551612" }],
     level: "both",
+    status: "closed",
     registrationLink: "https://forms.gle/aRw5qbeNHZqmMyyn9",
     rulebook: "https://drive.google.com/file/d/1pRNFbfJED6xpbfd4YGi6JXaNTrgzeVj0/view?usp=sharing"
   },
@@ -211,6 +215,7 @@ const events: EventData[] = [
     timing: "18th Feb, 2:00 PM - 05:00 PM",
     contacts: [{ name: "Viveka Core Team", phone: "" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/Uom8d5cAYFrhcSme6",
     rulebook: "https://drive.google.com/file/d/1VzB6bKC1q7SgNPUiYXPyv8OTbP-ox92Q/view?usp=sharing"
   },
@@ -227,6 +232,7 @@ const events: EventData[] = [
     timing: "18th Feb 2:00 PM (Univ) | 19th Feb 3:25 PM (School)",
     contacts: [{ name: "Anshuma Yadav", phone: "9369885065" }, { name: "Neha Yadav", phone: "6388223377" }, { name: "Nistha Arora", phone: "8707641236" }],
     level: "both",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/ETgf9kfMqPX1vMa98",
     rulebook: "https://drive.google.com/file/d/1HbdVSBo-7nUrNn9-fwGjqGkXBpU7uw-S/view?usp=sharing"
   },
@@ -243,6 +249,7 @@ const events: EventData[] = [
     timing: "18th Feb, 01:00 PM",
     contacts: [{ name: "Vinay Yadav", phone: "8765072315" }, { name: "Vinayak", phone: "9140613407" }, { name: "Divyata Maurya", phone: "9250055785" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/Z4uFqqSUz1i8NEnE8",
     rulebook: "https://drive.google.com/file/d/1CdGKWR9IRZTuM-IjuyptOXODMB7w_0st/view?usp=sharing"
   },
@@ -307,6 +314,7 @@ const events: EventData[] = [
     timing: "18th Feb - 03:00 PM",
     contacts: [{ name: "Rashi Malik", phone: "8707340147" }, { name: "Dhruv Pathak", phone: " 8604440669" }, { name: "Aditya Verma", phone: "9839428105" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/uK2wUFS4hEbZNy588",
     rulebook: "https://drive.google.com/file/d/177gEckRSDaQT86g5xTJDYWRheYmpk0Rs/view?usp=sharing"
   },
@@ -339,6 +347,7 @@ const events: EventData[] = [
     timing: "20th Feb, 01:30 PM",
     contacts: [{ name: "Tech Fusion Club", phone: "" }],
     level: "university",
+    status: "closed",
     registrationLink: "https://forms.gle/ZfdKn6Q5Xgn7M1Th8/",
     isSpecialEvent: true,
     speaker: {
@@ -733,16 +742,24 @@ export default function EventDashboard() {
                               >
                                 📄 Download PPT Template →
                               </a>
-                              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-red-400 bg-red-500/10 border border-red-500/30 rounded-full">
-                                <span className="w-2 h-2 rounded-full bg-red-400 shadow-[0_0_8px_rgba(248,113,113,0.6)]" />
-                                Registrations Closed
-                              </span>
                             </>
+                          )}
+                          {activeEvent.status === "closed" && (
+                            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-red-400 bg-red-500/10 border border-red-500/30 rounded-full">
+                              <span className="w-2 h-2 rounded-full bg-red-400 shadow-[0_0_8px_rgba(248,113,113,0.6)]" />
+                              Registrations Closed
+                            </span>
+                          )}
+                          {activeEvent.status === "closing_soon" && (
+                            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 border border-amber-500/30 rounded-full animate-pulse">
+                              <span className="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.6)]" />
+                              Filling Fast!
+                            </span>
                           )}
                         </div>
                       ) : (
                         <button disabled className="mt-4 px-4 py-2 text-xs border border-white/10 text-gray-500 rounded cursor-not-allowed">
-
+                          
                         </button>
                       )}
                     </div>
@@ -822,7 +839,7 @@ export default function EventDashboard() {
                       </>
                     )}
 
-                    {activeEvent.id === "hackathon" ? (
+                    {activeEvent.status === "closed" ? (
                       <button className="hidden md:flex w-full py-4 bg-red-500/20 cursor-not-allowed text-red-400 font-bold uppercase tracking-wider rounded items-center justify-center gap-2 border border-red-500/30">
                         Registrations Closed
                       </button>
@@ -833,7 +850,7 @@ export default function EventDashboard() {
                         rel="noopener noreferrer"
                         className="hidden md:flex w-full py-4 bg-neon-cyan text-black font-bold uppercase tracking-wider rounded transition-all hover:bg-white hover:scale-[1.02] items-center justify-center gap-2 group"
                       >
-                        Register Now  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                        {activeEvent.status === "closing_soon" ? "Register Now (Closing Soon!)" : "Register Now"} <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                       </a>
                     ) : (
                       <button className="hidden md:flex w-full py-4 bg-neon-cyan/50 cursor-not-allowed text-black/50 font-bold uppercase tracking-wider rounded items-center justify-center gap-2 group">
@@ -847,7 +864,7 @@ export default function EventDashboard() {
 
               {/* Mobile Floating Footer */}
               <div className="p-4 border-t border-white/10 bg-black/80 backdrop-blur-md md:hidden shrink-0 z-20">
-                {activeEvent.id === "hackathon" ? (
+                {activeEvent.status === "closed" ? (
                   <button className="w-full py-3 bg-red-500/20 cursor-not-allowed text-red-400 font-bold uppercase tracking-wider rounded flex items-center justify-center gap-2 border border-red-500/30">
                     Registrations Closed
                   </button>
@@ -858,7 +875,7 @@ export default function EventDashboard() {
                     rel="noopener noreferrer"
                     className="w-full py-3 bg-neon-cyan text-black font-bold uppercase tracking-wider rounded transition-all active:scale-95 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(0,240,255,0.3)]"
                   >
-                    Register Now <ArrowRight size={18} />
+                    {activeEvent.status === "closing_soon" ? "Register Now (Closing Soon!)" : "Register Now"} <ArrowRight size={18} />
                   </a>
                 ) : (
                   <button className="w-full py-3 bg-neon-cyan/50 cursor-not-allowed text-black/50 font-bold uppercase tracking-wider rounded flex items-center justify-center gap-2">
