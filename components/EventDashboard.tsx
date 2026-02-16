@@ -103,7 +103,7 @@ const events: EventData[] = [
     level: "university",
     status: "closing_soon",
     registrationLink: "https://forms.gle/TAstKD4ENGMsFqB77",
-    rulebook: "https://drive.google.com/file/d/1JjKKm1lzgl0Kktjg0_yjZpiG6Ugz5Xt0/view?usp=sharing"
+    rulebook: "https://drive.google.com/file/d/1haF1miPxjHK80IUOCHEYwdjnMgXCBDln/view?usp=sharing"
   },
   {
     id: "digi-art",
