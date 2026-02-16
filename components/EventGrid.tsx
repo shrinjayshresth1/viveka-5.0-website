@@ -20,7 +20,7 @@ const events: EventData[] = [
     location: "TBA",
     timing: "TBA",
     contacts: [{ name: "Tech Team", phone: "" }],
-    rulebook: "https://drive.google.com/file/d/1haF1miPxjHK80IUOCHEYwdjnMgXCBDln/view?usp=sharing"
+    rulebook: "https://drive.google.com/file/d/1Wdu1TfFAOuGHno7Fu4ORakFo9H2MTV_8/view?usp=sharing"
   },
   {
     id: "hackathon-university",
