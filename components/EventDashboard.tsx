@@ -52,6 +52,7 @@ const events: EventData[] = [
     timing: "20th Feb",
     contacts: [{ name: "Shashank Kumar", phone: "6306569583" }, { name: "Divyansh Srivastava", phone: "6394500934" }, { name: "Sanskar Dixit", phone: "7607124641" }, { name: "Ashutosh Singh", phone: "9026830316" }],
     level: "university",
+    status: "closed",
     registrationLink: "https://forms.gle/FPDw5HN32rgQhyyg7",
     rulebook: "https://drive.google.com/file/d/1FwnOuSYFHRA-uF7wucMzZLsb6sS0Pnjn/view?usp=sharing"
   },
@@ -166,6 +167,7 @@ const events: EventData[] = [
     timing: "19th Feb, 11:00 AM",
     contacts: [{ name: "Yash Mishra", phone: "6306974406" }, { name: "Nirbhay Singh", phone: "7607124641" }, { name: "Aviral Mishra", phone: "9519255113" }, { name: "Aiman Abidi", phone: "8756821074" }],
     level: "university",
+    status: "closed",
     registrationLink: "https://forms.gle/d6U8aJQQF7Cb72zYA",
     rulebook: "https://drive.google.com/file/d/1m9Tar-PU5RT5KWgR86t7Nl2EhUFsdi8t/view?usp=sharing"
   },
@@ -215,7 +217,7 @@ const events: EventData[] = [
     timing: "18th Feb, 2:00 PM - 05:00 PM",
     contacts: [{ name: "Viveka Core Team", phone: "" }],
     level: "university",
-    status: "closing_soon",
+    status: "closed",
     registrationLink: "https://forms.gle/Uom8d5cAYFrhcSme6",
     rulebook: "https://drive.google.com/file/d/1VzB6bKC1q7SgNPUiYXPyv8OTbP-ox92Q/view?usp=sharing"
   },
@@ -759,7 +761,7 @@ export default function EventDashboard() {
                         </div>
                       ) : (
                         <button disabled className="mt-4 px-4 py-2 text-xs border border-white/10 text-gray-500 rounded cursor-not-allowed">
-                          
+
                         </button>
                       )}
                     </div>
