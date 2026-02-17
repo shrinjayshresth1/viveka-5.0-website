@@ -100,7 +100,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "All Labs (B2-Ground Floor)",
     timing: "18th Feb, 11:30 AM",
-    contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Neelabh Shukla", phone: "7307551612" }, { name: "Om Jaiswal", phone: "7068339541" }],
+    contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Neelabh Shukla", phone: "7307551612" }, { name: "Om Jaiswal", phone: "7068339541" }, { name: "Aakarsh Mishra", phone: "9682043203" }],
     level: "university",
     status: "closing_soon",
     registrationLink: "https://forms.gle/TAstKD4ENGMsFqB77",
@@ -199,7 +199,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "B5-Ground Floor",
     timing: "20th Feb, 12:30 PM",
-    contacts: [{ name: "TBA", phone: "" }],
+    contacts: [{ name: "HRITIK RAJ KHARE", phone: "8081937738" }, { name: "ABHISHEK RAO", phone: "9792815988" }, { name: "ABDUL SABROJ", phone: "07991578515" }],
     level: "university",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfp1YDYkguSOpV1-tWO9QcmUbxhjWDUxW3k6HOxOpiwTelQKg/viewform",
     rulebook: "https://drive.google.com/file/d/1YokkhFDOWowmHLAoegLsdxQWZEC1n5Zr/view?usp=drive_link"
