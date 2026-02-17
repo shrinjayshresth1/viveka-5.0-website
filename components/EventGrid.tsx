@@ -184,13 +184,14 @@ const events: EventData[] = [
     description: "The ultimate gaming showdown! Step onto the battleground, lead your squad, and compete against the best to claim the title of e-sports champions.",
     image: "https://images.unsplash.com/photo-1593305841991-05c29736f87e?q=80&w=2070&auto=format&fit=crop",
     category: "Gaming",
-    teamSize: "Squad",
-    fee: "Register to View",
+    teamSize: "4 Members",
+    fee: "₹200/-",
     prizes: ["Pool Prize"],
-    location: "E-Sports Arena",
-    timing: "TBA",
-    contacts: [],
-    rulebook: "https://drive.google.com/file/d/1FwnOuSYFHRA-uF7wucMzZLsb6sS0Pnjn/view?usp=sharing"
+    location: "Mini Auditorium (Admin) (Final Round)",
+    timing: "20th Feb",
+    contacts: [{ name: "Shashank Kumar", phone: "6306569583" }, { name: "Divyansh Srivastava", phone: "6394500934" }, { name: "Sanskar Dixit", phone: "7607124641" }, { name: "Ashutosh Singh", phone: "9026830316" }],
+    rulebook: "https://drive.google.com/file/d/1FwnOuSYFHRA-uF7wucMzZLsb6sS0Pnjn/view?usp=sharing",
+    registrationLink: "https://forms.gle/FPDw5HN32rgQhyyg7"
   },
 
   // --- BRAINSTORMING & FUN ---

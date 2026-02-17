@@ -19,6 +19,7 @@ export interface EventData {
   contacts: { name: string; phone: string }[];
   note?: string;
   rulebook?: string;
+  registrationLink?: string;
 }
 
 interface EventModalProps {
@@ -149,9 +150,17 @@ export default function EventModal({ event, onClose }: EventModalProps) {
                  )}
 
                  {/* footer CTA */}
-                 <button className="w-full py-4 bg-neon-cyan text-black font-bold text-lg rounded-xl hover:bg-white hover:scale-[1.01] transition-all duration-300 shadow-[0_0_30px_rgba(0,240,255,0.3)]">
-                     Register Now
-                 </button>
+                 <a 
+                     href={event.registrationLink || "#"}
+                     target={event.registrationLink ? "_blank" : undefined}
+                     rel="noopener noreferrer"
+                     className={cn(
+                        "block w-full py-4 text-center bg-neon-cyan text-black font-bold text-lg rounded-xl hover:bg-white hover:scale-[1.01] transition-all duration-300 shadow-[0_0_30px_rgba(0,240,255,0.3)]",
+                        !event.registrationLink && "opacity-50 cursor-not-allowed pointer-events-none"
+                     )}
+                 >
+                     {event.registrationLink ? "Register Now" : "Registration Closed / TBA"}
+                 </a>
 
             </div>
         </motion.div>
