@@ -52,6 +52,7 @@ const events: EventData[] = [
     timing: "20th Feb",
     contacts: [{ name: "Shashank Kumar", phone: "6306569583" }, { name: "Divyansh Srivastava", phone: "6394500934" }, { name: "Sanskar Dixit", phone: "7607124641" }, { name: "Ashutosh Singh", phone: "9026830316" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/FPDw5HN32rgQhyyg7",
     rulebook: "https://drive.google.com/file/d/1FwnOuSYFHRA-uF7wucMzZLsb6sS0Pnjn/view?usp=sharing"
   },
@@ -68,6 +69,7 @@ const events: EventData[] = [
     timing: "19th Feb, 02:00 PM",
     contacts: [{ name: "Samarth Kumar", phone: "8081880868" }, { name: "Himanshu Sharma", phone: "6386531609" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/4pDhh72JboG8BjwE9",
     rulebook: "https://drive.google.com/file/d/1Gp_eUg06eHemEYtqbD6F6OASdbCB8lti/view?usp=sharing"
   },
@@ -118,6 +120,7 @@ const events: EventData[] = [
     timing: "19th Feb, 10:00 AM",
     contacts: [{ name: "Prateek Kumar Singh", phone: "8924046121" }, { name: "Mohd Ayaan", phone: "8528628809" }, { name: "Dilijan Ansari", phone: "8400372991" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfQ60JeC5doeu_ZGahXm342zI3GvOfPGePq5Ew7foQ6yKni3w/viewform",
     rulebook: "https://drive.google.com/file/d/1NbRZZdiGWlEuI90NF7xyaoPUdyzoAq2_/view?usp=sharing"
   },
@@ -134,6 +137,7 @@ const events: EventData[] = [
     timing: "19th Feb, 01:30 PM (Univ) | 19th Feb 03:30 PM (School)",
     contacts: [{ name: "Kshitij Gupta", phone: "9455813610" }, { name: "Anurag Kumar Rai", phone: "7991406755" }, { name: "Vicky Kumar Mishra", phone: "9334335156" }],
     level: "both",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/DrEv4TLiGe9FTjZV7",
     rulebook: "https://drive.google.com/file/d/19A2FG13rKeCGg86FfjVbZfOTAMckt_xH/view?usp=sharing"
   },
@@ -150,6 +154,7 @@ const events: EventData[] = [
     timing: "20th Feb, 10:00 AM",
     contacts: [{ name: "Prachi Maurya", phone: "6394376362" }, { name: "Sparsh Awasthi", phone: "9219382816" }, { name: "Satyam Gupta", phone: "8318957671" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/ViWJuZAuq7th7FWd9",
     rulebook: "https://drive.google.com/file/d/1P4ebaiNbmjjJScGvJLPQkJ6sCBe4Z9v2/view?usp=sharing"
   },
@@ -200,6 +205,7 @@ const events: EventData[] = [
     timing: "20th Feb, 12:30 PM",
     contacts: [{ name: "HRITIK RAJ KHARE", phone: "8081937738" }, { name: "ABHISHEK RAO", phone: "9792815988" }, { name: "ABDUL SABROJ", phone: "07991578515" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfp1YDYkguSOpV1-tWO9QcmUbxhjWDUxW3k6HOxOpiwTelQKg/viewform",
     rulebook: "https://drive.google.com/file/d/1YokkhFDOWowmHLAoegLsdxQWZEC1n5Zr/view?usp=drive_link"
   },
@@ -267,6 +273,7 @@ const events: EventData[] = [
     timing: "19th Feb 02:30 PM (Univ) | 19th Feb 2:00 PM (School)",
     contacts: [{ name: "Shiv Manglam Dubey", phone: "" }, { name: "Aditya Singh", phone: "9794791608" }, { name: "Anubhav Jaiswal", phone: "9559107407" }],
     level: "both",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/jSG2d9sAQHoVe3hE6",
     rulebook: "https://drive.google.com/file/d/19uO8lyB5qYmusAEMaNl2tbGdZBhoxzLh/view?usp=sharing"
   },
@@ -283,6 +290,7 @@ const events: EventData[] = [
     timing: "19th Feb 12:30 PM (Univ) | 19th Feb 2:00 PM (School)",
     contacts: [{ name: "Abhishek Rao", phone: "9792815988" }, { name: "Ahad Ahmad", phone: "8299705189" }, { name: "Subhadeep Pal", phone: "7880499977" }],
     level: "both",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/Goifd69cWuGo8V9C7",
     rulebook: "https://drive.google.com/file/d/1DthINe_AgJnMKer5RRtJcG6L0Nj_FKlT/view?usp=sharing"
   },
@@ -299,6 +307,7 @@ const events: EventData[] = [
     timing: "19th Feb, 04:00 PM",
     contacts: [{ name: "Raunak Srivastava", phone: "7235918654" }, { name: "Aditya Pratap Singh", phone: "9120058311" }, { name: "Mahendra Maurya", phone: "6393092836" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/C19QxDKbjjJAVGSw7",
     rulebook: "https://drive.google.com/file/d/1Prn-3YT46TsbWFqLcE3JpHaAcJJsZCuo/view?usp=sharing"
   },
@@ -332,6 +341,7 @@ const events: EventData[] = [
     timing: "20th Feb, 11:30 AM",
     contacts: [{ name: "Isha Singh", phone: "9305139337" }, { name: "Aakarsh Pandey", phone: "8545928982" }, { name: "Mohd Aghaz", phone: "7379068369" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://forms.gle/h3WtGLPZARirgymPA",
     rulebook: "https://drive.google.com/file/d/1lP7BK1iwe1ZhsBk5gdU91SxEFTyHTbTt/view?usp=sharing"
   },
@@ -376,6 +386,7 @@ const events: EventData[] = [
     timing: "20th Feb, 03:30 PM",
     contacts: [{ name: "Tech Fusion Club", phone: "" }],
     level: "university",
+    status: "closing_soon",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfAZkVI9O6fbDWZ718qS8Ji2cc2MClOmZxhexsafwEId1MJYQ/viewform",
     isSpecialEvent: true,
     speaker: {
@@ -851,7 +862,7 @@ export default function EventDashboard() {
                         rel="noopener noreferrer"
                         className="hidden md:flex w-full py-4 bg-neon-cyan text-black font-bold uppercase tracking-wider rounded transition-all hover:bg-white hover:scale-[1.02] items-center justify-center gap-2 group"
                       >
-                        {activeEvent.status === "closing_soon" ? "Register Now (Closing Soon!)" : "Register Now"} <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                        Register Now <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                       </a>
                     ) : (
                       <button className="hidden md:flex w-full py-4 bg-neon-cyan/50 cursor-not-allowed text-black/50 font-bold uppercase tracking-wider rounded items-center justify-center gap-2 group">
@@ -876,7 +887,7 @@ export default function EventDashboard() {
                     rel="noopener noreferrer"
                     className="w-full py-3 bg-neon-cyan text-black font-bold uppercase tracking-wider rounded transition-all active:scale-95 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(0,240,255,0.3)]"
                   >
-                    {activeEvent.status === "closing_soon" ? "Register Now (Closing Soon!)" : "Register Now"} <ArrowRight size={18} />
+                    Register Now <ArrowRight size={18} />
                   </a>
                 ) : (
                   <button className="w-full py-3 bg-neon-cyan/50 cursor-not-allowed text-black/50 font-bold uppercase tracking-wider rounded flex items-center justify-center gap-2">
