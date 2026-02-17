@@ -52,6 +52,7 @@ const events: EventData[] = [
     timing: "20th Feb",
     contacts: [{ name: "Shashank Kumar", phone: "6306569583" }, { name: "Divyansh Srivastava", phone: "6394500934" }, { name: "Sanskar Dixit", phone: "7607124641" }, { name: "Ashutosh Singh", phone: "9026830316" }],
     level: "university",
+    status: "closed",
     registrationLink: "https://forms.gle/FPDw5HN32rgQhyyg7",
     rulebook: "https://drive.google.com/file/d/1FwnOuSYFHRA-uF7wucMzZLsb6sS0Pnjn/view?usp=sharing"
   },
@@ -99,7 +100,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "All Labs (B2-Ground Floor)",
     timing: "18th Feb, 11:30 AM",
-    contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Neelabh Shukla", phone: "7307551612" }, { name: "Om Jaiswal", phone: "7068339541" }],
+    contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Neelabh Shukla", phone: "7307551612" }, { name: "Om Jaiswal", phone: "7068339541" }, { name: "Aakarsh Mishra", phone: "9682043203" }],
     level: "university",
     status: "closing_soon",
     registrationLink: "https://forms.gle/TAstKD4ENGMsFqB77",
@@ -131,7 +132,7 @@ const events: EventData[] = [
     fee: "₹200/-",
     prizes: ["TBA"],
     location: "Admin Ground",
-    timing: "19th Feb, 01:30 PM",
+    timing: "19th Feb, 01:30 PM (Univ) | 19th Feb 03:30 PM (School)",
     contacts: [{ name: "Kshitij Gupta", phone: "9455813610" }, { name: "Anurag Kumar Rai", phone: "7991406755" }, { name: "Vicky Kumar Mishra", phone: "9334335156" }],
     level: "both",
     registrationLink: "https://forms.gle/DrEv4TLiGe9FTjZV7",
@@ -166,6 +167,7 @@ const events: EventData[] = [
     timing: "19th Feb, 11:00 AM",
     contacts: [{ name: "Yash Mishra", phone: "6306974406" }, { name: "Nirbhay Singh", phone: "7607124641" }, { name: "Aviral Mishra", phone: "9519255113" }, { name: "Aiman Abidi", phone: "8756821074" }],
     level: "university",
+    status: "closed",
     registrationLink: "https://forms.gle/d6U8aJQQF7Cb72zYA",
     rulebook: "https://drive.google.com/file/d/1m9Tar-PU5RT5KWgR86t7Nl2EhUFsdi8t/view?usp=sharing"
   },
@@ -197,7 +199,7 @@ const events: EventData[] = [
     prizes: ["TBA"],
     location: "B5-Ground Floor",
     timing: "20th Feb, 12:30 PM",
-    contacts: [{ name: "TBA", phone: "" }],
+    contacts: [{ name: "HRITIK RAJ KHARE", phone: "8081937738" }, { name: "ABHISHEK RAO", phone: "9792815988" }, { name: "ABDUL SABROJ", phone: "07991578515" }],
     level: "university",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfp1YDYkguSOpV1-tWO9QcmUbxhjWDUxW3k6HOxOpiwTelQKg/viewform",
     rulebook: "https://drive.google.com/file/d/1YokkhFDOWowmHLAoegLsdxQWZEC1n5Zr/view?usp=drive_link"
@@ -215,7 +217,7 @@ const events: EventData[] = [
     timing: "18th Feb, 2:00 PM - 05:00 PM",
     contacts: [{ name: "Viveka Core Team", phone: "" }],
     level: "university",
-    status: "closing_soon",
+    status: "closed",
     registrationLink: "https://forms.gle/Uom8d5cAYFrhcSme6",
     rulebook: "https://drive.google.com/file/d/1VzB6bKC1q7SgNPUiYXPyv8OTbP-ox92Q/view?usp=sharing"
   },
@@ -263,7 +265,7 @@ const events: EventData[] = [
     fee: "₹150/- (Univ), ₹100/- (School)",
     prizes: ["TBA"],
     location: "Volleyball Court",
-    timing: "19th Feb 12:30 PM (Univ) | 19th Feb 2:00 PM (School)",
+    timing: "19th Feb 02:30 PM (Univ) | 19th Feb 2:00 PM (School)",
     contacts: [{ name: "Shiv Manglam Dubey", phone: "" }, { name: "Aditya Singh", phone: "9794791608" }, { name: "Anubhav Jaiswal", phone: "9559107407" }],
     level: "both",
     registrationLink: "https://forms.gle/jSG2d9sAQHoVe3hE6",
@@ -310,7 +312,7 @@ const events: EventData[] = [
     teamSize: "1 Member",
     fee: "₹60/-",
     prizes: ["TBA"],
-    location: "University Club Stage",
+    location: "Admin Ground",
     timing: "18th Feb - 03:00 PM",
     contacts: [{ name: "Rashi Malik", phone: "8707340147" }, { name: "Dhruv Pathak", phone: " 8604440669" }, { name: "Aditya Verma", phone: "9839428105" }],
     level: "university",
@@ -759,7 +761,7 @@ export default function EventDashboard() {
                         </div>
                       ) : (
                         <button disabled className="mt-4 px-4 py-2 text-xs border border-white/10 text-gray-500 rounded cursor-not-allowed">
-                          
+
                         </button>
                       )}
                     </div>
