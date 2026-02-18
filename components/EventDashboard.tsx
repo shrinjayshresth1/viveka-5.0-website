@@ -84,7 +84,7 @@ const events: EventData[] = [
     timing: "18th Feb - 02:00 PM",
     contacts: [{ name: "Shipra Mishra", phone: "9696494437" }, { name: "Prateek Singh", phone: "9044298094" }, { name: "Jahnvi Pandey", phone: "7523800560" }],
     level: "university",
-    status: "closing_soon",
+    status: "closed",
     registrationLink: "https://forms.gle/zy14bmEJTQ9HzpXa7",
     rulebook: "https://drive.google.com/file/d/1Z39Olh-N6R44TKbJzkeGJ4Vq8zkwATqV/view?usp=sharing"
   },
