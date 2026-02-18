@@ -86,7 +86,7 @@ const events: EventData[] = [
     timing: "18th Feb - 02:00 PM",
     contacts: [{ name: "Shipra Mishra", phone: "9696494437" }, { name: "Prateek Singh", phone: "9044298094" }, { name: "Jahnvi Pandey", phone: "7523800560" }],
     level: "university",
-    status: "closing_soon",
+    status: "closed",
     registrationLink: "https://forms.gle/zy14bmEJTQ9HzpXa7",
     rulebook: "https://drive.google.com/file/d/1Z39Olh-N6R44TKbJzkeGJ4Vq8zkwATqV/view?usp=sharing"
   },
@@ -103,7 +103,7 @@ const events: EventData[] = [
     timing: "18th Feb, 11:30 AM",
     contacts: [{ name: "Shrinjay Shresth", phone: "9334916387" }, { name: "Neelabh Shukla", phone: "7307551612" }, { name: "Om Jaiswal", phone: "7068339541" }, { name: "Aakarsh Mishra", phone: "9682043203" }],
     level: "university",
-    status: "closing_soon",
+    status: "closed",
     registrationLink: "https://forms.gle/TAstKD4ENGMsFqB77",
     rulebook: "https://drive.google.com/file/d/1Wdu1TfFAOuGHno7Fu4ORakFo9H2MTV_8/view?usp=sharing"
   },
@@ -239,7 +239,7 @@ const events: EventData[] = [
     timing: "18th Feb 2:00 PM (Univ) | 19th Feb 3:25 PM (School)",
     contacts: [{ name: "Anshuma Yadav", phone: "9369885065" }, { name: "Neha Yadav", phone: "6388223377" }, { name: "Nistha Arora", phone: "8707641236" }],
     level: "both",
-    status: "closing_soon",
+    status: "closed",
     registrationLink: "https://forms.gle/ETgf9kfMqPX1vMa98",
     rulebook: "https://drive.google.com/file/d/1HbdVSBo-7nUrNn9-fwGjqGkXBpU7uw-S/view?usp=sharing"
   },
@@ -256,7 +256,7 @@ const events: EventData[] = [
     timing: "18th Feb, 01:00 PM",
     contacts: [{ name: "Vinay Yadav", phone: "8765072315" }, { name: "Vinayak", phone: "9140613407" }, { name: "Divyata Maurya", phone: "9250055785" }],
     level: "university",
-    status: "closing_soon",
+    status: "closed",
     registrationLink: "https://forms.gle/Z4uFqqSUz1i8NEnE8",
     rulebook: "https://drive.google.com/file/d/1CdGKWR9IRZTuM-IjuyptOXODMB7w_0st/view?usp=sharing"
   },
@@ -324,7 +324,7 @@ const events: EventData[] = [
     timing: "18th Feb - 03:00 PM",
     contacts: [{ name: "Rashi Malik", phone: "8707340147" }, { name: "Dhruv Pathak", phone: " 8604440669" }, { name: "Aditya Verma", phone: "9839428105" }],
     level: "university",
-    status: "closing_soon",
+    status: "closed",
     registrationLink: "https://forms.gle/uK2wUFS4hEbZNy588",
     rulebook: "https://drive.google.com/file/d/177gEckRSDaQT86g5xTJDYWRheYmpk0Rs/view?usp=sharing"
   },
