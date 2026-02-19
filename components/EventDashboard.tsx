@@ -309,7 +309,7 @@ const events: EventData[] = [
     level: "university",
     status: "closing_soon",
     registrationLink: "https://forms.gle/C19QxDKbjjJAVGSw7",
-    rulebook: "https://drive.google.com/file/d/1Prn-3YT46TsbWFqLcE3JpHaAcJJsZCuo/view?usp=sharing"
+    rulebook: "https://drive.google.com/file/d/10z_hK-xerd5RZ89guqyBVhOpw3vMPToU/view?usp=sharing"
   },
   {
     id: "rubiks-cube",
